@@ -41,7 +41,7 @@
               </div>
               <span class="page__title-pre">PHD</span>
             </div>
-            <div class="course__tab-content mb-95">
+            <div class="course__tab-content mb-40">
               <div class="tab-content" id="courseTabContent">
                 <div
                   class="tab-pane fade show active"
@@ -103,7 +103,7 @@
             </div>
           </div>
         </div>
-        <h3 class="mt-5 mb-3" style="color: #2b4eff">Why study PhD?</h3>
+        <h3 class="mt-5 mb-3">Why study PhD?</h3>
         <p>
           Pursuing a Ph.D. (Doctor of Philosophy) is a significant commitment,
           and individuals who attain this advanced degree often experience
@@ -181,7 +181,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 245px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -243,7 +246,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 245px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -284,7 +290,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 275px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"

@@ -1,22 +1,22 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="FAQ" subtitle="FAQ" />
-  <FaqArea />
+  <Breadcrumb title="Terms of Use" subtitle="Terms of Use" />
+  <TermsOfUseArea />
   <Footer footerPadding="true" />
 </template>
 
 <script>
 import Header from "../components/Home/Header.vue";
 import Breadcrumb from "../components/common/Breadcrumb.vue";
-import FaqArea from "../components/AboutUs/FaqArea.vue";
+import TermsOfUseArea from "@/components/Contact/TermsOfUseArea.vue";
 import Footer from "../components/Home/Footer.vue";
 
 export default {
-  name: "CoursesList",
+  name: "DataPrivacy",
   components: {
     Header,
     Breadcrumb,
-    FaqArea,
+    TermsOfUseArea,
     Footer,
   },
 };

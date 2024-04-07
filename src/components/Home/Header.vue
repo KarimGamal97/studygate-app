@@ -8,108 +8,39 @@
           : 'header__area header__transparent header__padding'
       } ${header__white && header__white}`"
     >
-      <div class="container-fluid">
+      <div class="container">
         <div class="row align-items-center">
-          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-2 col-sm-4 col-6">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-5 col-2">
             <div class="header__left d-flex">
               <div class="logo d-flex">
                 <router-link to="/">
                   <img
                     v-if="header__white && !isSticky"
                     src="../../assets/img/logo/logo.svg"
-                    style="width: 25%; margin-left: 20px"
+                    style="width: 50%; margin-right: 10px"
                     alt="logo"
                   />
-
                   <img
                     v-else
                     src="../../assets/img/logo/logo.svg"
-                    style="width: 25%; margin-left: 20px"
+                    style="width: 50%; margin-right: 10px"
                     alt="logo"
                   />
-                  <h3>StudyGate</h3>
+                  <h3 v-if="header__white && !isSticky" style="color: #fff">
+                    Studigrid
+                  </h3>
+                  <h3 v-else style="color: #000; margin-top: 5px">Studigrid</h3>
                 </router-link>
               </div>
-              <!-- <div class="header__category d-none d-lg-block">
-                <nav>
-                  <ul>
-                    <li>
-                      <router-link
-                        to="/courses"
-                        class="cat-menu d-flex align-items-center"
-                      >
-                        <div class="cat-dot-icon d-inline-block">
-                          <svg viewBox="0 0 276.2 276.2">
-                            <g>
-                              <g>
-                                <path
-                                  class="cat-dot"
-                                  d="M33.1,2.5C15.3,2.5,0.9,17,0.9,34.8s14.5,32.3,32.3,32.3s32.3-14.5,32.3-32.3S51,2.5,33.1,2.5z"
-                                />
-                                <path
-                                  class="cat-dot"
-                                  d="M137.7,2.5c-17.8,0-32.3,14.5-32.3,32.3s14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3S155.5,2.5,137.7,2.5    z"
-                                />
-                                <path
-                                  class="cat-dot"
-                                  d="M243.9,67.1c17.8,0,32.3-14.5,32.3-32.3S261.7,2.5,243.9,2.5S211.6,17,211.6,34.8S226.1,67.1,243.9,67.1z"
-                                />
-                                <path
-                                  class="cat-dot"
-                                  d="M32.3,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3S0,120.4,0,138.2S14.5,170.5,32.3,170.5z"
-                                />
-                                <path
-                                  class="cat-dot"
-                                  d="M136.8,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3c-17.8,0-32.3,14.5-32.3,32.3    C104.5,156.1,119,170.5,136.8,170.5z"
-                                />
-                                <path
-                                  class="cat-dot"
-                                  d="M243,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3s-32.3,14.5-32.3,32.3    C210.7,156.1,225.2,170.5,243,170.5z"
-                                />
-                                <path
-                                  class="cat-dot"
-                                  d="M33,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3s32.3-14.5,32.3-32.3S50.8,209.1,33,209.1z    "
-                                />
-                                <path
-                                  class="cat-dot"
-                                  d="M137.6,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3    S155.4,209.1,137.6,209.1z"
-                                />
-                                <path
-                                  class="cat-dot"
-                                  d="M243.8,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3    S261.6,209.1,243.8,209.1z"
-                                />
-                              </g>
-                            </g>
-                          </svg>
-                        </div>
-                        <span>Category</span>
-                      </router-link>
-                      <ul class="cat-submenu">
-                        <li>
-                          <router-link to="/course-details">English Learning</router-link>
-                        </li>
-                        <li>
-                          <router-link to="/course-details">Web Development</router-link>
-                        </li>
-                        <li><router-link to="/course-details">Logo Design</router-link></li>
-                        <li>
-                          <router-link to="/course-details">Motion Graphics</router-link>
-                        </li>
-                        <li><router-link to="/course-details">Video Edition</router-link></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-              </div> -->
             </div>
           </div>
-          <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-10 col-sm-8 col-6">
+          <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-7 col-10">
             <div
-              class="header__right d-flex justify-content-end align-items-center"
+              class="header__right d-flex justify-content-around align-items-center"
             >
               <div :class="`main-menu ${header__white && 'main-menu-3'}`">
                 <nav id="mobile-menu" class="d-none d-xl-block">
-                  <ul>
+                  <ul class="d-flex" style="gap: 40px">
                     <li>
                       <router-link to="/">Home</router-link>
                     </li>

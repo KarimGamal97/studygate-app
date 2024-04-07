@@ -51,9 +51,8 @@
             </div>
             <div class="category__content">
               <h4 class="category__title">
-                <router-link to="/course-details">Data Science</router-link>
+                <router-link to="/ms-data">Master of Data Science</router-link>
               </h4>
-              <p>Data is Everything</p>
             </div>
           </div>
         </div>
@@ -81,9 +80,10 @@
             </div>
             <div class="category__content">
               <h4 class="category__title">
-                <router-link to="/course-details">Business</router-link>
+                <router-link to="/ms-analytics"
+                  >Master of Data Analytics</router-link
+                >
               </h4>
-              <p>Improve your business</p>
             </div>
           </div>
         </div>
@@ -111,9 +111,8 @@
             </div>
             <div class="category__content">
               <h4 class="category__title">
-                <router-link to="/course-details">Art & Design</router-link>
+                <router-link to="/mba">MBA</router-link>
               </h4>
-              <p>Fun & Challenging</p>
             </div>
           </div>
         </div>
@@ -141,9 +140,8 @@
             </div>
             <div class="category__content">
               <h4 class="category__title">
-                <router-link to="/course-details">Lifestyle</router-link>
+                <router-link to="/phd">PHD Research</router-link>
               </h4>
-              <p>New Skills, New You</p>
             </div>
           </div>
         </div>
@@ -171,9 +169,8 @@
             </div>
             <div class="category__content">
               <h4 class="category__title">
-                <router-link to="/course-details">Marketing</router-link>
+                <router-link to="/mphil">MPhil Degree</router-link>
               </h4>
-              <p>Improve your business</p>
             </div>
           </div>
         </div>
@@ -197,9 +194,10 @@
             </div>
             <div class="category__content">
               <h4 class="category__title">
-                <router-link to="/course-details">Finance</router-link>
+                <router-link to="/mres"
+                  >Master by Research Mres Degree</router-link
+                >
               </h4>
-              <p>Fun & Challenging</p>
             </div>
           </div>
         </div>
@@ -231,11 +229,8 @@
             </div>
             <div class="category__content">
               <h4 class="category__title">
-                <router-link to="/course-details"
-                  >Health & Fitness
-                </router-link>
+                <router-link to="/ai-tools">AI Tools Training </router-link>
               </h4>
-              <p>Invest to Your Body</p>
             </div>
           </div>
         </div>
@@ -269,9 +264,8 @@
             </div>
             <div class="category__content">
               <h4 class="category__title">
-                <router-link to="/course-details">Music</router-link>
+                <router-link to="/data-tools">AI Development</router-link>
               </h4>
-              <p>Major or Minor</p>
             </div>
           </div>
         </div>
@@ -299,9 +293,10 @@
             </div>
             <div class="category__content">
               <h4 class="category__title">
-                <router-link to="/course-details">Academics</router-link>
+                <router-link to="/short-courses"
+                  >Analytics Short Courses & Training</router-link
+                >
               </h4>
-              <p>High Education Level</p>
             </div>
           </div>
         </div>

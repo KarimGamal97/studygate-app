@@ -13,7 +13,10 @@
               >
                 <div class="row">
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 220px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -34,9 +37,11 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 220px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -56,7 +61,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 220px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -76,7 +84,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 220px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -95,7 +106,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 220px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -112,7 +126,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 220px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"

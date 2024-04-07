@@ -112,7 +112,10 @@
               >
                 <div class="row">
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-0 fix"
+                      style="height: 360px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -173,7 +176,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 327px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -213,7 +219,7 @@
                 aria-labelledby="grid-tab"
               >
                 <div class="row">
-                  <h3 class="mt-5 mb-3" style="color: #2b4eff">
+                  <h3 class="mt-5 mb-3">
                     Why study Data and Business Analytics?
                   </h3>
                   <p>
@@ -383,7 +389,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 320px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -405,7 +414,7 @@
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <img
-                      src="../../assets/img/Ms_Data_Analytcs/analytcs-2.png"
+                      src="../../assets/img/Ms_Data_Analytcs/analytcs-2-2.png"
                       style="width: 100%"
                       alt=""
                     />

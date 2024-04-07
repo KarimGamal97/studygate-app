@@ -20,7 +20,7 @@
       />
     </div>
     <div class="container">
-      <div class="hero__content-wrapper mt-90">
+      <div class="hero__content-wrapper">
         <div class="row align-items-center">
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
             <div class="hero__content p-relative z-index-1">

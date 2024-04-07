@@ -16,16 +16,26 @@
               </p>
             </div>
             <div class="contact__form">
-              <form action="assets/mail.php">
+              <form>
                 <div class="row">
                   <div class="col-xxl-6 col-xl-6 col-md-6">
                     <div class="contact__form-input">
-                      <input type="text" placeholder="Your Name" name="name" />
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        name="name"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-md-6">
                     <div class="contact__form-input">
-                      <input type="email" placeholder="Email Id" name="email" />
+                      <input
+                        type="email"
+                        placeholder="Email Id"
+                        name="email"
+                        required
+                      />
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-md-6">
@@ -34,78 +44,109 @@
                         type="number"
                         placeholder="Phone Number"
                         name="phone"
+                        required
                       />
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-md-6">
                     <div class="contact__form-input">
-                      <input type="text" placeholder="City" name="city" />
+                      <input
+                        type="text"
+                        placeholder="City"
+                        name="city"
+                        required
+                      />
                     </div>
                   </div>
                   <h3>Queries for</h3>
                   <div class="d-flex col-xxl-12 col-xl-12 col-md-12 mb-3">
-                    <div class="col-6">
+                    <div class="col-3">
                       <div class="form-check">
                         <input
                           class="form-check-input"
                           type="checkbox"
                           value=""
                           id="flexCheckDefault"
+                          required
                         />
                         <label
                           class="form-check-label ms-2"
                           for="flexCheckDefault"
                         >
-                          NEW ZEALAND
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="flexCheckDefault"
-                        />
-                        <label
-                          class="form-check-label ms-2"
-                          for="flexCheckDefault"
-                        >
-                          CANADA
+                          Master Degree
                         </label>
                       </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-2">
                       <div class="form-check">
                         <input
                           class="form-check-input"
                           type="checkbox"
                           value=""
                           id="flexCheckDefault"
+                          required
                         />
                         <label
                           class="form-check-label ms-2"
                           for="flexCheckDefault"
                         >
-                          UNITED KINGDOM
+                          MBA
                         </label>
                       </div>
+                    </div>
+                    <div class="col-3">
                       <div class="form-check">
                         <input
                           class="form-check-input"
                           type="checkbox"
                           value=""
                           id="flexCheckDefault"
+                          required
                         />
                         <label
                           class="form-check-label ms-2"
                           for="flexCheckDefault"
                         >
-                          AUSTRALIA
+                          MS Research
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                          required
+                        />
+                        <label
+                          class="form-check-label ms-2"
+                          for="flexCheckDefault"
+                        >
+                          PHD
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                          required
+                        />
+                        <label
+                          class="form-check-label ms-2"
+                          for="flexCheckDefault"
+                        >
+                          Training
                         </label>
                       </div>
                     </div>
                   </div>
-                  <h3>Send us a message/Enquiries</h3>
+                  <h3>Destination Country</h3>
                   <div class="col-xxl-12 my-3">
                     <div class="input-group">
                       <select
@@ -113,11 +154,8 @@
                         id="inputGroupSelect04"
                         aria-label="Example select with button addon"
                       >
-                        <option selected="stu">Study Abroad</option>
-                        <option value="uni">University Collaboration</option>
-                        <option value="bus">Business Association</option>
-                        <option value="car">Careers</option>
-                        <option value="oth">Others</option>
+                        <option selected="uk">UNITED KINGDOM</option>
+                        <option value="nez">NEW ZEALAND</option>
                       </select>
                     </div>
                   </div>
@@ -134,12 +172,33 @@
                       class="contact__form-agree d-flex align-items-center mb-20"
                     >
                       <input
+                        type="checkbox"
+                        id="robotCheckbox"
+                        v-model="isChecked"
+                        @change="validateCheckbox"
+                      />
+                      <label for="robotCheckbox">I am not a robot</label>
+                      <span
+                        v-if="!isValid"
+                        style="color: red; margin-left: 15px"
+                        >Please confirm that you are not a robot.</span
+                      >
+                    </div>
+                  </div>
+                  <div class="col-xxl-12">
+                    <div
+                      class="contact__form-agree d-flex align-items-center mb-20"
+                    >
+                      <input
                         class="e-check-input"
                         type="checkbox"
                         id="e-agree"
                       />
                       <label class="e-check-label" for="e-agree"
-                        >I agree to the<a href="#">Terms & Conditions</a></label
+                        >I agree to the<a href="terms-of-use">Terms </a>&<a
+                          href="/data-privacy"
+                          >Privacy Polices</a
+                        ></label
                       >
                     </div>
                   </div>
@@ -276,7 +335,21 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
-  name: "ContactArea",
+  setup() {
+    const isChecked = ref(false);
+    const isValid = ref(true);
+
+    const validateCheckbox = () => {
+      isValid.value = isChecked.value;
+    };
+    return {
+      isChecked,
+      isValid,
+      validateCheckbox,
+    };
+  },
 };
 </script>

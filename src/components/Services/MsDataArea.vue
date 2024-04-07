@@ -123,7 +123,10 @@
               >
                 <div class="row">
                   <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 335px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -163,7 +166,10 @@
                     />
                   </div>
                   <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 330px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"

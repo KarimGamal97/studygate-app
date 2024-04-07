@@ -43,7 +43,7 @@
               </div>
               <span class="page__title-pre">UK Universities </span>
             </div>
-            <div class="course__tab-content mb-95">
+            <div class="course__tab-content mb-0">
               <div class="tab-content" id="courseTabContent">
                 <div
                   class="tab-pane fade show active"
@@ -115,7 +115,7 @@
                           countries each with its own set of renowned
                           universities. Here are 15 common universities spread
                           across these nations, providing a glimpse into the
-                          academic excellence the UK has to offer:
+                          academic excellence the UK has to offer.
                         </p>
                       </div>
                       <div class="col-6">

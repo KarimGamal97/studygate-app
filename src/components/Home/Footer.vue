@@ -76,11 +76,11 @@
                     }`"
                   >
                     <ul>
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">UK Distance Education</a></li>
-                      <li><a href="#">ContactUs</a></li>
-                      <li><a href="#">Useful Links </a></li>
+                      <li><a href="/about">About Us</a></li>
+                      <li><a href="/services">Services</a></li>
+                      <li><a href="/distance-edu">UK Distance Education</a></li>
+                      <li><a href="/contact">ContactUs</a></li>
+                      <li><a href="/useful-links">Useful Links </a></li>
                     </ul>
                   </div>
                 </div>
@@ -108,11 +108,11 @@
                     }`"
                   >
                     <ul>
-                      <li><a href="#">Distance Education</a></li>
-                      <li><a href="#">Why study in Uk</a></li>
-                      <li><a href="#">UK Accreditation </a></li>
-                      <li><a href="#">UK Universities </a></li>
-                      <li><a href="#">About UK</a></li>
+                      <li><a href="/distance-edu">Distance Education</a></li>
+                      <li><a href="/why-study-uk">Why study in Uk</a></li>
+                      <li><a href="uk-accreditation">UK Accreditation </a></li>
+                      <li><a href="/data-privacy">Data Privacy </a></li>
+                      <li><a href="terms-of-use">Terms of Use</a></li>
                     </ul>
                   </div>
                 </div>

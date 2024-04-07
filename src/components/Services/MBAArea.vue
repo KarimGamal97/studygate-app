@@ -126,7 +126,10 @@
               >
                 <div class="row">
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 385px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -156,15 +159,11 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <img
-                          src="../../assets/img/MBA/mba-2.png"
-                          style="width: 100%"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+                    <img
+                      src="../../assets/img/MBA/mba-2.png"
+                      style="width: 100%"
+                      alt=""
+                    />
                   </div>
                   <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
                     <div class="course__item white-bg mb-30 fix">
@@ -229,7 +228,7 @@
             </div>
           </div>
         </div>
-        <h3 class="mt-5 mb-3" style="color: #2b4eff">Why study MBA?</h3>
+        <h3 class="mt-5 mb-3">Why study MBA?</h3>
         <p>
           Pursuing an MBA (Master of Business Administration) is a strategic
           investment in one's career, offering various benefits that contribute
@@ -331,7 +330,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 245px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -393,7 +395,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 245px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -413,7 +418,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg mb-30 fix"
+                      style="height: 400px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
@@ -435,15 +443,11 @@
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <img
-                          src="../../assets/img/MBA/mba-3.png"
-                          style="width: 100%"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+                    <img
+                      src="../../assets/img/MBA/mba-3.png"
+                      style="width: 100%"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>

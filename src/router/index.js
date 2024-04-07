@@ -19,6 +19,12 @@ import MBA from "../pages/MBA.vue";
 import PHD from "../pages/PHD.vue";
 import MRES from "../pages/MRES.vue";
 import MPhil from "../pages/MPhil.vue";
+import AiTools from "../pages/AiTools.vue";
+import DataTools from "../pages/DataTools.vue";
+// Contact
+import Contact from "../pages/Contact.vue";
+import DataPrivacy from "../pages/DataPrivacy.vue";
+import TermsOfUse from "../pages/TermsOfUse.vue";
 import ShortCourses from "../pages/ShortCourses.vue";
 import Blog from "../pages/Blog.vue";
 import BlogDetails from "../pages/BlogDetails.vue";
@@ -30,7 +36,6 @@ import Checkout from "../pages/Checkout.vue";
 import SignIn from "../pages/SignIn.vue";
 import SignUp from "../pages/SignUp.vue";
 import ErrorPage from "../pages/ErrorPage.vue";
-import Contact from "../pages/Contact.vue";
 import CourseDetailsPage from "../pages/DynamicCourseDetails.vue";
 import DynamicBlogDetails from "../pages/DynamicBlogDetails.vue";
 
@@ -107,8 +112,24 @@ const router = createRouter({
       component: MPhil,
     },
     {
+      path: "/data-privacy",
+      component: DataPrivacy,
+    },
+    {
+      path: "/terms-of-use",
+      component: TermsOfUse,
+    },
+    {
       path: "/short-courses",
       component: ShortCourses,
+    },
+    {
+      path: "/ai-tools",
+      component: AiTools,
+    },
+    {
+      path: "/data-tools",
+      component: DataTools,
     },
     {
       path: "/blog",

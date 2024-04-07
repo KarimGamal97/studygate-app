@@ -24,20 +24,36 @@
                         </h3>
                         <div class="course__teacher">
                           <div class="mb-2">
-                            <a href="https://www.ukas.com/"
-                              >- https://www.ukas.com/
+                            <a
+                              href="https://www.ukas.com/"
+                              style="
+                                font-weight: bold;
+                                color: #2b4eff;
+                                font-size: 20px;
+                              "
+                              >- Ukas
                             </a>
                           </div>
                           <div class="mb-2">
                             <a
                               href="https://www.ukstudyonline.com/how-to-check-if-a-university-is-accredited-in-the-uk/"
-                              >-
-                              https://www.ukstudyonline.com/how-to-check-if-a-university-is-accredited-in-the-uk/
+                              style="
+                                font-weight: bold;
+                                color: #2b4eff;
+                                font-size: 20px;
+                              "
+                              >- Uk Study Online
                             </a>
                           </div>
                           <div class="mb-2">
-                            <a href="https://www.the-bac.org/"
-                              >- https://www.the-bac.org/
+                            <a
+                              href="https://www.the-bac.org/"
+                              style="
+                                font-weight: bold;
+                                color: #2b4eff;
+                                font-size: 20px;
+                              "
+                              >- The Bac
                             </a>
                           </div>
                         </div>

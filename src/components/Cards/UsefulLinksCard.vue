@@ -21,26 +21,63 @@
                         <h3 class="course__title">• Useful Links</h3>
                         <div class="course__teacher">
                           <p>
-                            <a href="WWW.JOBS.AC.UK"> 1 - WWW.JOBS.AC.UK</a>
-                          </p>
-                          <p>
-                            <a href="http://www.scholars4dev.com/">
-                              2 - http://www.scholars4dev.com/</a
+                            <a
+                              href="WWW.JOBS.AC.UK"
+                              style="
+                                font-weight: bold;
+                                color: #2b4eff;
+                                font-size: 20px;
+                              "
+                            >
+                              1 - JOBS.AC</a
                             >
                           </p>
                           <p>
-                            <a href="http://www.findaphd.com/">
-                              3 - http://www.findaphd.com/</a
+                            <a
+                              href="http://www.scholars4dev.com/"
+                              style="
+                                font-weight: bold;
+                                color: #2b4eff;
+                                font-size: 20px;
+                              "
+                            >
+                              2 - Scholars 4dev</a
                             >
                           </p>
                           <p>
-                            <a href="http://scholarship-positions.com/">
-                              4 - http://scholarship-positions.com/</a
+                            <a
+                              href="http://www.findaphd.com/"
+                              style="
+                                font-weight: bold;
+                                color: #2b4eff;
+                                font-size: 20px;
+                              "
+                            >
+                              3 - Find a phd</a
                             >
                           </p>
                           <p>
-                            <a href="http://www.ukcisa.org.uk/">
-                              5 - http://www.ukcisa.org.uk/</a
+                            <a
+                              href="http://scholarship-positions.com/"
+                              style="
+                                font-weight: bold;
+                                color: #2b4eff;
+                                font-size: 20px;
+                              "
+                            >
+                              4 - Scholarship-Positions</a
+                            >
+                          </p>
+                          <p>
+                            <a
+                              href="http://www.ukcisa.org.uk/"
+                              style="
+                                font-weight: bold;
+                                color: #2b4eff;
+                                font-size: 20px;
+                              "
+                            >
+                              5 - Ukcisa</a
                             >
                           </p>
                         </div>
