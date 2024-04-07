@@ -177,7 +177,7 @@
                 </div>
               </div> -->
               <div class="header__btn ml-20 d-none d-sm-block">
-                <router-link to="/contact" class="e-btn"
+                <router-link to="/book-meeting" class="e-btn"
                   >Book a Meeting</router-link
                 >
               </div>

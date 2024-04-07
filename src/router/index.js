@@ -26,6 +26,7 @@ import Contact from "../pages/Contact.vue";
 import DataPrivacy from "../pages/DataPrivacy.vue";
 import TermsOfUse from "../pages/TermsOfUse.vue";
 import ShortCourses from "../pages/ShortCourses.vue";
+import BookingForm from "../pages/BookingForm.vue";
 import Blog from "../pages/Blog.vue";
 import BlogDetails from "../pages/BlogDetails.vue";
 import Instructor from "../pages/Instructor.vue";
@@ -130,6 +131,10 @@ const router = createRouter({
     {
       path: "/data-tools",
       component: DataTools,
+    },
+    {
+      path: "/book-meeting",
+      component: BookingForm,
     },
     {
       path: "/blog",
