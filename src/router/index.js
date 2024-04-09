@@ -28,28 +28,13 @@ import TermsOfUse from "../pages/TermsOfUse.vue";
 import ShortCourses from "../pages/ShortCourses.vue";
 import BookingForm from "../pages/BookingForm.vue";
 import DiscoverMore from "../pages/DiscoverMore.vue";
-import Blog from "../pages/Blog.vue";
-import BlogDetails from "../pages/BlogDetails.vue";
-import Instructor from "../pages/Instructor.vue";
-import InstructorDetails from "../pages/InstructorDetails.vue";
-import EventDetails from "../pages/EventDetails.vue";
-import Cart from "../pages/Cart.vue";
-import Checkout from "../pages/Checkout.vue";
-import SignIn from "../pages/SignIn.vue";
-import SignUp from "../pages/SignUp.vue";
 import ErrorPage from "../pages/ErrorPage.vue";
-import CourseDetailsPage from "../pages/DynamicCourseDetails.vue";
-import DynamicBlogDetails from "../pages/DynamicBlogDetails.vue";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
       path: "/",
-      component: Home,
-    },
-    {
-      path: "/home",
       component: Home,
     },
     {
@@ -142,44 +127,8 @@ const router = createRouter({
       component: DiscoverMore,
     },
     {
-      path: "/blog",
-      component: Blog,
-    },
-    {
-      path: "/blog-details",
-      component: BlogDetails,
-    },
-    {
       path: "/about",
       component: About,
-    },
-    {
-      path: "/instructor",
-      component: Instructor,
-    },
-    {
-      path: "/instructor-details",
-      component: InstructorDetails,
-    },
-    {
-      path: "/event-details",
-      component: EventDetails,
-    },
-    {
-      path: "/cart",
-      component: Cart,
-    },
-    {
-      path: "/checkout",
-      component: Checkout,
-    },
-    {
-      path: "/login",
-      component: SignIn,
-    },
-    {
-      path: "/register",
-      component: SignUp,
     },
     {
       path: "/errorPage",
@@ -188,14 +137,6 @@ const router = createRouter({
     {
       path: "/contact",
       component: Contact,
-    },
-    {
-      path: "/course-details/:id",
-      component: CourseDetailsPage,
-    },
-    {
-      path: "/blog-details/:id",
-      component: DynamicBlogDetails,
     },
   ],
 });

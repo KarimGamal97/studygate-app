@@ -17,12 +17,12 @@
             <div class="banner__content">
               <span>Free</span>
               <h3 class="banner__title">
-                <router-link to="/course-details"
+                <router-link to="/uk-universities"
                   >UAE Foundation <br />
                   Document</router-link
                 >
               </h3>
-              <router-link to="/courses" class="e-btn e-btn-2"
+              <router-link to="/uk-universities" class="e-btn e-btn-2"
                 >View Courses</router-link
               >
             </div>
@@ -46,11 +46,11 @@
             <div class="banner__content">
               <span class="orange">new</span>
               <h3 class="banner__title">
-                <router-link to="/course-details"
+                <router-link to="/distance-edu"
                   >Online Courses <br />From UK University
                 </router-link>
               </h3>
-              <router-link to="/courses" class="e-btn e-btn-2"
+              <router-link to="/distance-edu" class="e-btn e-btn-2"
                 >Find Out More</router-link
               >
             </div>

@@ -150,11 +150,9 @@
 </template>
 
 <script>
-import CourseMixin from "../../mixins/courseItemsMixin";
-
 export default {
   name: "UkUniversitiesCard",
-  mixins: [CourseMixin],
+
   components: {},
 };
 </script>

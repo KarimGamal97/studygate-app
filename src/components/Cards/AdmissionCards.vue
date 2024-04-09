@@ -157,11 +157,8 @@
 </template>
 
 <script>
-import CourseMixin from "../../mixins/courseItemsMixin";
-
 export default {
   name: "AdmissionCards",
-  mixins: [CourseMixin],
   components: {},
 };
 </script>

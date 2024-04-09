@@ -95,11 +95,8 @@
 </template>
 
 <script>
-import CourseMixin from "../../mixins/courseItemsMixin";
-
 export default {
-  name: "UkUniversitiesCard",
-  mixins: [CourseMixin],
+  name: "UsefulLinks",
   components: {},
 };
 </script>

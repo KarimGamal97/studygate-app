@@ -78,11 +78,8 @@
 </template>
 
 <script>
-import CourseMixin from "../../mixins/courseItemsMixin";
-
 export default {
   name: "UkAccrediation",
-  mixins: [CourseMixin],
   components: {},
 };
 </script>
