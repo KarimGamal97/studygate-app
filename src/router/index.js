@@ -27,6 +27,7 @@ import DataPrivacy from "../pages/DataPrivacy.vue";
 import TermsOfUse from "../pages/TermsOfUse.vue";
 import ShortCourses from "../pages/ShortCourses.vue";
 import BookingForm from "../pages/BookingForm.vue";
+import DiscoverMore from "../pages/DiscoverMore.vue";
 import Blog from "../pages/Blog.vue";
 import BlogDetails from "../pages/BlogDetails.vue";
 import Instructor from "../pages/Instructor.vue";
@@ -135,6 +136,10 @@ const router = createRouter({
     {
       path: "/book-meeting",
       component: BookingForm,
+    },
+    {
+      path: "/discover-more",
+      component: DiscoverMore,
     },
     {
       path: "/blog",

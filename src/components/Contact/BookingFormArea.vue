@@ -19,19 +19,16 @@
           <label for="meetingTime">Meeting Time:</label>
           <input type="time" id="meetingTime" name="meetingTime" required />
 
-          <button type="submit">Start Meeting</button>
+          <label for="participantName">Your Email:</label>
+          <input
+            type="email"
+            id="participantEmail"
+            name="participantEmail"
+            required
+          />
+
+          <button type="submit">Submit</button>
         </form>
-      </div>
-      <div class="meeting-list">
-        <h2>Your Upcoming Meetings</h2>
-        <ul>
-          <li>Meeting 1: Project Discussion - June 15, 2023, 10:00 AM</li>
-          <li>Meeting 2: Training Session - June 18, 2023, 3:30 PM</li>
-        </ul>
-      </div>
-      <div class="functionality-buttons">
-        <button>Join Meeting</button>
-        <button>Access Recordings</button>
       </div>
     </div>
   </div>
@@ -113,7 +110,8 @@ header p {
 
 .meeting-form input[type="text"],
 .meeting-form input[type="date"],
-.meeting-form input[type="time"] {
+.meeting-form input[type="time"],
+.meeting-form input[type="email"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;

@@ -25,21 +25,21 @@
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
             <div class="hero__content p-relative z-index-1">
               <h3 class="hero__title">
-                <span>Access 2700+</span>
+                <span>Secure online</span>
                 <span class="yellow-shape"
-                  >Online
+                  >UK
                   <img
                     src="../../assets/img/shape/yellow-bg.png"
                     alt="yellow-shape"
                   />
                 </span>
-                Tutorial From Top Instructor.
+                degree without quitting job.
               </h3>
               <p>
                 StudyGate connects students in the UAE and GCC with distance
                 higher education from UK universities.
               </p>
-              <router-link to="/services" class="e-btn"
+              <router-link to="/discover-more" class="e-btn"
                 >Discover More</router-link
               >
             </div>

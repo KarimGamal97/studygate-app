@@ -41,12 +41,7 @@
                       </li>
                       <li>
                         <a href="#" class="tw"
-                          ><i class="fab fa-twitter"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="#" class="pin"
-                          ><i class="fab fa-pinterest-p"></i
+                          ><i class="fab fa-linkedin-in"></i
                         ></a>
                       </li>
                     </ul>
