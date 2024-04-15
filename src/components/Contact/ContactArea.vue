@@ -16,15 +16,35 @@
               </p>
             </div>
             <div class="contact__form">
-              <form>
+              <form @submit.prevent="validateForm">
                 <div class="row">
+                  <div class="errors-list">
+                    <div class="error text-center" v-if="usernameError">
+                      {{ usernameError }}
+                    </div>
+                    <div class="error text-center" v-if="emailError">
+                      {{ emailError }}
+                    </div>
+                    <div class="error text-center" v-if="phoneError">
+                      {{ phoneError }}
+                    </div>
+                    <div class="error text-center" v-if="cityError">
+                      {{ cityError }}
+                    </div>
+                    <div class="error text-center" v-if="selectedError">
+                      {{ selectedError }}
+                    </div>
+                    <div class="error text-center" v-if="textAreaError">
+                      {{ textAreaError }}
+                    </div>
+                  </div>
                   <div class="col-xxl-6 col-xl-6 col-md-6">
                     <div class="contact__form-input">
                       <input
                         type="text"
                         placeholder="Your Name"
                         name="name"
-                        required
+                        v-model="username"
                       />
                     </div>
                   </div>
@@ -34,17 +54,17 @@
                         type="email"
                         placeholder="Email Id"
                         name="email"
-                        required
+                        v-model="email"
                       />
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-md-6">
                     <div class="contact__form-input">
                       <input
-                        type="number"
+                        type="text"
                         placeholder="Phone Number"
                         name="phone"
-                        required
+                        v-model="phone"
                       />
                     </div>
                   </div>
@@ -54,7 +74,7 @@
                         type="text"
                         placeholder="City"
                         name="city"
-                        required
+                        v-model="city"
                       />
                     </div>
                   </div>
@@ -65,14 +85,11 @@
                         <input
                           class="form-check-input"
                           type="checkbox"
-                          value=""
-                          id="flexCheckDefault"
-                          required
+                          value="Master Degree"
+                          id="masterDegree"
+                          v-model="selectedOptions"
                         />
-                        <label
-                          class="form-check-label ms-2"
-                          for="flexCheckDefault"
-                        >
+                        <label class="form-check-label ms-2" for="masterDegree">
                           Master Degree
                         </label>
                       </div>
@@ -82,14 +99,11 @@
                         <input
                           class="form-check-input"
                           type="checkbox"
-                          value=""
-                          id="flexCheckDefault"
-                          required
+                          value="MBA"
+                          id="MBA"
+                          v-model="selectedOptions"
                         />
-                        <label
-                          class="form-check-label ms-2"
-                          for="flexCheckDefault"
-                        >
+                        <label class="form-check-label ms-2" for="MBA">
                           MBA
                         </label>
                       </div>
@@ -99,14 +113,11 @@
                         <input
                           class="form-check-input"
                           type="checkbox"
-                          value=""
-                          id="flexCheckDefault"
-                          required
+                          value="msResearch"
+                          id="MS Research"
+                          v-model="selectedOptions"
                         />
-                        <label
-                          class="form-check-label ms-2"
-                          for="flexCheckDefault"
-                        >
+                        <label class="form-check-label ms-2" for="msResearch">
                           MS Research
                         </label>
                       </div>
@@ -116,14 +127,11 @@
                         <input
                           class="form-check-input"
                           type="checkbox"
-                          value=""
-                          id="flexCheckDefault"
-                          required
+                          value="PHD"
+                          id="PHD"
+                          v-model="selectedOptions"
                         />
-                        <label
-                          class="form-check-label ms-2"
-                          for="flexCheckDefault"
-                        >
+                        <label class="form-check-label ms-2" for="PHD">
                           PHD
                         </label>
                       </div>
@@ -133,14 +141,11 @@
                         <input
                           class="form-check-input"
                           type="checkbox"
-                          value=""
-                          id="flexCheckDefault"
-                          required
+                          value="Training"
+                          id="Training"
+                          v-model="selectedOptions"
                         />
-                        <label
-                          class="form-check-label ms-2"
-                          for="flexCheckDefault"
-                        >
+                        <label class="form-check-label ms-2" for="Training">
                           Training
                         </label>
                       </div>
@@ -164,6 +169,7 @@
                       <textarea
                         placeholder="Enter Your Message"
                         name="message"
+                        v-model="textArea"
                       ></textarea>
                     </div>
                   </div>
@@ -332,21 +338,110 @@
 </template>
 
 <script>
-import { ref } from "vue";
-
 export default {
-  setup() {
-    const isChecked = ref(false);
-    const isValid = ref(true);
-
-    const validateCheckbox = () => {
-      isValid.value = isChecked.value;
-    };
+  data() {
     return {
-      isChecked,
-      isValid,
-      validateCheckbox,
+      formErrors: [],
+
+      username: null,
+      usernameError: null,
+      emailError: null,
+      phoneError: null,
+      cityError: null,
+      email: null,
+      textAreaError: null,
+      city: null,
+      phone: null,
+      maxChars: 12,
+      selectedOptions: [],
+      selectedError: null,
+      hasSelection: true,
+      textArea: null,
     };
+  },
+
+  methods: {
+    // validateForm() {
+    //   if (!this.username) {
+    //     this.formErrors.push("Username is required");
+    //   } else if (!/^[a-zA-Z]+$/.test(this.username)) {
+    //     this.formErrors.push("Username must contain only letters");
+    //   }
+    //   if (!this.email) {
+    //     this.formErrors.push("Email is required");
+    //   } else if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.email)) {
+    //     this.formErrors.push("Email is must be valid");
+    //   }
+    //   if (!this.phone) {
+    //     this.formErrors.push("Phone is required");
+    //   } else if (!/^\d{1,16}$/.test(this.phone)) {
+    //     this.formErrors.push("Phone must be a number with at least 16 digits");
+    //   }
+    //   if (!this.city) {
+    //     this.formErrors.push("City is required");
+    //   }
+    //   if (this.username && this.username.length > this.maxChars) {
+    //     this.formErrors.push(
+    //       `Username must be at most ${this.maxChars} characters`
+    //     );
+    //   }
+    //   return this.formErrors.length === 0;
+    // },
+
+    validateForm() {
+      if (!this.username) {
+        this.usernameError = "Username is required";
+      } else if (this.username.length < 8 || this.username.length > 16) {
+        this.usernameError = "Username must be between  8 and 16 characters";
+      } else {
+        this.usernameError = "";
+      }
+
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!regex.test(this.email)) {
+        this.emailError = "Invalid email format";
+      } else {
+        this.emailError = "";
+      }
+
+      if (!this.phone) {
+        this.phoneError = "phone is required";
+      } else if (this.phone.length < 8 || this.phone.length > 16) {
+        this.phoneError = "Username must be between  8 and 16 characters";
+      } else {
+        this.phoneError = "";
+      }
+      if (!this.city) {
+        this.cityError = "city is required";
+      } else if (this.city.length < 4 || this.city.length > 16) {
+        this.cityError = "city must be between  4 and 16 characters";
+      } else {
+        this.cityError = "";
+      }
+
+      if (this.textArea.length < 20) {
+        this.textAreaError = "Your message must be more than 20 character!";
+      }
+
+      // if (this.selectedOptions.length == 0) {
+      //   this.selectedError == "error";
+      // } else {
+      //   this.selectedError = "";
+      // }
+    },
+  },
+  computed: {
+    isAtLeastOneSelected() {
+      return this.selectedOptions.length > 0;
+    },
   },
 };
 </script>
+<style scoped>
+.errors-list .error {
+  padding: 15px;
+  background-color: rgba(244, 67, 54, 0.14);
+  color: #f44336;
+  margin-bottom: 15px;
+}
+</style>

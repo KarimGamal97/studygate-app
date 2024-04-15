@@ -2,40 +2,119 @@
   <div class="container mt-50 mb-50">
     <div class="content">
       <div class="meeting-form">
-        <form>
+        <form @submit.prevent="validateForm">
           <label for="meetingTitle">Meeting Title:</label>
-          <input type="text" id="meetingTitle" name="meetingTitle" required />
+          <input
+            type="text"
+            id="meetingTitle"
+            name="meetingTitle"
+            v-model="meetingTitle"
+          />
 
           <label for="participantName">Your Name:</label>
           <input
             type="text"
             id="participantName"
             name="participantName"
-            required
+            v-model="participantName"
           />
           <label for="meetingDate">Meeting Date:</label>
-          <input type="date" id="meetingDate" name="meetingDate" required />
+          <input
+            type="date"
+            id="meetingDate"
+            name="meetingDate"
+            v-model="meetingDate"
+          />
 
           <label for="meetingTime">Meeting Time:</label>
-          <input type="time" id="meetingTime" name="meetingTime" required />
+          <input
+            type="time"
+            id="meetingTime"
+            name="meetingTime"
+            v-model="meetingTime"
+          />
 
           <label for="participantName">Your Email:</label>
           <input
             type="email"
             id="participantEmail"
             name="participantEmail"
-            required
+            v-model="participantEmail"
           />
 
-          <button type="submit">Submit</button>
+          <button :disabled="formErrors.length > 0" type="submit">
+            Submit
+          </button>
         </form>
+        <div class="row">
+          <div class="errors-list">
+            <div
+              v-if="formErrors.length > 0"
+              class="error text-center mt-2 pt-3"
+            >
+              <p>Please fix the following errors:</p>
+              <ul>
+                <li
+                  class="mt-2 pt-3"
+                  v-for="(error, index) in formErrors"
+                  :key="index"
+                >
+                  {{ error }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      meetingTitle: "",
+      participantName: "",
+      meetingDate: "",
+      meetingTime: "",
+      participantEmail: "",
+      formErrors: [],
+    };
+  },
+  methods: {
+    validateForm() {
+      this.formErrors = [];
+
+      if (!this.meetingTitle) {
+        this.formErrors.push("Meeting Title is required");
+      }
+      if (!this.participantName) {
+        this.formErrors.push("Your Name is required");
+      }
+      if (!this.meetingDate) {
+        this.formErrors.push("Meeting Date is required");
+      }
+      if (!this.meetingTime) {
+        this.formErrors.push("Meeting Time is required");
+      }
+      if (!this.participantEmail) {
+        this.formErrors.push("Your Email is required");
+      }
+
+      // Additional validation logic for email format can be added here
+
+      if (this.formErrors.length === 0) {
+        // Form is valid, submit the form or perform further actions
+        this.submitForm();
+      }
+    },
+    submitForm() {
+      // Perform form submission logic here
+      console.log("Form submitted!");
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -179,5 +258,13 @@ header p {
 
 .functionality-buttons button:hover {
   background-color: #0056b3;
+}
+</style>
+<style scoped>
+.errors-list .error {
+  padding: 15px;
+  background-color: rgba(244, 67, 54, 0.14);
+  color: #f44336;
+  margin-bottom: 15px;
 }
 </style>
