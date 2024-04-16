@@ -32,7 +32,7 @@
                       <router-link to="/phd">More about Studigrid</router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      StudyGate is an educational and technology service that
+                      Studigate is an educational and technology service that
                       facilitate access to distance higher education from UK
                       universities for students in the UAE and GCC.
                     </li>
@@ -59,7 +59,6 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
-                        <h3 class="course__title">1</h3>
                         <div class="course__teacher">
                           <p>
                             Elevate your professional trajectory by securing a
@@ -77,18 +76,6 @@
                             with your professional goals and personal
                             circumstances.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">2</h3>
-                        <div class="course__teacher">
                           <p>
                             Embarking on this educational journey offers you the
                             flexibility to balance your professional commitments
@@ -102,18 +89,6 @@
                             degree can open doors to new opportunities and
                             elevate your career to new heights.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">3</h3>
-                        <div class="course__teacher">
                           <p>
                             Moreover, earning a degree from a UK institution,
                             renowned globally for its academic excellence and
@@ -128,18 +103,6 @@
                             faculty from around the globe, further enriching
                             your learning experience.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">4</h3>
-                        <div class="course__teacher">
                           <p>
                             In addition, StidiGate Higher Education is more than
                             just an educational consultancy; it's a strategic
@@ -153,21 +116,6 @@
                             required to successfully complete your chosen
                             program.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div
-                      class="course__item white-bg mb-30 fix"
-                      style="height: 295px"
-                    >
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">5</h3>
-                        <div class="course__teacher">
                           <p>
                             In summary, pursuing an online degree from the UK
                             offers a unique blend of flexibility, global

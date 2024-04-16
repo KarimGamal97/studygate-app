@@ -25,7 +25,7 @@
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
             <div class="hero__content p-relative z-index-1">
               <h3 class="hero__title">
-                <span>Secure online</span>
+                <span>Secure Distance</span>
                 <span class="yellow-shape"
                   >UK
                   <img
@@ -36,8 +36,8 @@
                 degree without quitting job.
               </h3>
               <p>
-                StudyGate connects students in the UAE and GCC with distance
-                higher education from UK universities.
+                Studigate connects students in the GCC with distance higher
+                education from UK universities.
               </p>
               <router-link to="/discover-more" class="e-btn"
                 >Discover More</router-link
@@ -86,3 +86,10 @@ export default {
   name: "HeroSection",
 };
 </script>
+
+<style scoped>
+.hero__height {
+  padding: 165px 0 50px 0;
+  min-height: 0;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Uk Universities" subtitle="Uk Universities" />
+  <Breadcrumb title="UK Universities" subtitle="UK Universities" />
   <UkUniversitiesArea />
   <UkUniversitiesCard />
   <Footer footerPadding="true" />

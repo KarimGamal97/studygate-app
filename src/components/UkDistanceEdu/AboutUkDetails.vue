@@ -32,7 +32,7 @@
                       <router-link to="/about-uk">About UK</router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      StudyGate is an educational and technology service that
+                      Studigate is an educational and technology service that
                       facilitate access to distance higher education from UK
                       universities for students in the UAE and GCC.
                     </li>

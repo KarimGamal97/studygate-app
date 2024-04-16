@@ -5,7 +5,7 @@
         <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6">
           <div class="about__thumb-wrapper">
             <div class="about__review">
-              <h5>Join the <span>StudyGate </span> community</h5>
+              <h5>Join the <span>Studigate </span> community</h5>
             </div>
             <div class="about__thumb ml-100">
               <img src="../../assets/img/about/about.jpg" alt="" />
@@ -32,15 +32,15 @@
                   >Goals
                   <img src="../../assets/img/shape/yellow-bg-2.png" alt="" />
                 </span>
-                with StudyGate
+                with Studigate
               </h2>
               <p style="text-align: justify">
-                StudyGate is an educational and technology service that
+                Studigate is an educational and technology service that
                 facilitate access to distance higher education from UK
                 universities for students in the UAE and GCC. Our approach
                 combines personalized guidance and partnership with reputable
                 universities to offer distance learning education programs
-                mainly in analytics and business. StudyGate also offers bridging
+                mainly in analytics and business. Studigate also offers bridging
                 courses and professional training in Data Analytics to
                 professionals, and organizations.
               </p>
@@ -52,8 +52,8 @@
                   UK universities.
                 </li>
                 <li class="d-flex align-items-center">
-                  <i class="fa fa-check"></i> Programs focus on analytics.
-                  courses
+                  <i class="fa fa-check"></i> Programs focus on analytics
+                  courses .
                 </li>
                 <li class="d-flex align-items-center">
                   <i class="fa fa-check"></i> Professional training.

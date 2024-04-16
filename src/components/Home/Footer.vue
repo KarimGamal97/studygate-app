@@ -29,9 +29,9 @@
                   }`"
                 >
                   <p style="text-align: justify">
-                    StudyGate is an educational and technology service that
-                    facilitate access to distance higher education from UK
-                    universities for students in the UAE and GCC.
+                    Studigate is an educational and technology service that
+                    facilitates access to distance higher education from UK
+                    universities for students in the GCC.
                   </p>
 
                   <div class="footer__social">

@@ -2,50 +2,6 @@
   <div class="container mt-50 mb-50">
     <div class="content">
       <div class="meeting-form">
-        <form @submit.prevent="validateForm">
-          <label for="meetingTitle">Meeting Title:</label>
-          <input
-            type="text"
-            id="meetingTitle"
-            name="meetingTitle"
-            v-model="meetingTitle"
-          />
-
-          <label for="participantName">Your Name:</label>
-          <input
-            type="text"
-            id="participantName"
-            name="participantName"
-            v-model="participantName"
-          />
-          <label for="meetingDate">Meeting Date:</label>
-          <input
-            type="date"
-            id="meetingDate"
-            name="meetingDate"
-            v-model="meetingDate"
-          />
-
-          <label for="meetingTime">Meeting Time:</label>
-          <input
-            type="time"
-            id="meetingTime"
-            name="meetingTime"
-            v-model="meetingTime"
-          />
-
-          <label for="participantName">Your Email:</label>
-          <input
-            type="email"
-            id="participantEmail"
-            name="participantEmail"
-            v-model="participantEmail"
-          />
-
-          <button :disabled="formErrors.length > 0" type="submit">
-            Submit
-          </button>
-        </form>
         <div class="row">
           <div class="errors-list">
             <div
@@ -65,6 +21,53 @@
             </div>
           </div>
         </div>
+        <form @submit.prevent="validateForm">
+          <label for="meetingTitle">Meeting Details</label>
+          <textarea
+            id="meetingTitle"
+            name="meetingTitle"
+            v-model="meetingTitle"
+            rows="5"
+            maxlength="255"
+            @input="clearErrors"
+          ></textarea>
+          <label for="participantName">Your Name</label>
+          <input
+            type="text"
+            id="participantName"
+            name="participantName"
+            v-model="participantName"
+            @input="clearErrors"
+          />
+          <label for="meetingDate">Meeting Date</label>
+          <input
+            type="date"
+            id="meetingDate"
+            name="meetingDate"
+            v-model="meetingDate"
+            @input="clearErrors"
+          />
+
+          <label for="meetingTime">Meeting Time</label>
+          <input
+            type="time"
+            id="meetingTime"
+            name="meetingTime"
+            v-model="meetingTime"
+            @input="clearErrors"
+          />
+
+          <label for="participantName">Your Email</label>
+          <input
+            type="email"
+            id="participantEmail"
+            name="participantEmail"
+            v-model="participantEmail"
+            @input="clearErrors"
+          />
+
+          <button :disabled="formErrors.length > 0" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </div>
@@ -101,17 +104,16 @@ export default {
       if (!this.participantEmail) {
         this.formErrors.push("Your Email is required");
       }
-
-      // Additional validation logic for email format can be added here
-
       if (this.formErrors.length === 0) {
-        // Form is valid, submit the form or perform further actions
         this.submitForm();
       }
     },
     submitForm() {
-      // Perform form submission logic here
       console.log("Form submitted!");
+      this.formErrors = [];
+    },
+    clearErrors() {
+      this.formErrors = [];
     },
   },
 };
@@ -190,7 +192,8 @@ header p {
 .meeting-form input[type="text"],
 .meeting-form input[type="date"],
 .meeting-form input[type="time"],
-.meeting-form input[type="email"] {
+.meeting-form input[type="email"],
+.meeting-form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -198,7 +201,9 @@ header p {
   border-radius: 5px;
   font-size: 16px;
 }
-
+.meeting-form textarea {
+  resize: none;
+}
 .meeting-form button {
   background-color: #007bff;
   color: #fff;

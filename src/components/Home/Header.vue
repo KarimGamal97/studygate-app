@@ -143,7 +143,7 @@
                           <router-link to="/about">Our Company</router-link>
                         </li>
                         <li>
-                          <router-link to="/faq">Faq</router-link>
+                          <router-link to="/faq">FAQ</router-link>
                         </li>
                       </ul>
                     </li>
@@ -479,7 +479,7 @@
                   <router-link to="/about">Our Company</router-link>
                 </li>
                 <li>
-                  <router-link to="/faq">Faq</router-link>
+                  <router-link to="/faq">FAQ</router-link>
                 </li>
               </ul>
             </li>

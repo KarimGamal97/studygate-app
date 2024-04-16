@@ -23,18 +23,20 @@
                           <p>
                             <a
                               href="WWW.JOBS.AC.UK"
+                              target="_blank"
                               style="
                                 font-weight: bold;
                                 color: #2b4eff;
                                 font-size: 20px;
                               "
                             >
-                              1 - JOBS.AC</a
+                              1 - Find a scholarship or a job in the UK</a
                             >
                           </p>
                           <p>
                             <a
                               href="http://www.scholars4dev.com/"
+                              target="_blank"
                               style="
                                 font-weight: bold;
                                 color: #2b4eff;
@@ -47,6 +49,7 @@
                           <p>
                             <a
                               href="http://www.findaphd.com/"
+                              target="_blank"
                               style="
                                 font-weight: bold;
                                 color: #2b4eff;
@@ -59,6 +62,7 @@
                           <p>
                             <a
                               href="http://scholarship-positions.com/"
+                              target="_blank"
                               style="
                                 font-weight: bold;
                                 color: #2b4eff;
@@ -71,6 +75,7 @@
                           <p>
                             <a
                               href="http://www.ukcisa.org.uk/"
+                              target="_blank"
                               style="
                                 font-weight: bold;
                                 color: #2b4eff;

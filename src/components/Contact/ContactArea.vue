@@ -6,8 +6,14 @@
           <div class="contact__wrapper">
             <div class="section__title-wrapper mb-40">
               <h2 class="section__title">
-                Get in<span class="yellow-bg yellow-bg-big"
-                  >touch<img src="../../assets/img/shape/yellow-bg.png" alt=""
+                Get
+                <span
+                  class="yellow-bg yellow-bg-big"
+                  style="text-transform: lowercase"
+                >
+                  in touch<img
+                    src="../../assets/img/shape/yellow-bg.png"
+                    alt=""
                 /></span>
               </h2>
               <p>
@@ -25,17 +31,14 @@
                     <div class="error text-center" v-if="emailError">
                       {{ emailError }}
                     </div>
-                    <div class="error text-center" v-if="phoneError">
-                      {{ phoneError }}
-                    </div>
-                    <div class="error text-center" v-if="cityError">
-                      {{ cityError }}
+                    <div class="error text-center" v-if="textAreaError">
+                      {{ textAreaError }}
                     </div>
                     <div class="error text-center" v-if="selectedError">
                       {{ selectedError }}
                     </div>
-                    <div class="error text-center" v-if="textAreaError">
-                      {{ textAreaError }}
+                    <div class="error text-center" v-if="valueError">
+                      {{ valueError }}
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-md-6">
@@ -64,18 +67,12 @@
                         type="text"
                         placeholder="Phone Number"
                         name="phone"
-                        v-model="phone"
                       />
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-md-6">
                     <div class="contact__form-input">
-                      <input
-                        type="text"
-                        placeholder="City"
-                        name="city"
-                        v-model="city"
-                      />
+                      <input type="text" placeholder="City" name="city" />
                     </div>
                   </div>
                   <h3>Queries for</h3>
@@ -158,9 +155,10 @@
                         class="form-select py-3"
                         id="inputGroupSelect04"
                         aria-label="Example select with button addon"
+                        v-model="values"
                       >
-                        <option selected="uk">UNITED KINGDOM</option>
-                        <option value="nez">NEW ZEALAND</option>
+                        <option value="uk" selected="uk">UNITED KINGDOM</option>
+                        <option value="values">NEW ZEALAND</option>
                       </select>
                     </div>
                   </div>
@@ -169,7 +167,6 @@
                       <textarea
                         placeholder="Enter Your Message"
                         name="message"
-                        v-model="textArea"
                       ></textarea>
                     </div>
                   </div>
@@ -210,9 +207,7 @@
                   </div>
                   <div class="col-xxl-12">
                     <div class="contact__btn">
-                      <button type="submit" class="e-btn">
-                        Send your message
-                      </button>
+                      <button type="submit" class="e-btn">Send</button>
                     </div>
                   </div>
                 </div>
@@ -257,12 +252,12 @@
                       </svg>
                     </div>
                     <div class="contact__info-text">
-                      <h4>New York Office</h4>
+                      <h4>Abu Dhabi Office</h4>
                       <p>
                         <a
                           target="_blank"
                           href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873"
-                          >Maypole Crescent 70-80 Upper St Norwich NR2 1LT</a
+                          >Al Muroor Road Office 207 Saraya Tower</a
                         >
                       </p>
                     </div>
@@ -284,12 +279,7 @@
                     <div class="contact__info-text">
                       <h4>Email us directly</h4>
                       <p>
-                        <a href="mailto:support@educal.com"
-                          >support@educal.com</a
-                        >
-                      </p>
-                      <p>
-                        <a href="mailto:info@educal.com"> info@educal.com</a>
+                        <a href="mailto:info@studygrid.com">info@studigate</a>
                       </p>
                     </div>
                   </div>
@@ -308,10 +298,7 @@
                     </div>
                     <div class="contact__info-text">
                       <h4>Phone</h4>
-                      <p><a href="tel:+(426)-742-26-44">+(426) 742 26 44</a></p>
-                      <p>
-                        <a href="tel:+(224)-762-442-32">+(224) 762 442 32</a>
-                      </p>
+                      <p><a href="tel:009710581223419">009710581223419</a></p>
                     </div>
                   </div>
                 </li>
@@ -341,22 +328,17 @@
 export default {
   data() {
     return {
+      values: [],
       formErrors: [],
-
       username: null,
       usernameError: null,
       emailError: null,
-      phoneError: null,
-      cityError: null,
       email: null,
-      textAreaError: null,
-      city: null,
-      phone: null,
       maxChars: 12,
       selectedOptions: [],
+      isAtLeastOneOptionSelected: null,
       selectedError: null,
-      hasSelection: true,
-      textArea: null,
+      valueError: null,
     };
   },
 
@@ -396,43 +378,20 @@ export default {
       } else {
         this.usernameError = "";
       }
-
       const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!regex.test(this.email)) {
         this.emailError = "Invalid email format";
       } else {
         this.emailError = "";
       }
-
-      if (!this.phone) {
-        this.phoneError = "phone is required";
-      } else if (this.phone.length < 8 || this.phone.length > 16) {
-        this.phoneError = "Username must be between  8 and 16 characters";
+      if (this.values.length == 0) {
+        this.valueError = "Choose at least one Country !";
       } else {
-        this.phoneError = "";
+        this.valueError = "";
       }
-      if (!this.city) {
-        this.cityError = "city is required";
-      } else if (this.city.length < 4 || this.city.length > 16) {
-        this.cityError = "city must be between  4 and 16 characters";
-      } else {
-        this.cityError = "";
+      if (this.selectedOptions.length == 0) {
+        this.selectedError = "Please select at least one Query !";
       }
-
-      if (this.textArea.length < 20) {
-        this.textAreaError = "Your message must be more than 20 character!";
-      }
-
-      // if (this.selectedOptions.length == 0) {
-      //   this.selectedError == "error";
-      // } else {
-      //   this.selectedError = "";
-      // }
-    },
-  },
-  computed: {
-    isAtLeastOneSelected() {
-      return this.selectedOptions.length > 0;
     },
   },
 };

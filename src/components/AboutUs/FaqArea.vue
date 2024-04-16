@@ -29,10 +29,10 @@
                       <router-link to="/">Home</router-link>
                     </li>
                     <li class="breadcrumb-item">
-                      <router-link to="/faq">Faq</router-link>
+                      <router-link to="/faq">FAQ</router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      StudyGate is an educational and technology service that
+                      Studigate is an educational and technology service that
                       facilitate access to distance higher education from UK
                       universities for students in the UAE and GCC.
                     </li>
@@ -50,7 +50,7 @@
                     <i></i>
                     <h3
                       class="fw-bold"
-                      style="font-size: 26px; margin-bottom: 5px"
+                      style="font-size: 22px; margin-bottom: 5px"
                     >
                       What types of programs do you offer?
                     </h3>
@@ -74,7 +74,7 @@
                     <i></i>
                     <h3
                       class="fw-bold"
-                      style="font-size: 26px; margin-bottom: 5px"
+                      style="font-size: 22px; margin-bottom: 5px"
                     >
                       Are your degrees recognized internationally?
                     </h3>
@@ -96,7 +96,7 @@
                     <i></i>
                     <h3
                       class="fw-bold"
-                      style="font-size: 26px; margin-bottom: 5px"
+                      style="font-size: 22px; margin-bottom: 5px"
                     >
                       How do distance learning classes work?
                     </h3>
@@ -121,7 +121,7 @@
                     <i></i>
                     <h3
                       class="fw-bold"
-                      style="font-size: 26px; margin-bottom: 5px"
+                      style="font-size: 22px; margin-bottom: 5px"
                     >
                       Can I study at my own pace?
                     </h3>
@@ -144,7 +144,7 @@
                     <i></i>
                     <h3
                       class="fw-bold"
-                      style="font-size: 26px; margin-bottom: 5px"
+                      style="font-size: 22px; margin-bottom: 5px"
                     >
                       What kind of support services do you offer to distance
                       learning students?
@@ -169,7 +169,7 @@
                     <i></i>
                     <h3
                       class="fw-bold"
-                      style="font-size: 26px; margin-bottom: 5px"
+                      style="font-size: 22px; margin-bottom: 5px"
                     >
                       What are the admission requirements for your programs?
                     </h3>
@@ -193,7 +193,7 @@
                     <i></i>
                     <h3
                       class="fw-bold"
-                      style="font-size: 26px; margin-bottom: 5px"
+                      style="font-size: 22px; margin-bottom: 5px"
                     >
                       How do I apply?
                     </h3>
@@ -216,7 +216,7 @@
                     <i></i>
                     <h3
                       class="fw-bold"
-                      style="font-size: 26px; margin-bottom: 5px"
+                      style="font-size: 22px; margin-bottom: 5px"
                     >
                       Are there any scholarships or financial aid options
                       available?
@@ -241,7 +241,7 @@
                     <i></i>
                     <h3
                       class="fw-bold"
-                      style="font-size: 26px; margin-bottom: 5px"
+                      style="font-size: 22px; margin-bottom: 5px"
                     >
                       How are exams administered for distance learning courses?
                     </h3>
@@ -264,7 +264,7 @@
                     <i></i>
                     <h3
                       class="fw-bold"
-                      style="font-size: 26px; margin-bottom: 5px"
+                      style="font-size: 22px; margin-bottom: 5px"
                     >
                       How can I choose the right university and course in the
                       UK?
@@ -289,7 +289,7 @@
                     <i></i>
                     <h3
                       class="fw-bold"
-                      style="font-size: 26px; margin-bottom: 5px"
+                      style="font-size: 22px; margin-bottom: 5px"
                     >
                       What is the cost of studying and living in the UK?
                     </h3>
