@@ -24,23 +24,6 @@
             <div class="contact__form">
               <form @submit.prevent="validateForm">
                 <div class="row">
-                  <div class="errors-list">
-                    <div class="error text-center" v-if="usernameError">
-                      {{ usernameError }}
-                    </div>
-                    <div class="error text-center" v-if="emailError">
-                      {{ emailError }}
-                    </div>
-                    <div class="error text-center" v-if="textAreaError">
-                      {{ textAreaError }}
-                    </div>
-                    <div class="error text-center" v-if="selectedError">
-                      {{ selectedError }}
-                    </div>
-                    <div class="error text-center" v-if="valueError">
-                      {{ valueError }}
-                    </div>
-                  </div>
                   <div class="col-xxl-6 col-xl-6 col-md-6">
                     <div class="contact__form-input">
                       <input
@@ -48,7 +31,22 @@
                         placeholder="Your Name"
                         name="name"
                         v-model="username"
+                        @input="v$.username.$touch()"
+                        :class="[
+                          `${
+                            v$.$errors.find(
+                              (err) => err.$property == 'username'
+                            )
+                              ? 'danger'
+                              : ''
+                          }`,
+                        ]"
                       />
+                      <span v-for="err in v$.$errors" :key="err.$uid">
+                        <span class="err" v-if="err.$property == 'username'">
+                          {{ err.$message }}
+                        </span>
+                      </span>
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-md-6">
@@ -58,7 +56,19 @@
                         placeholder="Email Id"
                         name="email"
                         v-model="email"
+                        :class="[
+                          `${
+                            v$.$errors.find((err) => err.$property == 'email')
+                              ? 'danger'
+                              : ''
+                          }`,
+                        ]"
                       />
+                      <span v-for="err in v$.$errors" :key="err.$uid">
+                        <span class="err" v-if="err.$property == 'email'">
+                          {{ err.$message }}
+                        </span>
+                      </span>
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-md-6">
@@ -67,12 +77,44 @@
                         type="text"
                         placeholder="Phone Number"
                         name="phone"
+                        v-model="phone"
+                        @input="v$.phone.$touch()"
+                        :class="[
+                          `${
+                            v$.$errors.find((err) => err.$property == 'phone')
+                              ? 'danger'
+                              : ''
+                          }`,
+                        ]"
                       />
+                      <span v-for="err in v$.$errors" :key="err.$uid">
+                        <span class="err" v-if="err.$property == 'phone'">
+                          {{ err.$message }}
+                        </span>
+                      </span>
                     </div>
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-md-6">
                     <div class="contact__form-input">
-                      <input type="text" placeholder="City" name="city" />
+                      <input
+                        type="text"
+                        placeholder="City"
+                        name="city"
+                        v-model="city"
+                        @input="v$.city.$touch()"
+                        :class="[
+                          `${
+                            v$.$errors.find((err) => err.$property == 'city')
+                              ? 'danger'
+                              : ''
+                          }`,
+                        ]"
+                      />
+                      <span v-for="err in v$.$errors" :key="err.$uid">
+                        <span class="err" v-if="err.$property == 'city'">
+                          {{ err.$message }}
+                        </span>
+                      </span>
                     </div>
                   </div>
                   <h3>Queries for</h3>
@@ -84,7 +126,6 @@
                           type="checkbox"
                           value="Master Degree"
                           id="masterDegree"
-                          v-model="selectedOptions"
                         />
                         <label class="form-check-label ms-2" for="masterDegree">
                           Master Degree
@@ -98,7 +139,6 @@
                           type="checkbox"
                           value="MBA"
                           id="MBA"
-                          v-model="selectedOptions"
                         />
                         <label class="form-check-label ms-2" for="MBA">
                           MBA
@@ -112,7 +152,6 @@
                           type="checkbox"
                           value="msResearch"
                           id="MS Research"
-                          v-model="selectedOptions"
                         />
                         <label class="form-check-label ms-2" for="msResearch">
                           MS Research
@@ -126,7 +165,6 @@
                           type="checkbox"
                           value="PHD"
                           id="PHD"
-                          v-model="selectedOptions"
                         />
                         <label class="form-check-label ms-2" for="PHD">
                           PHD
@@ -140,7 +178,6 @@
                           type="checkbox"
                           value="Training"
                           id="Training"
-                          v-model="selectedOptions"
                         />
                         <label class="form-check-label ms-2" for="Training">
                           Training
@@ -155,7 +192,15 @@
                         class="form-select py-3"
                         id="inputGroupSelect04"
                         aria-label="Example select with button addon"
-                        v-model="values"
+                        v-model="country"
+                        @input="v$.country.$touch()"
+                        :class="[
+                          `${
+                            v$.$errors.find((err) => err.$property == 'country')
+                              ? 'danger'
+                              : ''
+                          }`,
+                        ]"
                       >
                         <option value="uk" selected="uk">UNITED KINGDOM</option>
                         <option value="values">NEW ZEALAND</option>
@@ -167,23 +212,30 @@
                       <textarea
                         placeholder="Enter Your Message"
                         name="message"
+                        v-model="message"
+                        @input="v$.message.$touch()"
+                        :class="[
+                          `${
+                            v$.$errors.find((err) => err.$property == 'message')
+                              ? 'danger'
+                              : ''
+                          }`,
+                        ]"
                       ></textarea>
+                      <span v-for="err in v$.$errors" :key="err.$uid">
+                        <span class="err" v-if="err.$property == 'message'">
+                          {{ err.$message }}
+                        </span>
+                      </span>
                     </div>
                   </div>
                   <div class="col-xxl-12">
                     <div
                       class="contact__form-agree d-flex align-items-center mb-20"
                     >
-                      <input
-                        type="checkbox"
-                        id="robotCheckbox"
-                        v-model="isChecked"
-                        @change="validateCheckbox"
-                      />
+                      <input type="checkbox" id="robotCheckbox" />
                       <label for="robotCheckbox">I am not a robot</label>
-                      <span
-                        v-if="!isValid"
-                        style="color: red; margin-left: 15px"
+                      <span style="color: red; margin-left: 15px"
                         >Please confirm that you are not a robot.</span
                       >
                     </div>
@@ -325,82 +377,66 @@
 </template>
 
 <script>
+import { useVuelidate } from "@vuelidate/core";
+import {
+  required,
+  minLength,
+  maxLength,
+  alpha,
+  email,
+  helpers,
+} from "@vuelidate/validators";
+
 export default {
+  setup() {
+    return { v$: useVuelidate() };
+  },
   data() {
     return {
       values: [],
-      formErrors: [],
-      username: null,
-      usernameError: null,
-      emailError: null,
-      email: null,
-      maxChars: 12,
-      selectedOptions: [],
-      isAtLeastOneOptionSelected: null,
-      selectedError: null,
-      valueError: null,
+      username: "",
+      email: "",
+      phone: "",
+      city: "",
+      message: "",
+      country: "",
     };
   },
-
+  validations() {
+    return {
+      username: {
+        required: helpers.withMessage("", required),
+        minLength: minLength(3),
+        maxLength: maxLength(15),
+        alpha,
+      },
+      email: { required: helpers.withMessage("", required), email },
+      country: { required },
+      message: {
+        minLength: minLength(30),
+        maxLength: maxLength(500),
+        required: helpers.withMessage(
+          "Your message must be at least 30 Characters",
+          required
+        ),
+      },
+    };
+  },
   methods: {
-    // validateForm() {
-    //   if (!this.username) {
-    //     this.formErrors.push("Username is required");
-    //   } else if (!/^[a-zA-Z]+$/.test(this.username)) {
-    //     this.formErrors.push("Username must contain only letters");
-    //   }
-    //   if (!this.email) {
-    //     this.formErrors.push("Email is required");
-    //   } else if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.email)) {
-    //     this.formErrors.push("Email is must be valid");
-    //   }
-    //   if (!this.phone) {
-    //     this.formErrors.push("Phone is required");
-    //   } else if (!/^\d{1,16}$/.test(this.phone)) {
-    //     this.formErrors.push("Phone must be a number with at least 16 digits");
-    //   }
-    //   if (!this.city) {
-    //     this.formErrors.push("City is required");
-    //   }
-    //   if (this.username && this.username.length > this.maxChars) {
-    //     this.formErrors.push(
-    //       `Username must be at most ${this.maxChars} characters`
-    //     );
-    //   }
-    //   return this.formErrors.length === 0;
-    // },
-
-    validateForm() {
-      if (!this.username) {
-        this.usernameError = "Username is required";
-      } else if (this.username.length < 8 || this.username.length > 16) {
-        this.usernameError = "Username must be between  8 and 16 characters";
-      } else {
-        this.usernameError = "";
-      }
-      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!regex.test(this.email)) {
-        this.emailError = "Invalid email format";
-      } else {
-        this.emailError = "";
-      }
-      if (this.values.length == 0) {
-        this.valueError = "Choose at least one Country !";
-      } else {
-        this.valueError = "";
-      }
-      if (this.selectedOptions.length == 0) {
-        this.selectedError = "Please select at least one Query !";
-      }
+    async validateForm() {
+      await this.v$.$validate();
     },
   },
 };
 </script>
+
 <style scoped>
-.errors-list .error {
-  padding: 15px;
-  background-color: rgba(244, 67, 54, 0.14);
-  color: #f44336;
-  margin-bottom: 15px;
+.err {
+  color: indianred;
+  font-size: 11px;
+  font-weight: bold;
+}
+.danger {
+  border: 1px solid indianred;
 }
 </style>
