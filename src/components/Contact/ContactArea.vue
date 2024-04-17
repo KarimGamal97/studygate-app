@@ -229,21 +229,10 @@
                       </span>
                     </div>
                   </div>
-                  <div class="col-xxl-12">
-                    <div
-                      class="contact__form-agree d-flex align-items-center mb-20"
-                    >
-                      <input type="checkbox" id="robotCheckbox" />
-                      <label for="robotCheckbox">I am not a robot</label>
-                      <span style="color: red; margin-left: 15px"
-                        >Please confirm that you are not a robot.</span
-                      >
-                    </div>
-                  </div>
                   <!-- Captcha -->
                   <vue-recaptcha
                     v-show="showRecaptcha"
-                    sitekey="key"
+                    sitekey="6LfWEr4pAAAAABNqiI6kVo73ow6QUbxnCc5vu-fz"
                     size="normal"
                     theme="light"
                     hl="tr"
@@ -256,7 +245,6 @@
                   >
                   </vue-recaptcha>
                   <!-- Captcha -->
-
                   <div class="col-xxl-12">
                     <div
                       class="contact__form-agree d-flex align-items-center mb-20"
