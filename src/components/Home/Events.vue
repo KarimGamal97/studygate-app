@@ -17,7 +17,7 @@
                 >Events<img src="../../assets/img/shape/yellow-bg.png" alt=""
               /></span>
             </h2>
-            <p>We found 13 events available for you.</p>
+            <p>We found 4 events available for you.</p>
           </div>
         </div>
       </div>
@@ -38,17 +38,15 @@
                   <span>{{ event.city }}</span>
                 </div>
                 <h3 class="events__title">
-                  <router-link to="/event-details">{{
-                    event.title
-                  }}</router-link>
+                  <a :href="event.path" target="_blank">{{ event.title }}</a>
                 </h3>
               </div>
               <div class="events__more">
-                <router-link to="/event-details" class="link-btn">
+                <a :href="event.path" target="_blank" class="link-btn">
                   View More
                   <i class="far fa-arrow-right"></i>
                   <i class="far fa-arrow-right"></i>
-                </router-link>
+                </a>
               </div>
             </div>
           </div>
@@ -70,6 +68,7 @@ export default {
           date: "Jun 14, 2022",
           time: "12:00 am - 2:30 pm",
           city: "New York",
+          path: "https://icdm2024.org/",
         },
         {
           id: 2,
@@ -77,6 +76,7 @@ export default {
           date: "April 10, 2022",
           time: "9:00 am - 5:00 pm",
           city: "Mindahan",
+          path: "https://www.icedl.org/",
         },
         {
           id: 3,
@@ -84,6 +84,7 @@ export default {
           date: "July 16, 2022",
           time: "10:30 am - 1:30 pm",
           city: "Weedpatch",
+          path: "https://openai.com/blog/announcing-openai-devday",
         },
         {
           id: 4,
@@ -91,6 +92,7 @@ export default {
           date: "March 24, 2022",
           time: "10:30 am - 12:00 pm",
           city: "Lnland",
+          path: "https://events.educause.edu/annual-conference",
         },
       ],
     };
