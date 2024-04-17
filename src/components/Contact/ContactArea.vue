@@ -240,6 +240,23 @@
                       >
                     </div>
                   </div>
+                  <!-- Captcha -->
+                  <vue-recaptcha
+                    v-show="showRecaptcha"
+                    sitekey="key"
+                    size="normal"
+                    theme="light"
+                    hl="tr"
+                    :loading-timeout="loadingTimeout"
+                    @verify="recaptchaVerified"
+                    @expire="recaptchaExpired"
+                    @fail="recaptchaFailed"
+                    @error="recaptchaError"
+                    ref="vueRecaptcha"
+                  >
+                  </vue-recaptcha>
+                  <!-- Captcha -->
+
                   <div class="col-xxl-12">
                     <div
                       class="contact__form-agree d-flex align-items-center mb-20"
@@ -377,6 +394,7 @@
 </template>
 
 <script>
+import vueRecaptcha from "vue3-recaptcha2";
 import { useVuelidate } from "@vuelidate/core";
 import {
   required,
@@ -391,6 +409,9 @@ export default {
   setup() {
     return { v$: useVuelidate() };
   },
+  components: {
+    vueRecaptcha,
+  },
   data() {
     return {
       values: [],
@@ -400,6 +421,8 @@ export default {
       city: "",
       message: "",
       country: "",
+      showRecaptcha: true,
+      loadingTimeout: 30000,
     };
   },
   validations() {
@@ -425,6 +448,16 @@ export default {
   methods: {
     async validateForm() {
       await this.v$.$validate();
+    },
+    recaptchaVerified(response) {
+      console.log(response);
+    },
+    recaptchaExpired() {
+      this.$refs.vueRecaptcha.reset();
+    },
+    recaptchaFailed() {},
+    recaptchaError(reason) {
+      console.log(reason);
     },
   },
 };
