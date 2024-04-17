@@ -107,7 +107,23 @@
               </span>
             </span>
           </div>
-          <button type="submit">Send</button>
+          <!-- Captcha -->
+          <vue-recaptcha
+            v-show="showRecaptcha"
+            sitekey="6LfWEr4pAAAAABNqiI6kVo73ow6QUbxnCc5vu-fz"
+            size="normal"
+            theme="light"
+            hl="tr"
+            :loading-timeout="loadingTimeout"
+            @verify="recaptchaVerified"
+            @expire="recaptchaExpired"
+            @fail="recaptchaFailed"
+            @error="recaptchaError"
+            ref="vueRecaptcha"
+          >
+          </vue-recaptcha>
+          <!-- Captcha -->
+          <button type="submit" class="mt-3">Send</button>
         </form>
       </div>
     </div>
@@ -115,6 +131,7 @@
 </template>
 
 <script>
+import vueRecaptcha from "vue3-recaptcha2";
 import { useVuelidate } from "@vuelidate/core";
 import {
   required,
@@ -129,6 +146,9 @@ export default {
   setup() {
     return { v$: useVuelidate() };
   },
+  components: {
+    vueRecaptcha,
+  },
   data() {
     return {
       name: "",
@@ -136,6 +156,8 @@ export default {
       meetingDate: "",
       meetingTime: "",
       meetingDetails: "",
+      showRecaptcha: true,
+      loadingTimeout: 30000,
     };
   },
   validations() {
@@ -165,6 +187,16 @@ export default {
   methods: {
     async validateForm() {
       await this.v$.$validate();
+    },
+    recaptchaVerified(response) {
+      console.log(response);
+    },
+    recaptchaExpired() {
+      this.$refs.vueRecaptcha.reset();
+    },
+    recaptchaFailed() {},
+    recaptchaError(reason) {
+      console.log(reason);
     },
   },
 };
