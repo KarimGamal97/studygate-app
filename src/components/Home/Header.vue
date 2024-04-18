@@ -143,6 +143,11 @@
                           <router-link to="/about">Our Company</router-link>
                         </li>
                         <li>
+                          <router-link to="/book-meeting"
+                            >Book a meeting</router-link
+                          >
+                        </li>
+                        <li>
                           <router-link to="/faq">FAQ</router-link>
                         </li>
                       </ul>
@@ -177,8 +182,8 @@
                 </div>
               </div> -->
               <div class="header__btn ml-20 d-none d-sm-block">
-                <router-link to="/book-meeting" class="e-btn"
-                  >Book a Meeting</router-link
+                <router-link to="/apply-course" class="e-btn"
+                  >Apply for A Course</router-link
                 >
               </div>
               <div class="sidebar__menu d-xl-none">
@@ -477,6 +482,9 @@
               >
                 <li>
                   <router-link to="/about">Our Company</router-link>
+                </li>
+                <li>
+                  <router-link to="/book-meeting">Book a meeting</router-link>
                 </li>
                 <li>
                   <router-link to="/faq">FAQ</router-link>

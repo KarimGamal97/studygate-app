@@ -11,6 +11,7 @@ import AboutUk from "../pages/AboutUk.vue";
 // About Us
 import Faq from "../pages/Faq.vue";
 import About from "../pages/About.vue";
+
 // Services
 import Services from "../pages/Services.vue";
 import MsAnalytics from "../pages/MsAnalytics.vue";
@@ -27,6 +28,7 @@ import DataPrivacy from "../pages/DataPrivacy.vue";
 import TermsOfUse from "../pages/TermsOfUse.vue";
 import ShortCourses from "../pages/ShortCourses.vue";
 import BookingForm from "../pages/BookingForm.vue";
+import ApplyingCourse from "../pages/ApplyingCourse.vue";
 import DiscoverMore from "../pages/DiscoverMore.vue";
 import ErrorPage from "../pages/ErrorPage.vue";
 
@@ -121,6 +123,10 @@ const router = createRouter({
     {
       path: "/book-meeting",
       component: BookingForm,
+    },
+    {
+      path: "/apply-course",
+      component: ApplyingCourse,
     },
     {
       path: "/discover-more",
