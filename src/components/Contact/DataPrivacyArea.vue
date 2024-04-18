@@ -87,7 +87,6 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
-                        <h3 class="course__title">1. Information We Collect</h3>
                         <div class="course__teacher">
                           <p>
                             When you visit our website and interact with our
@@ -115,20 +114,6 @@
                             information, IP address, browser type, and referring
                             URL.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">
-                          2. How We Use Your Information
-                        </h3>
-                        <div class="course__teacher">
                           <p>
                             We use the information we collect for the following
                             purposes:
@@ -150,20 +135,6 @@
                             • To comply with legal obligations and resolve
                             disputes.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">
-                          3. Data Sharing and Disclosure
-                        </h3>
-                        <div class="course__teacher">
                           <p>
                             We may share your personal information with third
                             parties only in the following circumstances:
@@ -186,18 +157,6 @@
                             to comply with applicable laws, regulations, legal
                             processes, or government requests.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">4. Data Security</h3>
-                        <div class="course__teacher">
                           <p>
                             We take appropriate technical and organizational
                             measures to protect your personal information from
@@ -206,18 +165,6 @@
                             controls, regular security assessments, and staff
                             training on data protection practices.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">5. Data Retention</h3>
-                        <div class="course__teacher">
                           <p>
                             We will retain your personal information only for as
                             long as necessary to fulfill the purposes outlined
@@ -225,18 +172,6 @@
                             securely delete or anonymize your information when
                             it is no longer needed.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">6. Your Rights</h3>
-                        <div class="course__teacher">
                           <p>
                             You have the following rights regarding your
                             personal information:
@@ -273,40 +208,28 @@
                             practices, please contact us using the information
                             provided below.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">7. Contact Us</h3>
-                        <div class="course__teacher">
                           <p>
                             If you have any questions, comments, or requests
                             regarding this Data Privacy Policy or our handling
                             of your personal information, please contact us at:
                           </p>
-                          <p style="font-weight: bold; font-size: 26px">
-                            Studigrid
-                          </p>
+                          <p>Studigrid</p>
                           <p>
                             <i
                               class="fa fa-location-arrow"
-                              style="font-size: 18px; margin: 0 10px 0 0"
+                              style="font-size: 12px; margin: 0 10px 0 0"
                             ></i
                             >Al Muroor, Abu Dhabi
                           </p>
-                          <a href="mailto:info@studigrid.com"
-                            ><i
-                              class="fa fa-envelope"
-                              style="font-size: 18px; margin: 0 10px 0 0"
-                            ></i>
-                            info@studigrid.com
-                          </a>
+                          <div style="margin-bottom: 15px">
+                            <a href="mailto:info@studigrid.com"
+                              ><i
+                                class="fa fa-envelope"
+                                style="font-size: 12px; margin: 0 10px 0 0"
+                              ></i>
+                              info@studigrid.com
+                            </a>
+                          </div>
                           <p>
                             We may update this Privacy Policy from time to time
                             to reflect changes in our practices or legal
@@ -319,7 +242,7 @@
                             terms outlined in this Data Privacy Policy.
                           </p>
                           <p>Data and Privacy Manager</p>
-                          <p class="fw-bold">Studigrid</p>
+                          <p>Studigrid</p>
                         </div>
                       </div>
                     </div>
@@ -340,3 +263,9 @@ export default {
   components: {},
 };
 </script>
+
+<style scoped>
+p {
+  font-size: 15px;
+}
+</style>

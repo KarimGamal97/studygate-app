@@ -98,7 +98,7 @@
                     <div class="contact__form-input">
                       <input
                         type="text"
-                        placeholder="City"
+                        placeholder="Country"
                         name="city"
                         v-model="city"
                         @input="v$.city.$touch()"
@@ -117,7 +117,7 @@
                       </span>
                     </div>
                   </div>
-                  <h3>Queries for</h3>
+                  <h3 style="font-size: 20px">Queries for</h3>
                   <div class="d-flex col-xxl-12 col-xl-12 col-md-12 mb-3">
                     <div class="col-3">
                       <div class="form-check">
@@ -185,7 +185,7 @@
                       </div>
                     </div>
                   </div>
-                  <h3>Destination Country</h3>
+                  <h3 style="font-size: 20px">Destination Country of Study</h3>
                   <div class="col-xxl-12 my-3">
                     <div class="input-group">
                       <select

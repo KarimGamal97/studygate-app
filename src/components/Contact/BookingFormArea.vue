@@ -3,6 +3,29 @@
     <div class="content">
       <div class="meeting-form">
         <form @submit.prevent="validateForm">
+          <!-- MeetingTitle -->
+          <div>
+            <label for="meetingTitle">Meeting Title</label>
+            <input
+              type="text"
+              id="meetingTitle"
+              name="meetingTitle"
+              v-model="meetingTitle"
+              @input="v$.meetingTitle.$touch()"
+              :class="[
+                `${
+                  v$.$errors.find((err) => err.$property == 'meetingTitle')
+                    ? 'danger'
+                    : ''
+                }`,
+              ]"
+            />
+            <span v-for="err in v$.$errors" :key="err.$uid">
+              <span class="err" v-if="err.$property == 'meetingTitle'">
+                {{ err.$message }}
+              </span>
+            </span>
+          </div>
           <!-- meetingDetails -->
           <div>
             <label for="meetingDetails">Meeting Details</label>
@@ -155,6 +178,7 @@ export default {
       email: "",
       meetingDate: "",
       meetingTime: "",
+      meetingTitle: "",
       meetingDetails: "",
       showRecaptcha: true,
       loadingTimeout: 30000,
@@ -172,6 +196,7 @@ export default {
         required: helpers.withMessage("", required),
         email,
       },
+      meetingTitle: { required: helpers.withMessage("", required) },
       meetingTime: { required },
       meetingDate: { required },
       meetingDetails: {

@@ -29,7 +29,7 @@
                       <router-link to="/">Home</router-link>
                     </li>
                     <li class="breadcrumb-item">
-                      <router-link to="/ms-data">Ms Data Science </router-link>
+                      <router-link to="/ms-data">MS Data Science </router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
                       Studigate is an educational and technology service that
@@ -124,8 +124,8 @@
                 <div class="row">
                   <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
                     <div
-                      class="course__item white-bg mb-30 fix"
-                      style="height: 335px"
+                      class="course__item white-bg fix"
+                      style="height: 335px; margin-top: -70px"
                     >
                       <div class="course__content">
                         <div
@@ -154,21 +154,21 @@
                   <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                     <img
                       src="../../assets/img/Ms_Data_Science/data-science-3.png"
-                      style="width: 100%; height: 70%"
+                      style="width: 100%; height: 70%; margin-top: -50px"
                       alt=""
                     />
                   </div>
                   <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                     <img
                       src="../../assets/img/Ms_Data_Science/data-science-1.png"
-                      style="width: 100%; height: 70%"
+                      style="width: 100%; height: 70%; margin-top: -50px"
                       alt=""
                     />
                   </div>
                   <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
                     <div
-                      class="course__item white-bg mb-30 fix"
-                      style="height: 330px"
+                      class="course__item white-bg fix"
+                      style="height: 330px; margin-top: -70px"
                     >
                       <div class="course__content">
                         <div
@@ -195,7 +195,10 @@
                     </div>
                   </div>
                   <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
-                    <div class="course__item white-bg mb-30 fix">
+                    <div
+                      class="course__item white-bg fix"
+                      style="margin-top: -110px"
+                    >
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"

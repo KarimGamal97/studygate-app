@@ -30,7 +30,7 @@
                     </li>
                     <li class="breadcrumb-item">
                       <router-link to="/ms-analytics"
-                        >Master in Data Analytics
+                        >MS Analytics
                       </router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
@@ -148,7 +148,10 @@
                       alt=""
                     />
                   </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                  <div
+                    class="col-xxl-6 col-xl-6 col-lg-6 col-md-6"
+                    style="margin-top: -120px"
+                  >
                     <div class="course__item white-bg mb-30 fix">
                       <div class="course__content">
                         <div
@@ -178,7 +181,7 @@
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <div
                       class="course__item white-bg mb-30 fix"
-                      style="height: 327px"
+                      style="height: 327px; margin-top: -120px"
                     >
                       <div class="course__content">
                         <div

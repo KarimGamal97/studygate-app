@@ -77,13 +77,13 @@
                 aria-labelledby="grid-tab"
               >
                 <div class="row">
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                  <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
                     <div class="course__item white-bg mb-30 fix">
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
-                        <h3 class="course__title">1. Use of Website</h3>
+
                         <div class="course__teacher">
                           <p>
                             You must be at least 18 years old to use our website
@@ -92,18 +92,6 @@
                             and not to engage in any activity that violates
                             local laws or infringes on the rights of others.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">2. Intellectual Property</h3>
-                        <div class="course__teacher">
                           <p>
                             All content, materials, and intellectual property on
                             our website, including text, graphics, logos,
@@ -112,18 +100,6 @@
                             modify, or display any content from our website
                             without prior written permission.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">3. User Accounts</h3>
-                        <div class="course__teacher">
                           <p>
                             Some features of our website may require you to
                             create a user account. You are responsible for
@@ -132,21 +108,6 @@
                             your account. You agree to notify us immediately of
                             any unauthorized use of your account.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div
-                      class="course__item white-bg mb-30 fix"
-                      style="height: 220px"
-                    >
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">4. Privacy</h3>
-                        <div class="course__teacher">
                           <p>
                             Once We collect, use, and protect your personal
                             information as described in our Privacy Policy. By
@@ -154,18 +115,6 @@
                             processing of your information as outlined in the
                             Privacy Policy.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">5. Third-Party Links</h3>
-                        <div class="course__teacher">
                           <p>
                             Our website may contain links to third-party
                             websites or services. These links are provided for
@@ -174,20 +123,6 @@
                             with third-party sites are governed by their terms
                             and policies.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">
-                          6. Disclaimer of Warranties
-                        </h3>
-                        <div class="course__teacher">
                           <p>
                             Our website and services are provided on an "as is"
                             and "as available" basis without warranties of any
@@ -196,20 +131,6 @@
                             our website. Your use of our website is at your own
                             risk.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">
-                          7. Limitation of Liability
-                        </h3>
-                        <div class="course__teacher">
                           <p>
                             To the extent permitted by law, we shall not be
                             liable for any direct, indirect, incidental,
@@ -222,21 +143,6 @@
                             website or services, even if we have been advised of
                             the possibility of such damages.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div
-                      class="course__item white-bg mb-30 fix"
-                      style="height: 295px"
-                    >
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">8. Governing Law</h3>
-                        <div class="course__teacher">
                           <p>
                             These Terms of Use are governed by and construed in
                             accordance with the laws of the United Arab
@@ -244,21 +150,6 @@
                             your use of our website shall be subject to the
                             exclusive jurisdiction of the courts in the UAE.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div
-                      class="course__item white-bg mb-30 fix"
-                      style="height: 315px"
-                    >
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">9. Changes to Terms</h3>
-                        <div class="course__teacher">
                           <p>
                             We reserve the right to update or modify these Terms
                             of Use at any time. Any changes will be effective
@@ -266,25 +157,22 @@
                             continued use of our website after such changes
                             constitutes your acceptance of the revised terms.
                           </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                    <div class="course__item white-bg mb-30 fix">
-                      <div class="course__content">
-                        <div
-                          class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">10. Contact Us</h3>
-                        <div class="course__teacher">
                           <p>
                             If you have any questions, comments, or concerns
                             about these Terms of Use or our website, please
                             contact us at:
                           </p>
                           <p>Data and Privacy Manager</p>
-                          <p class="fw-bold">Studigrid</p>
+                          <p>Studigrid</p>
+                          <div style="margin-bottom: 15px">
+                            <a href="mailto:info@studigrid.com"
+                              ><i
+                                class="fa fa-envelope"
+                                style="font-size: 12px; margin: 0 10px 0 0"
+                              ></i>
+                              info@studigrid.com
+                            </a>
+                          </div>
                           <p>
                             Feel free to customize these terms to suit the
                             specific needs and policies of your educational
@@ -310,3 +198,9 @@ export default {
   components: {},
 };
 </script>
+
+<style scoped>
+p {
+  font-size: 15px;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Ms Analytics" subtitle="Ms Analytics" />
+  <Breadcrumb title="MS Analytics" subtitle="MS Analytics" />
   <MsAnalyticsArea />
   <Footer footerPadding="true" />
 </template>
