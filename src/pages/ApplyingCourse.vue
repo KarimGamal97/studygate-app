@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Applying for a Course" subtitle="Applying for a Course" />
+  <Breadcrumb title="Apply for a Course" subtitle="Apply for a Course" />
   <ApplyingCourseArea />
   <Footer footerPadding="true" />
 </template>

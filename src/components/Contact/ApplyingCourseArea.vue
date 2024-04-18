@@ -120,7 +120,7 @@
                       </span>
                     </div>
                   </div>
-                  <div class="col-xxl-6 col-xl-6 col-md-6 my-3">
+                  <div class="col-xxl-4 col-xl-5 col-md-5 my-3">
                     <h3 style="font-size: 20px">Intended Country of study</h3>
                     <div class="input-group">
                       <select
@@ -143,43 +143,45 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-xxl-6 col-xl-6 col-md-6 my-3">
+                  <div class="col-xxl-4 col-xl-5 col-md-5 my-3">
                     <h3 style="font-size: 20px">Degree of interest</h3>
                     <div class="input-group">
                       <select
                         class="form-select py-3"
                         id="inputGroupSelect04"
                         aria-label="Example select with button addon"
-                        v-model="degree"
-                        @input="v$.degree.$touch()"
+                        v-model="selectedOption"
+                        @input="v$.selectedOption.$touch()"
                         :class="[
                           `${
-                            v$.$errors.find((err) => err.$property == 'degree')
+                            v$.$errors.find(
+                              (err) => err.$property == 'selectedOption'
+                            )
                               ? 'danger'
                               : ''
                           }`,
                         ]"
                       >
-                        <option value="masterdata">
-                          Masters in Data Analytics / Data Science/ AI
+                        <option
+                          v-for="option in options"
+                          :key="option.value"
+                          :value="option.value"
+                        >
+                          {{ option.value }}
                         </option>
-                        <option value="mba">MBA</option>
-                        <option value="phdcomputing">PhD Computing</option>
-                        <option value="phbbusiness">PhD Business</option>
-                        <option value="mrescomp">
-                          Master by Research MRes (Computing/Business)
-                        </option>
-                        <option value="mreshealth">
-                          Master by Research MRes (Health-Psychology)
-                        </option>
-                        <option value="shortcourses">
-                          Short Courses in AI/Data Analytics
-                        </option>
-                        <option value="other">Other</option>
                       </select>
                     </div>
                   </div>
-                  <div class="col-xxl-7">
+                  <div class="col-xxl-4 my-3">
+                    <div class="contact__form-input" style="margin-top: 32px">
+                      <input
+                        type="text"
+                        v-if="selectedOption === 'Other'"
+                        v-model="otherText"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xxl-6">
                     <div
                       class="contact__form-agree d-flex align-items-center my-10 gap-2"
                     >
@@ -210,7 +212,6 @@
                       information.
                     </label>
                   </div>
-
                   <!-- Captcha -->
                   <vue-recaptcha
                     v-show="showRecaptcha"
@@ -267,11 +268,12 @@ export default {
       username: "",
       email: "",
       phone: "",
-
       country: "",
       degree: "",
       showRecaptcha: true,
       loadingTimeout: 30000,
+      selectedOption: "",
+      otherText: "",
     };
   },
   validations() {
@@ -284,7 +286,7 @@ export default {
       },
       email: { required: helpers.withMessage("", required), email },
       country: { required },
-      degree: { required },
+      selectedOption: { required },
       phone: { required: helpers.withMessage("", required) },
     };
   },
@@ -301,6 +303,20 @@ export default {
     recaptchaFailed() {},
     recaptchaError(reason) {
       console.log(reason);
+    },
+  },
+  computed: {
+    options() {
+      return [
+        { value: "Masters in Data Analytics / Data Science/ AI" },
+        { value: "MBA" },
+        { value: "PhD Computing" },
+        { value: "PhD Business" },
+        { value: " Master by Research MRes (Computing/Business)" },
+        { value: "Master by Research MRes (Health-Psychology)" },
+        { value: "Short Courses in AI/Data Analytics" },
+        { value: "Other" },
+      ];
     },
   },
 };
