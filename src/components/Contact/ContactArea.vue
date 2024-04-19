@@ -247,7 +247,7 @@
                   <!-- Captcha -->
                   <div class="col-xxl-12">
                     <div
-                      class="contact__form-agree d-flex align-items-center mb-20"
+                      class="contact__form-agree d-flex align-items-center mb-20 mt-3"
                     >
                       <input
                         class="e-check-input"
@@ -255,8 +255,11 @@
                         id="e-agree"
                       />
                       <label class="e-check-label" for="e-agree"
-                        >I agree to the<a href="terms-of-use">Terms </a>&<a
-                          href="/data-privacy"
+                        >I agree to the<a
+                          style="color: #0056ad"
+                          href="terms-of-use"
+                          >Terms </a
+                        >&<a style="color: #0056ad" href="/data-privacy"
                           >Privacy Polices</a
                         ></label
                       >

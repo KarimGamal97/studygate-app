@@ -178,6 +178,7 @@
                         type="text"
                         v-if="selectedOption === 'Other'"
                         v-model="otherText"
+                        placeholder="Course Name"
                       />
                     </div>
                   </div>
@@ -204,8 +205,8 @@
                       width="50px"
                     />
                     <label class="e-check-label" for="e-agree"
-                      >From time to time University of Leeds would like to send
-                      you information about further courses and events which we
+                      >From time to time Studigrid would like to send you
+                      information about further courses and events which we
                       think might interest you. You can opt-out of receiving
                       this information at any time using links provided in our
                       communications. Tick the box if you want to receive this
