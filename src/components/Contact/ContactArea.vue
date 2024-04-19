@@ -421,7 +421,7 @@ export default {
       username: {
         required: helpers.withMessage("", required),
         minLength: minLength(3),
-        maxLength: maxLength(15),
+        maxLength: maxLength(40),
         alpha,
       },
       email: { required: helpers.withMessage("", required), email },

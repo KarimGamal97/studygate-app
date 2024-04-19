@@ -83,17 +83,26 @@
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">
-                          Introduction to Artificial Intelligence
-                        </h3>
+                        >
+                          <h3 class="course__title">
+                            Introduction to Artificial Intelligence
+                          </h3>
+                          <img
+                            src="../../assets/img/ai/ai-1.jpg"
+                            alt=""
+                            width="180px"
+                          />
+                        </div>
                         <div class="course__teacher">
-                          <p>
+                          <p style="display: none">
                             This course covers the basics of AI, including
                             machine learning, natural language processing, and
                             robotics. Students learn about AI applications and
                             ethical considerations.
                           </p>
+                          <router-link to="/phd" class="e-btn e-btn-2"
+                            >Find Out More</router-link
+                          >
                         </div>
                       </div>
                     </div>
@@ -103,17 +112,26 @@
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">
-                          Machine Learning Fundamentals
-                        </h3>
+                        >
+                          <h3 class="course__title">
+                            Machine Learning Fundamentals
+                          </h3>
+                          <img
+                            src="../../assets/img/ai/ai-2.jpg"
+                            alt=""
+                            width="180px"
+                          />
+                        </div>
                         <div class="course__teacher">
-                          <p>
+                          <p style="display: none">
                             Focuses on core machine learning concepts,
                             algorithms, and their application. Students gain
                             hands-on experience with supervised and unsupervised
                             learning models.
                           </p>
+                          <router-link to="/phd" class="e-btn e-btn-2"
+                            >Find Out More</router-link
+                          >
                         </div>
                       </div>
                     </div>
@@ -123,17 +141,26 @@
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">
-                          Deep Learning for Computer Vision
-                        </h3>
+                        >
+                          <h3 class="course__title">
+                            Deep Learning for Computer Vision
+                          </h3>
+                          <img
+                            src="../../assets/img/ai/ai-10.jpg"
+                            alt=""
+                            width="180px"
+                          />
+                        </div>
                         <div class="course__teacher">
-                          <p>
+                          <p style="display: none">
                             Teaches how to apply deep learning techniques to
                             interpret and process images and videos. Covers
                             convolutional neural networks and their
                             applications.
                           </p>
+                          <router-link to="/phd" class="e-btn e-btn-2"
+                            >Find Out More</router-link
+                          >
                         </div>
                       </div>
                     </div>
@@ -143,15 +170,24 @@
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">AI for Business Leaders</h3>
+                        >
+                          <h3 class="course__title">AI for Business Leaders</h3>
+                          <img
+                            src="../../assets/img/ai/ai-4.jpg"
+                            alt=""
+                            width="180px"
+                          />
+                        </div>
                         <div class="course__teacher">
-                          <p>
+                          <p style="display: none">
                             Offers insights into how AI can be leveraged to
                             solve business problems, improve efficiency, and
                             drive innovation. Includes case studies and strategy
                             formulation.
                           </p>
+                          <router-link to="/phd" class="e-btn e-btn-2"
+                            >Find Out More</router-link
+                          >
                         </div>
                       </div>
                     </div>
@@ -161,17 +197,26 @@
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">
-                          Natural Language Processing (NLP)
-                        </h3>
+                        >
+                          <h3 class="course__title">
+                            Natural Language Processing (NLP)
+                          </h3>
+                          <img
+                            src="../../assets/img/ai/ai-5.jpg"
+                            alt=""
+                            width="180px"
+                          />
+                        </div>
                         <div class="course__teacher">
-                          <p>
+                          <p style="display: none">
                             Explores techniques to process and analyze text
                             data, enabling machines to understand human
                             language. Covers sentiment analysis, text
                             classification, and chatbot development.
                           </p>
+                          <router-link to="/phd" class="e-btn e-btn-2"
+                            >Find Out More</router-link
+                          >
                         </div>
                       </div>
                     </div>
@@ -181,15 +226,24 @@
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">Ethics and AI</h3>
+                        >
+                          <h3 class="course__title">Ethics and AI</h3>
+                          <img
+                            src="../../assets/img/ai/ai-6.jpg"
+                            alt=""
+                            width="180px"
+                          />
+                        </div>
                         <div class="course__teacher">
-                          <p>
+                          <p style="display: none">
                             Addresses the ethical considerations in AI
                             development and deployment, including bias, privacy,
                             and decision-making. Encourages responsible AI use
                             and governance.
                           </p>
+                          <router-link to="/phd" class="e-btn e-btn-2"
+                            >Find Out More</router-link
+                          >
                         </div>
                       </div>
                     </div>
@@ -215,16 +269,25 @@
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">
-                          Data Analytics Foundations
-                        </h3>
+                        >
+                          <h3 class="course__title">
+                            Data Analytics Foundations
+                          </h3>
+                          <img
+                            src="../../assets/img/ai/ai-7.jpg"
+                            alt=""
+                            width="180px"
+                          />
+                        </div>
                         <div class="course__teacher">
-                          <p>
+                          <p style="display: none">
                             Introduces the basics of data analysis, including
                             data collection, cleaning, and exploration. Uses
                             popular tools like Excel, SQL, and Tableau.
                           </p>
+                          <router-link to="/phd" class="e-btn e-btn-2"
+                            >Find Out More</router-link
+                          >
                         </div>
                       </div>
                     </div>
@@ -234,14 +297,23 @@
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">Python for Data Science</h3>
+                        >
+                          <h3 class="course__title">Python for Data Science</h3>
+                          <img
+                            src="../../assets/img/ai/ai-8.jpg"
+                            alt=""
+                            width="180px"
+                          />
+                        </div>
                         <div class="course__teacher">
-                          <p>
+                          <p style="display: none">
                             Teaches Python programming with a focus on data
                             analysis and visualization. Covers libraries like
                             Pandas, NumPy, and Matplotlib.
                           </p>
+                          <router-link to="/phd" class="e-btn e-btn-2"
+                            >Find Out More</router-link
+                          >
                         </div>
                       </div>
                     </div>
@@ -251,14 +323,23 @@
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">Business Analytics</h3>
+                        >
+                          <h3 class="course__title">Business Analytics</h3>
+                          <img
+                            src="../../assets/img/ai/ai-9.jpg"
+                            alt=""
+                            width="180px"
+                          />
+                        </div>
                         <div class="course__teacher">
-                          <p>
+                          <p style="display: none">
                             Focuses on using data analytics to make informed
                             business decisions. Includes predictive modeling,
                             customer analytics, and performance measurement.
                           </p>
+                          <router-link to="/phd" class="e-btn e-btn-2"
+                            >Find Out More</router-link
+                          >
                         </div>
                       </div>
                     </div>
@@ -268,14 +349,23 @@
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">Big Data Analytics</h3>
+                        >
+                          <h3 class="course__title">Big Data Analytics</h3>
+                          <img
+                            src="../../assets/img/ai/ai-10.jpg"
+                            alt=""
+                            width="180px"
+                          />
+                        </div>
                         <div class="course__teacher">
-                          <p>
+                          <p style="display: none">
                             Explores technologies and techniques for analyzing
                             large data sets. Covers Hadoop, Spark, and data
                             lakes, with emphasis on scalability and performance.
                           </p>
+                          <router-link to="/phd" class="e-btn e-btn-2"
+                            >Find Out More</router-link
+                          >
                         </div>
                       </div>
                     </div>
@@ -285,16 +375,25 @@
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">
-                          Data Visualization and Communication
-                        </h3>
+                        >
+                          <h3 class="course__title">
+                            Data Visualization and Communication
+                          </h3>
+                          <img
+                            src="../../assets/img/ai/ai-11.jpg"
+                            alt=""
+                            width="180px"
+                          />
+                        </div>
                         <div class="course__teacher">
-                          <p>
+                          <p style="display: none">
                             Teaches how to present data effectively using visual
                             tools. Students learn to create impactful charts,
                             graphs, and dashboards.
                           </p>
+                          <router-link to="/phd" class="e-btn e-btn-2"
+                            >Find Out More</router-link
+                          >
                         </div>
                       </div>
                     </div>
@@ -304,17 +403,26 @@
                       <div class="course__content">
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
-                        ></div>
-                        <h3 class="course__title">
-                          Quantitative Methods for Data Analysis
-                        </h3>
+                        >
+                          <h3 class="course__title">
+                            Quantitative Methods for Data Analysis
+                          </h3>
+                          <img
+                            src="../../assets/img/ai/ai-12.jpg"
+                            alt=""
+                            width="180px"
+                          />
+                        </div>
                         <div class="course__teacher">
-                          <p>
+                          <p style="display: none">
                             Offers an in-depth look at statistical methods and
                             models for data analysis. Suitable for those
                             interested in research or data-driven
                             decision-making.
                           </p>
+                          <router-link to="/phd" class="e-btn e-btn-2"
+                            >Find Out More</router-link
+                          >
                         </div>
                       </div>
                     </div>

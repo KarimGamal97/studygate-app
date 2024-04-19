@@ -183,7 +183,10 @@
               </div> -->
               <div class="header__btn ml-20 d-none d-sm-block">
                 <router-link to="/apply-course" class="e-btn"
-                  >Apply for A Course</router-link
+                  >Apply for A
+                  <span style="text-transform: capitalize"
+                    >Course</span
+                  ></router-link
                 >
               </div>
               <div class="sidebar__menu d-xl-none">

@@ -21,7 +21,7 @@
                 information from our advisors.
               </p>
             </div>
-            <div class="contact__form">
+            <div class="contact__form meeting-form">
               <form @submit.prevent="validateForm">
                 <div class="row">
                   <div class="col-xxl-6 col-xl-6 col-md-6">
@@ -121,7 +121,7 @@
                     </div>
                   </div>
                   <div class="col-xxl-4 col-xl-5 col-md-5 my-3">
-                    <h3 style="font-size: 20px">Intended Country of study</h3>
+                    <h3 style="font-size: 18px">Intended country of study</h3>
                     <div class="input-group">
                       <select
                         class="form-select py-3"
@@ -144,7 +144,7 @@
                     </div>
                   </div>
                   <div class="col-xxl-4 col-xl-5 col-md-5 my-3">
-                    <h3 style="font-size: 20px">Degree of interest</h3>
+                    <h3 style="font-size: 18px">Degree of interest</h3>
                     <div class="input-group">
                       <select
                         class="form-select py-3"
@@ -186,7 +186,7 @@
                     <div
                       class="contact__form-agree d-flex align-items-center my-10 gap-2"
                     >
-                      <p>
+                      <p style="font-size: 13px">
                         Your details will be used to supply the information you
                         requested and in accordance with our
                         <a style="color: #0056ad" href="terms-of-use">Terms </a
@@ -204,7 +204,10 @@
                       id="e-agree"
                       width="50px"
                     />
-                    <label class="e-check-label" for="e-agree"
+                    <label
+                      class="e-check-label"
+                      for="e-agree"
+                      style="font-size: 13px"
                       >From time to time Studigrid would like to send you
                       information about further courses and events which we
                       think might interest you. You can opt-out of receiving
@@ -282,7 +285,7 @@ export default {
       username: {
         required: helpers.withMessage("", required),
         minLength: minLength(3),
-        maxLength: maxLength(15),
+        maxLength: maxLength(40),
         alpha,
       },
       email: { required: helpers.withMessage("", required), email },
@@ -335,5 +338,17 @@ export default {
 .big-checkbox {
   width: 65px;
   height: 65px;
+}
+.meeting-form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+.container {
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px 30px;
 }
 </style>
