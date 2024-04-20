@@ -64,20 +64,20 @@
                 />
               </div>
               <div class="hero__thumb-big mr-30">
-                <!-- <img
+                <img
                   src="../../assets/img/home/home-2.png"
                   width="100%"
                   height="100%"
                   alt="hero-img"
-                /> -->
+                />
                 <div class="hero__quote hero__quote-animation">
                   <span>Tomorrow is our</span>
                   <h4>“When I Grow Up” Spirit Day!</h4>
                 </div>
               </div>
-              <!-- <div class="hero__thumb-sm mt-50 d-none d-lg-block">
+              <div class="hero__thumb-sm mt-50 d-none d-lg-block">
                 <img src="../../assets/img/home/home-4.png" alt="" />
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
