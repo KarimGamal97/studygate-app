@@ -65,10 +65,10 @@
               </div>
               <div class="hero__thumb-big mr-30">
                 <img
-                  src="../../assets/img/home/home-3.png"
+                  src="../../assets/img/home/home-3-3.png"
                   width="100%"
                   height="100%"
-                  alt=""
+                  alt="hero-img"
                 />
                 <div class="hero__quote hero__quote-animation">
                   <span>Tomorrow is our</span>
