@@ -52,11 +52,11 @@
                   src="../../assets/img/shape/hero/hero-1-dot.png"
                   alt=""
                 />
-                <img
+                <!-- <img
                   class="hero-1-circle-3"
                   src="../../assets/img/shape/hero/hero-1-circle-3.png"
                   alt=""
-                />
+                /> -->
                 <img
                   class="hero-1-circle-4"
                   src="../../assets/img/shape/hero/hero-1-circle-4.png"
@@ -64,7 +64,12 @@
                 />
               </div>
               <div class="hero__thumb-big mr-30">
-                <img src="../../assets/img/home/home-3.png" alt="" />
+                <img
+                  src="../../assets/img/home/home-3.png"
+                  width="100%"
+                  height="100%"
+                  alt=""
+                />
                 <div class="hero__quote hero__quote-animation">
                   <span>Tomorrow is our</span>
                   <h4>“When I Grow Up” Spirit Day!</h4>

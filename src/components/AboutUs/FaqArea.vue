@@ -4,7 +4,7 @@
       <img
         class="page-title-shape-5 d-none d-sm-block"
         src="../../assets/img/page-title/page-title-shape-1.png"
-        alt=""
+        alt="img"
       />
       <img
         class="page-title-shape-6"
