@@ -1,5 +1,5 @@
 <template>
-  <section class="page__title-area pt-120 pb-30">
+  <section class="page__title-area pt-20 pb-30">
     <div class="page__title-shape">
       <img
         class="page-title-shape-5 d-none d-sm-block"
@@ -67,7 +67,7 @@
             </div>
           </div>
         </div>
-        <h3 class="mt-5 mb-3">AI Short Courses</h3>
+        <h3 class="mb-3">AI Short Courses</h3>
         <div class="col-xxl-12 col-xl-12 col-lg-12">
           <div class="course__tab-conent">
             <div class="tab-content" id="courseTabContent">
