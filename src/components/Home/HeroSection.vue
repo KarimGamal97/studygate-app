@@ -65,7 +65,7 @@
               </div>
               <div class="hero__thumb-big mr-30">
                 <img
-                  src="../../assets/img/home/home-1.png"
+                  src="../../assets/img/home/home-2.png"
                   width="100%"
                   height="100%"
                   alt="hero-img"
@@ -76,7 +76,7 @@
                 </div>
               </div>
               <div class="hero__thumb-sm mt-50 d-none d-lg-block">
-                <img src="../../assets/img/home/home-2.png" alt="" />
+                <img src="../../assets/img/home/home-4.png" alt="" />
               </div>
             </div>
           </div>
