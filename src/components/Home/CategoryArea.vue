@@ -1,5 +1,5 @@
 <template>
-  <section class="category__area pt-120 pb-40">
+  <section class="category__area pt-20 pb-40">
     <div class="container">
       <div class="row align-items-end">
         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8">

@@ -1,5 +1,5 @@
 <template>
-  <section class="page__title-area pt-120 pb-30">
+  <section class="page__title-area pt-20 pb-30">
     <div class="page__title-shape">
       <img
         class="page-title-shape-5 d-none d-sm-block"
