@@ -43,7 +43,7 @@
               </div>
               <span class="page__title-pre">UK accreditation</span>
             </div>
-            <div class="course__tab-content mb-95">
+            <div class="course__tab-content">
               <div class="tab-content" id="courseTabContent">
                 <div
                   class="tab-pane fade show active"

@@ -1,8 +1,8 @@
 <template>
-  <section class="course__area pb-120">
+  <section class="course__area pb-50">
     <div class="container">
       <div class="row">
-        <div class="col-xxl-12 col-xl-12 col-lg-12 mt-150">
+        <div class="col-xxl-12 col-xl-12 col-lg-12 mt-20">
           <div class="course__tab-conent">
             <div class="tab-content" id="courseTabContent">
               <div

@@ -49,8 +49,11 @@
                     <input type="checkbox" checked />
                     <i></i>
                     <h3
-                      class="fw-bold"
-                      style="font-size: 16px; margin-bottom: 5px"
+                      style="
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                        font-weight: 400;
+                      "
                     >
                       What types of programs do you offer?
                     </h3>
@@ -73,8 +76,11 @@
                     <input type="checkbox" checked />
                     <i></i>
                     <h3
-                      class="fw-bold"
-                      style="font-size: 16px; margin-bottom: 5px"
+                      style="
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                        font-weight: 400;
+                      "
                     >
                       Are your degrees recognized internationally?
                     </h3>
@@ -95,8 +101,11 @@
                     <input type="checkbox" checked />
                     <i></i>
                     <h3
-                      class="fw-bold"
-                      style="font-size: 16px; margin-bottom: 5px"
+                      style="
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                        font-weight: 400;
+                      "
                     >
                       How do distance learning classes work?
                     </h3>
@@ -120,8 +129,11 @@
                     <input type="checkbox" checked />
                     <i></i>
                     <h3
-                      class="fw-bold"
-                      style="font-size: 16px; margin-bottom: 5px"
+                      style="
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                        font-weight: 400;
+                      "
                     >
                       Can I study at my own pace?
                     </h3>
@@ -143,8 +155,11 @@
                     <input type="checkbox" checked />
                     <i></i>
                     <h3
-                      class="fw-bold"
-                      style="font-size: 16px; margin-bottom: 5px"
+                      style="
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                        font-weight: 400;
+                      "
                     >
                       What kind of support services do you offer to distance
                       learning students?
@@ -168,8 +183,11 @@
                     <input type="checkbox" checked />
                     <i></i>
                     <h3
-                      class="fw-bold"
-                      style="font-size: 16px; margin-bottom: 5px"
+                      style="
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                        font-weight: 400;
+                      "
                     >
                       What are the admission requirements for your programs?
                     </h3>
@@ -192,8 +210,11 @@
                     <input type="checkbox" checked />
                     <i></i>
                     <h3
-                      class="fw-bold"
-                      style="font-size: 16px; margin-bottom: 5px"
+                      style="
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                        font-weight: 400;
+                      "
                     >
                       How do I apply?
                     </h3>
@@ -215,8 +236,11 @@
                     <input type="checkbox" checked />
                     <i></i>
                     <h3
-                      class="fw-bold"
-                      style="font-size: 16px; margin-bottom: 5px"
+                      style="
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                        font-weight: 400;
+                      "
                     >
                       Are there any scholarships or financial aid options
                       available?
@@ -240,8 +264,11 @@
                     <input type="checkbox" checked />
                     <i></i>
                     <h3
-                      class="fw-bold"
-                      style="font-size: 16px; margin-bottom: 5px"
+                      style="
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                        font-weight: 400;
+                      "
                     >
                       How are exams administered for distance learning courses?
                     </h3>
@@ -263,8 +290,11 @@
                     <input type="checkbox" checked />
                     <i></i>
                     <h3
-                      class="fw-bold"
-                      style="font-size: 16px; margin-bottom: 5px"
+                      style="
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                        font-weight: 400;
+                      "
                     >
                       How can I choose the right university and course in the
                       UK?
@@ -288,8 +318,11 @@
                     <input type="checkbox" checked />
                     <i></i>
                     <h3
-                      class="fw-bold"
-                      style="font-size: 16px; margin-bottom: 5px"
+                      style="
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                        font-weight: 400;
+                      "
                     >
                       What is the cost of studying and living in the UK?
                     </h3>
@@ -328,7 +361,6 @@ export default {
 };
 </script>
 <style scoped>
-/* ADD ACORDION GALAXY */
 #accordAPp .transition,
 #accordAPp p,
 #accordAPp ul li i:before,
@@ -371,7 +403,6 @@ export default {
 #accordAPp h2 {
   font-size: 14px;
   line-height: 16px;
-  font-weight: 600;
   letter-spacing: 1px;
   display: block;
   background-color: #fff;
@@ -477,5 +508,4 @@ export default {
     transform: rotateX(0deg);
   }
 }
-/* FIN ACORDION GALAXY */
 </style>

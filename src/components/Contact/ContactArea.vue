@@ -229,6 +229,40 @@
                       </span>
                     </div>
                   </div>
+                  <div class="col-xxl-12">
+                    <div
+                      class="contact__form-agree d-flex align-items-center my-10 gap-2"
+                    >
+                      <p style="font-size: 13px">
+                        Your details will be used to supply the information you
+                        requested and in accordance with our
+                        <a style="color: #0056ad" href="terms-of-use">Terms </a
+                        >&
+                        <a style="color: #0056ad" href="/data-privacy">
+                          Privacy Polices</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-xxl-12 d-flex gap-3 mb-3">
+                    <input
+                      class="e-check-input big-checkbox"
+                      type="checkbox"
+                      id="e-agree"
+                      width="50px"
+                    />
+                    <label
+                      class="e-check-label"
+                      for="e-agree"
+                      style="font-size: 13px"
+                      >From time to time Studigrid would like to send you
+                      information about further courses and events which we
+                      think might interest you. You can opt-out of receiving
+                      this information at any time using links provided in our
+                      communications. Tick the box if you want to receive this
+                      information.
+                    </label>
+                  </div>
                   <!-- Captcha -->
                   <vue-recaptcha
                     v-show="showRecaptcha"
@@ -245,27 +279,7 @@
                   >
                   </vue-recaptcha>
                   <!-- Captcha -->
-                  <div class="col-xxl-12">
-                    <div
-                      class="contact__form-agree d-flex align-items-center mb-20 mt-3"
-                    >
-                      <input
-                        class="e-check-input"
-                        type="checkbox"
-                        id="e-agree"
-                      />
-                      <label class="e-check-label" for="e-agree"
-                        >I agree to the<a
-                          style="color: #0056ad"
-                          href="terms-of-use"
-                          >Terms </a
-                        >&<a style="color: #0056ad" href="/data-privacy"
-                          >Privacy Polices</a
-                        ></label
-                      >
-                    </div>
-                  </div>
-                  <div class="col-xxl-12">
+                  <div class="col-xxl-12 mt-3">
                     <div class="contact__btn">
                       <button type="submit" class="e-btn">Send</button>
                     </div>

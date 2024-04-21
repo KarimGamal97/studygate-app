@@ -43,7 +43,7 @@
               </div>
               <span class="page__title-pre">Master in Data Analytics </span>
             </div>
-            <div class="course__tab-content mb-95">
+            <div class="course__tab-content mb-20">
               <div class="tab-content" id="courseTabContent">
                 <div
                   class="tab-pane fade show active"
