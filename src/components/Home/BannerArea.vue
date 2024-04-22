@@ -15,16 +15,20 @@
             }"
           >
             <div class="banner__content">
-              <span>New</span>
+              <span>
+                {{ $t("New") }}
+              </span>
               <h3 class="banner__title">
-                <router-link to="/phd"
-                  >External PhD Degrees <br />
-                  UK</router-link
-                >
+                <router-link to="/phd">
+                  {{ $t("External PhD Degrees") }}
+                  <br />
+
+                  {{ $t("UK") }}
+                </router-link>
               </h3>
-              <router-link to="/phd" class="e-btn e-btn-2"
-                >Find Out More</router-link
-              >
+              <router-link to="/phd" class="e-btn e-btn-2">
+                {{ $t("Find Out More") }}
+              </router-link>
             </div>
             <div class="banner__thumb d-none d-sm-block d-md-none d-lg-block">
               <img src="../../assets/img/banner/banner-img-1.png" alt="" />
@@ -44,15 +48,17 @@
             }"
           >
             <div class="banner__content">
-              <span class="orange">new</span>
+              <span class="orange"> {{ $t("New") }} </span>
               <h3 class="banner__title">
-                <router-link to="/uk-universities"
-                  >Distance Courses <br />From UK Universities
+                <router-link to="/uk-universities">
+                  {{ $t("Distance Courses") }}
+                  <br />
+                  {{ $t("From UK Universities") }}
                 </router-link>
               </h3>
-              <router-link to="/uk-universities" class="e-btn e-btn-2"
-                >View Courses</router-link
-              >
+              <router-link to="/uk-universities" class="e-btn e-btn-2">
+                {{ $t("View Courses") }}
+              </router-link>
             </div>
             <div
               class="banner__thumb banner__thumb-2 d-none d-sm-block d-md-none d-lg-block"
@@ -74,16 +80,19 @@
             }"
           >
             <div class="banner__content">
-              <span>New</span>
+              <span>
+                {{ $t("New") }}
+              </span>
               <h3 class="banner__title">
-                <router-link to="/ms-analytics"
-                  >Professional Certificates <br />
-                  in Data analytics</router-link
-                >
+                <router-link to="/ms-analytics">
+                  {{ $t("Professional Certificates") }}
+                  <br />
+                  {{ $t("in Data analytics") }}
+                </router-link>
               </h3>
-              <router-link to="/ms-analytics" class="e-btn e-btn-2"
-                >Find Out More</router-link
-              >
+              <router-link to="/ms-analytics" class="e-btn e-btn-2">
+                {{ $t("Find Out More") }}
+              </router-link>
             </div>
             <div class="banner__thumb d-none d-sm-block d-md-none d-lg-block">
               <img
@@ -107,15 +116,19 @@
             }"
           >
             <div class="banner__content">
-              <span class="orange">new</span>
+              <span class="orange">
+                {{ $t("New") }}
+              </span>
               <h3 class="banner__title">
-                <router-link to="/short-courses"
-                  >Ai Tools Training <br />and Development
+                <router-link to="/short-courses">
+                  {{ $t("Ai Tools Training") }}
+                  <br />
+                  {{ $t("and Development") }}
                 </router-link>
               </h3>
-              <router-link to="/short-courses" class="e-btn e-btn-2"
-                >Find Out More</router-link
-              >
+              <router-link to="/short-courses" class="e-btn e-btn-2">
+                {{ $t("Find Out More") }}
+              </router-link>
             </div>
             <div
               class="banner__thumb banner__thumb-2 d-none d-sm-block d-md-none d-lg-block"

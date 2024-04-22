@@ -29,9 +29,11 @@
                   }`"
                 >
                   <p style="text-align: justify">
-                    Studigate is an educational and technology service that
-                    facilitates access to distance higher education from UK
-                    universities for students in the GCC.
+                    {{
+                      $t(
+                        "Studigrid is an educational and technology service that facilitates access to distance higher education from UK universities for students in the GCC."
+                      )
+                    }}
                   </p>
 
                   <div class="footer__social">
@@ -61,7 +63,7 @@
                         : 'footer__widget-title'
                     }`"
                   >
-                    Company
+                    {{ $t("Company") }}
                   </h3>
                 </div>
                 <div class="footer__widget-body">
@@ -71,11 +73,23 @@
                     }`"
                   >
                     <ul>
-                      <li><a href="/about">About Us</a></li>
-                      <li><a href="/services">Services</a></li>
-                      <li><a href="/distance-edu">UK Distance Education</a></li>
-                      <li><a href="/contact">ContactUs</a></li>
-                      <li><a href="/useful-links">Useful Links </a></li>
+                      <li>
+                        <a href="/about">{{ $t("About Us") }}</a>
+                      </li>
+                      <li>
+                        <a href="/services">{{ $t("Services") }}</a>
+                      </li>
+                      <li>
+                        <a href="/distance-edu">
+                          {{ $t("UK Distance Education") }}</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/contact">{{ $t("ContactUs") }}</a>
+                      </li>
+                      <li>
+                        <a href="/useful-links">{{ $t("Useful Links") }}</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -93,7 +107,7 @@
                         : 'footer__widget-title'
                     }`"
                   >
-                    Platform
+                    {{ $t("Platform") }}
                   </h3>
                 </div>
                 <div class="footer__widget-body">
@@ -103,11 +117,25 @@
                     }`"
                   >
                     <ul>
-                      <li><a href="/distance-edu">Distance Education</a></li>
-                      <li><a href="/why-study-uk">Why study in Uk</a></li>
-                      <li><a href="uk-accreditation">UK Accreditation </a></li>
-                      <li><a href="/data-privacy">Data Privacy </a></li>
-                      <li><a href="terms-of-use">Terms of Use</a></li>
+                      <li>
+                        <a href="/distance-edu">{{
+                          $t("Distance Education")
+                        }}</a>
+                      </li>
+                      <li>
+                        <a href="/why-study-uk">{{ $t("Why study in Uk") }}</a>
+                      </li>
+                      <li>
+                        <a href="uk-accreditation">{{
+                          $t("UK Accreditation")
+                        }}</a>
+                      </li>
+                      <li>
+                        <a href="/data-privacy">{{ $t("Data Privacy") }}</a>
+                      </li>
+                      <li>
+                        <a href="terms-of-use">{{ $t("Terms of Use") }}</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -123,7 +151,7 @@
                         : 'footer__widget-title'
                     }`"
                   >
-                    Subscribe
+                    {{ $t("Subscribe") }}
                   </h3>
                 </div>
                 <div class="footer__widget-body">
@@ -134,14 +162,20 @@
                   >
                     <form action="#">
                       <div class="footer__subscribe-input mb-15">
-                        <input type="email" placeholder="Your email address" />
+                        <input type="email" placeholder="Email " />
                         <button type="submit">
                           <i class="far fa-arrow-right"></i>
                           <i class="far fa-arrow-right"></i>
                         </button>
                       </div>
                     </form>
-                    <p>Get the latest news and updates right at your inbox.</p>
+                    <p>
+                      {{
+                        $t(
+                          "Get the latest news and updates right at your inbox."
+                        )
+                      }}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -165,8 +199,10 @@
                 }`"
               >
                 <p>
-                  © 2022 Educal, All Rights Reserved. Design By
-                  <router-link to="https://mindtocode.org/">MTC</router-link>
+                  {{ $t("© 2022 Studigrid, All Rights Reserved. Design By") }}
+                  <router-link to="https://mindtocode.org/">
+                    {{ $t("MTC") }}
+                  </router-link>
                 </p>
               </div>
             </div>

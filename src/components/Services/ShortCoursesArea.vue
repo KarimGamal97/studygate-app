@@ -26,23 +26,25 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Home</router-link>
+                      <router-link to="/">{{ $t("Home") }}</router-link>
                     </li>
                     <li class="breadcrumb-item">
-                      <router-link to="/short-courses"
-                        >Short Courses
+                      <router-link to="/short-courses">
+                        {{ $t("Short Courses") }}
                       </router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Studigate is an educational and technology service that
-                      facilitate access to distance higher education from UK
-                      universities for students in the UAE and GCC.
+                      {{
+                        $t(
+                          "Studigrid is an educational and technology service that facilitates access to distance higher education from UK universities for students in the GCC."
+                        )
+                      }}
                     </li>
                   </ol>
                 </nav>
               </div>
-              <span class="page__title-pre"
-                >Short Courses in AI and Data Analytics
+              <span class="page__title-pre">
+                {{ $t("Short Courses in AI and Data Analytics") }}
               </span>
             </div>
             <div class="course__tab-content mb-95">
@@ -55,11 +57,11 @@
                 >
                   <div class="course__description">
                     <p>
-                      We provide short courses for organizations and individuals
-                      interested in AI and Data Analytics. We can also offer
-                      customized courses in the applications of AI in
-                      Healthcare, leadership, decision making, and business
-                      development. Examples of short courses are given below.
+                      {{
+                        $t(
+                          "We provide short courses for organizations and individuals interested in AI and Data Analytics. We can also offer customized courses in the applications of AI in Healthcare, leadership, decision making, and business development. Examples of short courses are given below."
+                        )
+                      }}
                     </p>
                   </div>
                 </div>
@@ -67,7 +69,9 @@
             </div>
           </div>
         </div>
-        <h3 class="mb-3">AI Short Courses</h3>
+        <h3 class="mb-3">
+          {{ $t("AI Short Courses") }}
+        </h3>
         <div class="col-xxl-12 col-xl-12 col-lg-12">
           <div class="course__tab-conent">
             <div class="tab-content" id="courseTabContent">
@@ -85,7 +89,7 @@
                           class="course__meta d-flex align-items-center justify-content-between"
                         >
                           <h3 class="course__title">
-                            Introduction to Artificial Intelligence
+                            {{ $t("Introduction to Artificial Intelligence") }}
                           </h3>
                           <img
                             src="../../assets/img/ai/ai-1.jpg"
@@ -100,9 +104,9 @@
                             robotics. Students learn about AI applications and
                             ethical considerations.
                           </p>
-                          <router-link to="/phd" class="e-btn e-btn-2"
-                            >Find Out More</router-link
-                          >
+                          <router-link to="/phd" class="e-btn e-btn-2">{{
+                            $t("Find Out More")
+                          }}</router-link>
                         </div>
                       </div>
                     </div>
@@ -114,7 +118,7 @@
                           class="course__meta d-flex align-items-center justify-content-between"
                         >
                           <h3 class="course__title">
-                            Machine Learning Fundamentals
+                            {{ $t("Machine Learning Fundamentals") }}
                           </h3>
                           <img
                             src="../../assets/img/ai/ai-2.jpg"
@@ -129,9 +133,9 @@
                             hands-on experience with supervised and unsupervised
                             learning models.
                           </p>
-                          <router-link to="/phd" class="e-btn e-btn-2"
-                            >Find Out More</router-link
-                          >
+                          <router-link to="/phd" class="e-btn e-btn-2">{{
+                            $t("Find Out More")
+                          }}</router-link>
                         </div>
                       </div>
                     </div>
@@ -143,7 +147,7 @@
                           class="course__meta d-flex align-items-center justify-content-between"
                         >
                           <h3 class="course__title">
-                            Deep Learning for Computer Vision
+                            {{ $t("Deep Learning for Computer Vision") }}
                           </h3>
                           <img
                             src="../../assets/img/ai/ai-10.jpg"
@@ -158,9 +162,9 @@
                             convolutional neural networks and their
                             applications.
                           </p>
-                          <router-link to="/phd" class="e-btn e-btn-2"
-                            >Find Out More</router-link
-                          >
+                          <router-link to="/phd" class="e-btn e-btn-2">{{
+                            $t("Find Out More")
+                          }}</router-link>
                         </div>
                       </div>
                     </div>
@@ -171,7 +175,9 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         >
-                          <h3 class="course__title">AI for Business Leaders</h3>
+                          <h3 class="course__title">
+                            {{ $t("AI for Business Leaders") }}
+                          </h3>
                           <img
                             src="../../assets/img/ai/ai-4.jpg"
                             alt=""
@@ -185,9 +191,9 @@
                             drive innovation. Includes case studies and strategy
                             formulation.
                           </p>
-                          <router-link to="/phd" class="e-btn e-btn-2"
-                            >Find Out More</router-link
-                          >
+                          <router-link to="/phd" class="e-btn e-btn-2">{{
+                            $t("Find Out More")
+                          }}</router-link>
                         </div>
                       </div>
                     </div>
@@ -199,7 +205,7 @@
                           class="course__meta d-flex align-items-center justify-content-between"
                         >
                           <h3 class="course__title">
-                            Natural Language Processing (NLP)
+                            {{ $t("Natural Language Processing (NLP)") }}
                           </h3>
                           <img
                             src="../../assets/img/ai/ai-5.jpg"
@@ -214,9 +220,9 @@
                             language. Covers sentiment analysis, text
                             classification, and chatbot development.
                           </p>
-                          <router-link to="/phd" class="e-btn e-btn-2"
-                            >Find Out More</router-link
-                          >
+                          <router-link to="/phd" class="e-btn e-btn-2">{{
+                            $t("Find Out More")
+                          }}</router-link>
                         </div>
                       </div>
                     </div>
@@ -227,7 +233,9 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         >
-                          <h3 class="course__title">Ethics and AI</h3>
+                          <h3 class="course__title">
+                            {{ $t("Ethics and AI") }}
+                          </h3>
                           <img
                             src="../../assets/img/ai/ai-6.jpg"
                             alt=""
@@ -241,9 +249,9 @@
                             and decision-making. Encourages responsible AI use
                             and governance.
                           </p>
-                          <router-link to="/phd" class="e-btn e-btn-2"
-                            >Find Out More</router-link
-                          >
+                          <router-link to="/phd" class="e-btn e-btn-2">{{
+                            $t("Find Out More")
+                          }}</router-link>
                         </div>
                       </div>
                     </div>
@@ -253,7 +261,9 @@
             </div>
           </div>
         </div>
-        <h3 class="mt-5 mb-3">Data Analytics Short Courses</h3>
+        <h3 class="mt-5 mb-3">
+          {{ $t("Data Analytics Short Courses") }}
+        </h3>
         <div class="col-xxl-12 col-xl-12 col-lg-12">
           <div class="course__tab-conent">
             <div class="tab-content" id="courseTabContent">
@@ -271,7 +281,7 @@
                           class="course__meta d-flex align-items-center justify-content-between"
                         >
                           <h3 class="course__title">
-                            Data Analytics Foundations
+                            {{ $t("Data Analytics Foundations") }}
                           </h3>
                           <img
                             src="../../assets/img/ai/ai-7.jpg"
@@ -285,9 +295,9 @@
                             data collection, cleaning, and exploration. Uses
                             popular tools like Excel, SQL, and Tableau.
                           </p>
-                          <router-link to="/phd" class="e-btn e-btn-2"
-                            >Find Out More</router-link
-                          >
+                          <router-link to="/phd" class="e-btn e-btn-2">{{
+                            $t("Find Out More")
+                          }}</router-link>
                         </div>
                       </div>
                     </div>
@@ -298,7 +308,9 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         >
-                          <h3 class="course__title">Python for Data Science</h3>
+                          <h3 class="course__title">
+                            {{ $t("Python for Data Science") }}
+                          </h3>
                           <img
                             src="../../assets/img/ai/ai-8.jpg"
                             alt=""
@@ -311,9 +323,9 @@
                             analysis and visualization. Covers libraries like
                             Pandas, NumPy, and Matplotlib.
                           </p>
-                          <router-link to="/phd" class="e-btn e-btn-2"
-                            >Find Out More</router-link
-                          >
+                          <router-link to="/phd" class="e-btn e-btn-2">{{
+                            $t("Find Out More")
+                          }}</router-link>
                         </div>
                       </div>
                     </div>
@@ -324,7 +336,9 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         >
-                          <h3 class="course__title">Business Analytics</h3>
+                          <h3 class="course__title">
+                            {{ $t("Business Analytics") }}
+                          </h3>
                           <img
                             src="../../assets/img/ai/ai-9.jpg"
                             alt=""
@@ -337,9 +351,9 @@
                             business decisions. Includes predictive modeling,
                             customer analytics, and performance measurement.
                           </p>
-                          <router-link to="/phd" class="e-btn e-btn-2"
-                            >Find Out More</router-link
-                          >
+                          <router-link to="/phd" class="e-btn e-btn-2">{{
+                            $t("Find Out More")
+                          }}</router-link>
                         </div>
                       </div>
                     </div>
@@ -350,7 +364,9 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         >
-                          <h3 class="course__title">Big Data Analytics</h3>
+                          <h3 class="course__title">
+                            {{ $t("Big Data Analytics") }}
+                          </h3>
                           <img
                             src="../../assets/img/ai/ai-10.jpg"
                             alt=""
@@ -363,9 +379,9 @@
                             large data sets. Covers Hadoop, Spark, and data
                             lakes, with emphasis on scalability and performance.
                           </p>
-                          <router-link to="/phd" class="e-btn e-btn-2"
-                            >Find Out More</router-link
-                          >
+                          <router-link to="/phd" class="e-btn e-btn-2">{{
+                            $t("Find Out More")
+                          }}</router-link>
                         </div>
                       </div>
                     </div>
@@ -377,7 +393,7 @@
                           class="course__meta d-flex align-items-center justify-content-between"
                         >
                           <h3 class="course__title">
-                            Data Visualization and Communication
+                            {{ $t("Data Visualization and Communication") }}
                           </h3>
                           <img
                             src="../../assets/img/ai/ai-11.jpg"
@@ -391,9 +407,9 @@
                             tools. Students learn to create impactful charts,
                             graphs, and dashboards.
                           </p>
-                          <router-link to="/phd" class="e-btn e-btn-2"
-                            >Find Out More</router-link
-                          >
+                          <router-link to="/phd" class="e-btn e-btn-2">{{
+                            $t("Find Out More")
+                          }}</router-link>
                         </div>
                       </div>
                     </div>
@@ -405,7 +421,7 @@
                           class="course__meta d-flex align-items-center justify-content-between"
                         >
                           <h3 class="course__title">
-                            Quantitative Methods for Data Analysis
+                            {{ $t("Quantitative Methods for Data Analysis") }}
                           </h3>
                           <img
                             src="../../assets/img/ai/ai-12.jpg"
@@ -420,9 +436,9 @@
                             interested in research or data-driven
                             decision-making.
                           </p>
-                          <router-link to="/phd" class="e-btn e-btn-2"
-                            >Find Out More</router-link
-                          >
+                          <router-link to="/phd" class="e-btn e-btn-2">{{
+                            $t("Find Out More")
+                          }}</router-link>
                         </div>
                       </div>
                     </div>

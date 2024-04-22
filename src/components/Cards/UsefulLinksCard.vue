@@ -18,7 +18,9 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
-                        <h3 class="course__title">• Useful Links</h3>
+                        <h3 class="course__title">
+                          • {{ $t("Useful Links") }}
+                        </h3>
                         <div class="course__teacher">
                           <p>
                             <a
@@ -30,8 +32,9 @@
                                 font-size: 20px;
                               "
                             >
-                              1 - Find a scholarship or a job in the UK</a
-                            >
+                              1 -
+                              {{ $t("Find a scholarship or a job in the UK") }}
+                            </a>
                           </p>
                           <p>
                             <a
@@ -43,8 +46,9 @@
                                 font-size: 20px;
                               "
                             >
-                              2 - Scholars 4dev</a
-                            >
+                              2 -
+                              {{ $t("Scholars 4dev") }}
+                            </a>
                           </p>
                           <p>
                             <a
@@ -56,8 +60,9 @@
                                 font-size: 20px;
                               "
                             >
-                              3 - Find a phd</a
-                            >
+                              3 -
+                              {{ $t("Find a phd") }}
+                            </a>
                           </p>
                           <p>
                             <a
@@ -69,8 +74,9 @@
                                 font-size: 20px;
                               "
                             >
-                              4 - Scholarship-Positions</a
-                            >
+                              4 -
+                              {{ $t("Scholarship-Positions") }}
+                            </a>
                           </p>
                           <p>
                             <a
@@ -82,8 +88,9 @@
                                 font-size: 20px;
                               "
                             >
-                              5 - Ukcisa</a
-                            >
+                              5 -
+                              {{ $t("Ukcisa") }}
+                            </a>
                           </p>
                         </div>
                       </div>

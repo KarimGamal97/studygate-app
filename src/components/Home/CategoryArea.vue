@@ -1,32 +1,40 @@
-<template>
-  <section class="category__area pt-20 pb-40">
+<template :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
+  <section
+    class="category__area pt-20 pb-40"
+    :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+  >
     <div class="container">
       <div class="row align-items-end">
-        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8">
+        <div
+          class="col-xxl-6 col-xl-6 col-lg-6 col-md-8"
+          :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+        >
           <div class="section__title-wrapper mb-45">
             <h2 class="section__title">
-              Explore <br />Our
-              <span class="yellow-bg"
-                >Popular
-                <img
-                  src="../../assets/img/shape/yellow-bg-2.png"
-                  alt=""
-                /> </span
-              >Services
+              {{ $t("Explore") }} <br />
+              {{ $t("Our") }}
+              <span class="yellow-bg">
+                {{ $t("Popular") }}
+                <img src="../../assets/img/shape/yellow-bg-2.png" alt="" />
+              </span>
+              {{ $t("Services") }}
             </h2>
           </div>
         </div>
-        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-4">
-          <div class="category__more mb-50 float-md-end fix">
+        <div
+          class="col-xxl-6 col-xl-6 col-lg-6 col-md-4"
+          :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+        >
+          <div class="category__more mb-50 float-md-end fix d-none">
             <router-link to="/services" class="link-btn">
-              View all Services
+              {{ $t("View all Services") }}
               <i class="far fa-arrow-right"></i>
               <i class="far fa-arrow-right"></i>
             </router-link>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row" :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
           <div
             class="category__item mb-30 transition-3 d-flex align-items-center"
@@ -50,8 +58,10 @@
               </svg>
             </div>
             <div class="category__content">
-              <h4 class="category__title">
-                <router-link to="/ms-data">Master of Data Science</router-link>
+              <h4 class="category__title" style="margin-right: 15px">
+                <router-link to="/ms-data">
+                  {{ $t("Master of Data Science") }}</router-link
+                >
               </h4>
             </div>
           </div>
@@ -79,10 +89,10 @@
               </svg>
             </div>
             <div class="category__content">
-              <h4 class="category__title">
-                <router-link to="/ms-analytics"
-                  >Master of Data Analytics</router-link
-                >
+              <h4 class="category__title" style="margin-right: 15px">
+                <router-link to="/ms-analytics">
+                  {{ $t("Master of Data Analytics") }}
+                </router-link>
               </h4>
             </div>
           </div>
@@ -110,8 +120,10 @@
               </svg>
             </div>
             <div class="category__content">
-              <h4 class="category__title">
-                <router-link to="/mba">MBA</router-link>
+              <h4 class="category__title" style="margin-right: 15px">
+                <router-link to="/mba">
+                  {{ $t("MBA") }}
+                </router-link>
               </h4>
             </div>
           </div>
@@ -139,8 +151,10 @@
               </svg>
             </div>
             <div class="category__content">
-              <h4 class="category__title">
-                <router-link to="/phd">PHD Research</router-link>
+              <h4 class="category__title" style="margin-right: 15px">
+                <router-link to="/phd">
+                  {{ $t("PHD Research") }}
+                </router-link>
               </h4>
             </div>
           </div>
@@ -168,8 +182,10 @@
               </svg>
             </div>
             <div class="category__content">
-              <h4 class="category__title">
-                <router-link to="/mphil">MPhil Degree</router-link>
+              <h4 class="category__title" style="margin-right: 15px">
+                <router-link to="/mphil">
+                  {{ $t("MPhil Degree") }}
+                </router-link>
               </h4>
             </div>
           </div>
@@ -193,10 +209,10 @@
               </svg>
             </div>
             <div class="category__content">
-              <h4 class="category__title">
-                <router-link to="/mres"
-                  >Master by Research Mres Degree</router-link
-                >
+              <h4 class="category__title" style="margin-right: 15px">
+                <router-link to="/mres">
+                  {{ $t("Master by Research Mres Degree") }}
+                </router-link>
               </h4>
             </div>
           </div>
@@ -228,8 +244,10 @@
               </svg>
             </div>
             <div class="category__content">
-              <h4 class="category__title">
-                <router-link to="/ai-tools">AI Tools Training </router-link>
+              <h4 class="category__title" style="margin-right: 15px">
+                <router-link to="/ai-tools">
+                  {{ $t("AI Tools Training") }}
+                </router-link>
               </h4>
             </div>
           </div>
@@ -263,8 +281,10 @@
               </svg>
             </div>
             <div class="category__content">
-              <h4 class="category__title">
-                <router-link to="/data-tools">AI Development</router-link>
+              <h4 class="category__title" style="margin-right: 15px">
+                <router-link to="/data-tools">
+                  {{ $t("AI Development") }}
+                </router-link>
               </h4>
             </div>
           </div>
@@ -292,10 +312,10 @@
               </svg>
             </div>
             <div class="category__content">
-              <h4 class="category__title">
-                <router-link to="/short-courses"
-                  >Analytics Short Courses & Training</router-link
-                >
+              <h4 class="category__title" style="margin-right: 15px">
+                <router-link to="/short-courses">
+                  {{ $t("Analytics Short Courses & Training") }}
+                </router-link>
               </h4>
             </div>
           </div>

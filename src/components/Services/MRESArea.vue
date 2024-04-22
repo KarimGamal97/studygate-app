@@ -26,20 +26,24 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Home</router-link>
+                      <router-link to="/">{{ $t("Home") }}</router-link>
                     </li>
                     <li class="breadcrumb-item">
-                      <router-link to="/mres">MRes</router-link>
+                      <router-link to="/mres">
+                        {{ $t("MRes") }}
+                      </router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Studigate is an educational and technology service that
-                      facilitate access to distance higher education from UK
-                      universities for students in the UAE and GCC.
+                      {{
+                        $t(
+                          "Studigrid is an educational and technology service that facilitates access to distance higher education from UK universities for students in the GCC."
+                        )
+                      }}
                     </li>
                   </ol>
                 </nav>
               </div>
-              <span class="page__title-pre">MRes</span>
+              <span class="page__title-pre">{{ $t("MRes") }}</span>
             </div>
             <div class="course__tab-content mb-95">
               <div class="tab-content" id="courseTabContent">
@@ -53,40 +57,32 @@
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                       <div class="course__description">
                         <p>
-                          A Master by Research (MRes) program in the UK is a
-                          postgraduate degree designed to provide students with
-                          advanced research training and skills. Typically
-                          lasting one year full-time or two years part-time, the
-                          MRes serves as both a standalone qualification and a
-                          bridge to doctoral research, offering a stronger focus
-                          on research methodology and practical experience than
-                          traditional taught master's degrees. The program
-                          combines a smaller taught component with a substantial
-                          research project, making up the bulk of the degree.
+                          {{
+                            $t(
+                              "A Master by Research (MRes) program in the UK is a postgraduate degree designed to provide students with advanced research training and skills. Typically lasting one year full-time or two years part-time, the MRes serves as both a standalone qualification and a bridge to doctoral research, offering a stronger focus on research methodology and practical experience than traditional taught master's degrees. The program combines a smaller taught component with a substantial research project, making up the bulk of the degree."
+                            )
+                          }}
                         </p>
                         <p>
-                          Admission requirements include a good undergraduate
-                          degree in a relevant field, with some programs
-                          requiring a specific level of achievement. The
-                          application process may also involve a research
-                          proposal, outlining the candidate's intended area of
-                          study.
+                          {{
+                            $t(
+                              "Admission requirements include a good undergraduate degree in a relevant field, with some programs requiring a specific level of achievement. The application process may also involve a research proposal, outlining the candidate's intended area of study."
+                            )
+                          }}
                         </p>
                         <p>
-                          The MRes is ideal for students aiming to pursue a PhD,
-                          offering an opportunity to develop research skills and
-                          produce a significant piece of scholarly work, such as
-                          a dissertation or research paper, under close
-                          supervision of academic staff. It assesses students'
-                          ability to conduct independent research, critical
-                          thinking, and mastery of their subject area.
+                          {{
+                            $t(
+                              "The MRes is ideal for students aiming to pursue a PhD, offering an opportunity to develop research skills and produce a significant piece of scholarly work, such as a dissertation or research paper, under close supervision of academic staff. It assesses students' ability to conduct independent research, critical thinking, and mastery of their subject area."
+                            )
+                          }}
                         </p>
                         <p>
-                          This degree is suited for those seeking careers in
-                          research, academia, or specialized sectors requiring
-                          research competencies. It also provides a valuable
-                          opportunity to explore a specific research interest in
-                          depth before committing to a PhD program.
+                          {{
+                            $t(
+                              "This degree is suited for those seeking careers in research, academia, or specialized sectors requiring research competencies. It also provides a valuable opportunity to explore a specific research interest in depth before committing to a PhD program."
+                            )
+                          }}
                         </p>
                       </div>
                     </div>

@@ -1,62 +1,17 @@
 @use "../abstract" as *;
 
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Educal – Online Learning and Education HTML5 Template
-    Author: Theme Pure
-    Support: basictheme@gmail.com
-    Description: Educal – Online Learning and Education HTML5 Template
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-/************ TABLE OF CONTENTS ***************
-
-    01. Common CSS
-    02. Header CSS
-    03. Hero CSS
-    04. Category CSS
-    05. Banner CSS
-    06. Course CSS
-    07. Events CSS
-    08. Price CSS
-    09. Cta CSS
-    10. Product CSS
-    11. Services CSS
-    12. About CSS
-    13. What CSS
-    14. Why CSS
-    15. Counter CSS
-    16. Testimonial CSS
-    17. Blog CSS
-    18. Slider CSS
-    19. Brand CSS
-    20. Teacher CSS
-    21. Page Title CSS
-    22. Contact CSS
-    23. Error CSS
-    24. Login CSS
-    00. Footer CSS
-
-
-**********************************************/
-/*
-
-
-*/
-
 /*----------------------------------------*/
 /*  01. Theme default CSS
 /*----------------------------------------*/
 
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: $hind;
+  font-family: $tajwal;
   font-size: 16px;
   font-weight: normal;
   color: $body-text-color;
@@ -141,7 +96,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $hind;
+  font-family: $tajwal;
   color: $heading-color;
   margin-top: 0px;
   font-weight: 700;
@@ -175,7 +130,7 @@ li {
   list-style: none;
 }
 p {
-  font-family: $hind;
+  font-family: $tajwal;
   font-size: 16px;
   font-weight: normal;
   color: $body-text-color;
@@ -380,7 +335,7 @@ p {
   height: 50px;
   line-height: 52px;
   text-align: center;
-  padding: 0 25px;
+  padding: 0 17px;
   color: $white;
   background: $e-blue;
   @include border-radius(4px);

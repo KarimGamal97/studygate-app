@@ -19,8 +19,12 @@
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
                         <h3 class="course__title">
-                          • Check the below links for further details on UK
-                          university accreditation.
+                          •
+                          {{
+                            $t(
+                              "Check the below links for further details on UK university accreditation"
+                            )
+                          }}
                         </h3>
                         <div class="course__teacher">
                           <div class="mb-2">

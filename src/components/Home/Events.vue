@@ -12,12 +12,15 @@
         <div class="col-xxl-4 offset-xxl-4">
           <div class="section__title-wrapper mb-60 text-center">
             <h2 class="section__title">
-              Current
-              <span class="yellow-bg yellow-bg-big"
-                >Events<img src="../../assets/img/shape/yellow-bg.png" alt=""
-              /></span>
+              {{ $t("Current Events") }}
+              <!-- <span class="yellow-bg yellow-bg-big">
+                {{ $t("Events")
+                }}<img src="../../assets/img/shape/yellow-bg.png" alt=""
+              /></span> -->
             </h2>
-            <p>We found 4 events available for you.</p>
+            <p>
+              {{ $t("We found 4 events available for you.") }}
+            </p>
           </div>
         </div>
       </div>
@@ -38,12 +41,12 @@
                   <span>{{ event.city }}</span>
                 </div>
                 <h3 class="events__title">
-                  <a :href="event.path" target="_blank">{{ event.title }}</a>
+                  <a :href="event.path" target="_blank">{{ event.title }} </a>
                 </h3>
               </div>
               <div class="events__more">
                 <a :href="event.path" target="_blank" class="link-btn">
-                  View More
+                  {{ $t("View More") }}
                   <i class="far fa-arrow-right"></i>
                   <i class="far fa-arrow-right"></i>
                 </a>

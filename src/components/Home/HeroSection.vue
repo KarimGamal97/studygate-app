@@ -1,8 +1,9 @@
-<template>
+<template :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
   <section
     class="hero__area hero__height d-flex align-items-center grey-bg-2 p-relative"
+    :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
   >
-    <div class="hero__shape">
+    <div class="hero__shape" :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
       <img
         class="hero-1-circle"
         src="../../assets/img/shape/hero/hero-1-circle.png"
@@ -19,32 +20,46 @@
         alt=""
       />
     </div>
-    <div class="container">
-      <div class="hero__content-wrapper">
+    <div class="container" :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
+      <div
+        class="hero__content-wrapper"
+        :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+      >
         <div class="row align-items-center">
           <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-            <div class="hero__content p-relative z-index-1">
+            <div
+              class="hero__content p-relative z-index-1"
+              :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+            >
               <h3 class="hero__title">
-                <span>Secure Distance</span>
-                <span class="yellow-shape"
-                  >UK
+                <span>
+                  {{ $t("Secure Distance") }}
+                </span>
+                <span class="yellow-shape">
+                  {{ $t("UK") }}
                   <img
                     src="../../assets/img/shape/yellow-bg.png"
                     alt="yellow-shape"
                   />
                 </span>
-                degree without quitting job.
+                {{ $t("degree without quitting job.") }}
               </h3>
               <p>
-                Studigate connects students in the GCC with distance higher
-                education from UK universities.
+                {{
+                  $t(
+                    "Studigate connects students in the GCC with distance higher education from UK universities."
+                  )
+                }}
               </p>
-              <router-link to="/discover-more" class="e-btn"
-                >Discover More</router-link
-              >
+              <router-link to="/discover-more" class="e-btn">
+                {{ $t("Discover More") }}
+              </router-link>
             </div>
           </div>
-          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+          <div
+            class="col-xxl-6 col-xl-6 col-lg-6 col-md-6"
+            :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+          >
             <div class="hero__thumb d-flex p-relative">
               <div class="hero__thumb-shape">
                 <img
@@ -70,9 +85,13 @@
                   height="100%"
                   alt="hero-img"
                 />
-                <div class="hero__quote hero__quote-animation">
-                  <span>Tomorrow is our</span>
-                  <h4>“When I Grow Up” Spirit Day!</h4>
+                <div class="hero__quote hero__quote-animation d-none">
+                  <span>
+                    {{ $t("Tomorrow is our") }}
+                  </span>
+                  <h4>
+                    {{ $t("“When I Grow Up” Spirit Day!") }}
+                  </h4>
                 </div>
               </div>
               <div class="hero__thumb-sm mt-50 d-none d-lg-block">

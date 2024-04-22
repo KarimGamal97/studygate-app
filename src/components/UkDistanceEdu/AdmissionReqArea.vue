@@ -26,24 +26,26 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Home</router-link>
+                      <router-link to="/">{{ $t("Home") }}</router-link>
                     </li>
                     <li class="breadcrumb-item">
-                      <router-link to="/admission-req"
-                        >Admission Requirement
+                      <router-link to="/admission-req">
+                        {{ $t("Admission Requirements") }}
                       </router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Studigate is an educational and technology service that
-                      facilitate access to distance higher education from UK
-                      universities for students in the UAE and GCC.
+                      {{
+                        $t(
+                          "Studigrid is an educational and technology service that facilitates access to distance higher education from UK universities for students in the GCC."
+                        )
+                      }}
                     </li>
                   </ol>
                 </nav>
               </div>
-              <span class="page__title-pre"
-                >MS-Master Degree Admission Requirement in the UK</span
-              >
+              <span class="page__title-pre">
+                {{ $t("MS-Master Degree Admission Requirement in the UK") }}
+              </span>
             </div>
             <div class="course__tab-content">
               <div class="tab-content" id="courseTabContent">
@@ -55,12 +57,11 @@
                 >
                   <div class="course__description">
                     <p>
-                      Admission requirements for a Master of Science (M.S.)
-                      program in the UK can vary across different universities
-                      and specific courses. However, there are general criteria
-                      that most institutions consider when evaluating
-                      applicants. Here's an overview of typical requirements for
-                      M.S. admission in the UK:
+                      {{
+                        $t(
+                          "Admission requirements for a Master of Science (M.S.) program in the UK can vary across different universities and specific courses. However, there are general criteria that most institutions consider when evaluating applicants. Here's an overview of typical requirements for M.S. admission in the UK:"
+                        )
+                      }}
                     </p>
                   </div>
                 </div>

@@ -21,28 +21,42 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
-                        <h3 class="course__title">• England</h3>
+                        <h3 class="course__title">• {{ $t("England") }}</h3>
                         <div class="course__teacher">
                           <p>
-                            University of Oxford - A historic institution
-                            renowned for its excellence in education and
-                            research.
+                            {{
+                              $t(
+                                "University of Oxford - A historic institution renowned for its excellence in education and research."
+                              )
+                            }}
                           </p>
                           <p>
-                            University of Cambridge - Known for its rigorous
-                            academic programs and historic colleges.
+                            {{
+                              $t(
+                                "University of Cambridge - Known for its rigorous academic programs and historic colleges."
+                              )
+                            }}
                           </p>
                           <p>
-                            Imperial College London - Specializes in science,
-                            engineering, medicine, and business.
+                            {{
+                              $t(
+                                "Imperial College London - Specializes in science, engineering, medicine, and business."
+                              )
+                            }}
                           </p>
                           <p>
-                            University of Manchester - Offers a wide range of
-                            programs, known for its research output.
+                            {{
+                              $t(
+                                "University of Manchester - Offers a wide range of programs, known for its research output."
+                              )
+                            }}
                           </p>
                           <p>
-                            University of Bristol - Renowned for its research
-                            and teaching in various disciplines.
+                            {{
+                              $t(
+                                "University of Bristol - Renowned for its research and teaching in various disciplines."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -57,23 +71,35 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
-                        <h3 class="course__title">• Scotland</h3>
+                        <h3 class="course__title">• {{ $t("Scotland") }}</h3>
                         <div class="course__teacher">
                           <p>
-                            University of Edinburgh - One of the world’s top
-                            universities, known for its research and innovation.
+                            {{
+                              $t(
+                                "University of Edinburgh - One of the world’s top universities, known for its research and innovation."
+                              )
+                            }}
                           </p>
                           <p>
-                            University of Glasgow - Offers a broad range of
-                            subjects with a strong research focus.
+                            {{
+                              $t(
+                                "University of Glasgow - Offers a broad range of subjects with a strong research focus."
+                              )
+                            }}
                           </p>
                           <p>
-                            University of Aberdeen - Known for its pioneering
-                            spirit and historic foundations.
+                            {{
+                              $t(
+                                "University of Aberdeen - Known for its pioneering spirit and historic foundations."
+                              )
+                            }}
                           </p>
                           <p>
-                            Heriot-Watt University - Specializes in science and
-                            engineering, business, and design.
+                            {{
+                              $t(
+                                "Heriot-Watt University - Specializes in science and engineering, business, and design."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -88,19 +114,28 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
-                        <h3 class="course__title">• Wales</h3>
+                        <h3 class="course__title">• {{ $t("Wales") }}</h3>
                         <div class="course__teacher">
                           <p>
-                            Cardiff University - A leading research and teaching
-                            university in Wales.
+                            {{
+                              $t(
+                                "Cardiff University - A leading research and teaching university in Wales."
+                              )
+                            }}
                           </p>
                           <p>
-                            Swansea University - Known for its research impact
-                            and seaside campus.
+                            {{
+                              $t(
+                                "Swansea University - Known for its research impact and seaside campus."
+                              )
+                            }}
                           </p>
                           <p>
-                            Bangor University - Offers a wide range of academic
-                            programs with a strong emphasis on research.
+                            {{
+                              $t(
+                                "Bangor University - Offers a wide range of academic programs with a strong emphasis on research."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -115,25 +150,37 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
-                        <h3 class="course__title">• Northern Ireland</h3>
+                        <h3 class="course__title">
+                          • {{ $t("Northern Ireland") }}
+                        </h3>
                         <div class="course__teacher">
                           <p>
-                            Queen’s University Belfast - A member of the Russell
-                            Group, known for its research and education.
+                            {{
+                              $t(
+                                "Queen’s University Belfast - A member of the Russell Group, known for its research and education."
+                              )
+                            }}
                           </p>
                           <p>
-                            Ulster University - Known for its strong business,
-                            health, and art programs.
+                            {{
+                              $t(
+                                "Ulster University - Known for its strong business, health, and art programs."
+                              )
+                            }}
                           </p>
                           <p>
-                            St. Mary's University College - A college with a
-                            focus on teacher education and liberal arts.
+                            {{
+                              $t(
+                                "St. Mary's University College - A college with a focus on teacher education and liberal arts."
+                              )
+                            }}
                           </p>
                           <p>
-                            Each of these universities contributes to the UK's
-                            reputation for higher education excellence, offering
-                            diverse programs, innovative research, and a global
-                            alumni network.
+                            {{
+                              $t(
+                                "Each of these universities contributes to the UK's reputation for higher education excellence, offering diverse programs, innovative research, and a global alumni network."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>

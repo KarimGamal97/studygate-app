@@ -26,20 +26,24 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Home</router-link>
+                      <router-link to="/">{{ $t("Home") }}</router-link>
                     </li>
                     <li class="breadcrumb-item">
-                      <router-link to="/about-uk">About UK</router-link>
+                      <router-link to="/about-uk">
+                        {{ $t("About UK") }}
+                      </router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Studigate is an educational and technology service that
-                      facilitate access to distance higher education from UK
-                      universities for students in the UAE and GCC.
+                      {{
+                        $t(
+                          "Studigrid is an educational and technology service that facilitates access to distance higher education from UK universities for students in the GCC."
+                        )
+                      }}
                     </li>
                   </ol>
                 </nav>
               </div>
-              <span class="page__title-pre">About UK?</span>
+              <span class="page__title-pre">{{ $t("About UK") }}</span>
             </div>
             <div class="course__tab-content mb-95">
               <div class="tab-content" id="courseTabContent">
@@ -53,21 +57,18 @@
                     <div class="row mb-50">
                       <div class="col-6">
                         <p>
-                          The United Kingdom, commonly known as the UK, is a
-                          sovereign country located off the northwestern coast
-                          of mainland Europe. Comprising four constituent
-                          countries—England, Scotland, Wales, and Northern
-                          Ireland—the UK boasts a rich history, diverse culture,
-                          and global influence.
+                          {{
+                            $t(
+                              "The United Kingdom, commonly known as the UK, is a sovereign country located off the northwestern coast of mainland Europe. Comprising four constituent countries—England, Scotland, Wales, and Northern Ireland—the UK boasts a rich history, diverse culture, and global influence."
+                            )
+                          }}
                         </p>
                         <p>
-                          At the heart of the UK is its capital, London, a
-                          vibrant metropolis, and a global financial hub. The
-                          city is a melting pot of cultures, offering iconic
-                          landmarks such as the Tower of London, Buckingham
-                          Palace, and the British Museum. London's diverse
-                          neighborhoods, world-class theaters, and thriving arts
-                          scene make it a dynamic and cosmopolitan center.
+                          {{
+                            $t(
+                              "At the heart of the UK is its capital, London, a vibrant metropolis, and a global financial hub. The city is a melting pot of cultures, offering iconic landmarks such as the Tower of London, Buckingham Palace, and the British Museum. London's diverse neighborhoods, world-class theaters, and thriving arts scene make it a dynamic and cosmopolitan center."
+                            )
+                          }}
                         </p>
                       </div>
                       <div class="col-6">
@@ -88,62 +89,50 @@
                       </div>
                       <div class="col-6">
                         <p>
-                          The UK's political system is a constitutional monarchy
-                          with a parliamentary democracy. The monarch, currently
-                          Queen Elizabeth II, serves as the ceremonial head of
-                          state, while the Prime Minister leads the government.
-                          The UK Parliament, situated at Westminster in London,
-                          plays a central role in the country's governance.
+                          {{
+                            $t(
+                              "The UK's political system is a constitutional monarchy with a parliamentary democracy. The monarch, currently Queen Elizabeth II, serves as the ceremonial head of state, while the Prime Minister leads the government. The UK Parliament, situated at Westminster in London, plays a central role in the country's governance."
+                            )
+                          }}
                         </p>
                         <p>
-                          Education is a cornerstone of the UK's global
-                          reputation. The country is home to some of the world's
-                          most prestigious universities, including the
-                          University of Oxford and the University of Cambridge.
-                          These institutions have a rich history and are
-                          renowned for their academic excellence, producing
-                          Nobel laureates, scientists, and thinkers who have
-                          shaped the course of human knowledge.
+                          {{
+                            $t(
+                              "Education is a cornerstone of the UK's global reputation. The country is home to some of the world's most prestigious universities, including the University of Oxford and the University of Cambridge. These institutions have a rich history and are renowned for their academic excellence, producing Nobel laureates, scientists, and thinkers who have shaped the course of human knowledge."
+                            )
+                          }}
                         </p>
                         <p>
-                          Culturally, the UK has made significant contributions
-                          to literature, music, and cinema. From the plays of
-                          William Shakespeare to the music of The Beatles and
-                          the films of Alfred Hitchcock, the UK's cultural
-                          impact resonates globally. The West End in London is
-                          synonymous with world-class theater productions, while
-                          music festivals like Glastonbury attract artists and
-                          fans from around the world.
+                          {{
+                            $t(
+                              "Culturally, the UK has made significant contributions to literature, music, and cinema. From the plays of William Shakespeare to the music of The Beatles and the films of Alfred Hitchcock, the UK's cultural impact resonates globally. The West End in London is synonymous with world-class theater productions, while music festivals like Glastonbury attract artists and fans from around the world."
+                            )
+                          }}
                         </p>
                       </div>
                     </div>
                     <div class="row mb-50">
                       <div class="col-6">
                         <p>
-                          The British countryside offers stunning landscapes,
-                          from the rolling hills of the Cotswolds to the rugged
-                          beauty of the Scottish Highlands. The Lake District in
-                          England, Snowdonia in Wales, and the Giant's Causeway
-                          in Northern Ireland showcase the diversity of the UK's
-                          natural beauty. Outdoor enthusiasts can enjoy hiking,
-                          cycling, and exploring historical sites scattered
-                          throughout the country.
+                          {{
+                            $t(
+                              "The British countryside offers stunning landscapes, from the rolling hills of the Cotswolds to the rugged beauty of the Scottish Highlands. The Lake District in England, Snowdonia in Wales, and the Giant's Causeway in Northern Ireland showcase the diversity of the UK's natural beauty. Outdoor enthusiasts can enjoy hiking, cycling, and exploring historical sites scattered throughout the country."
+                            )
+                          }}
                         </p>
                         <p>
-                          Sports play a vital role in UK culture, with football
-                          (soccer), cricket, rugby, and tennis being
-                          particularly popular. The Premier League, England's
-                          top football division, is globally renowned,
-                          attracting a massive international fan base.
-                          Wimbledon, one of the oldest and most prestigious
-                          tennis tournaments, is held annually in London.
+                          {{
+                            $t(
+                              "Sports play a vital role in UK culture, with football (soccer), cricket, rugby, and tennis being particularly popular. The Premier League, England's top football division, is globally renowned, attracting a massive international fan base. Wimbledon, one of the oldest and most prestigious tennis tournaments, is held annually in London."
+                            )
+                          }}
                         </p>
                         <p>
-                          The UK's healthcare system, the National Health
-                          Service (NHS), provides comprehensive medical care to
-                          residents. This publicly funded system ensures that
-                          healthcare is accessible to all, making it a point of
-                          pride for many UK citizens.
+                          {{
+                            $t(
+                              "The UK's healthcare system, the National Health Service (NHS), provides comprehensive medical care to residents. This publicly funded system ensures that healthcare is accessible to all, making it a point of pride for many UK citizens."
+                            )
+                          }}
                         </p>
                       </div>
                       <div class="col-6">
@@ -155,13 +144,11 @@
                       </div>
                     </div>
                     <p>
-                      In conclusion, the UK is a diverse and dynamic country
-                      with a rich cultural heritage, world-class education
-                      system, and global influence. Whether exploring its
-                      historic landmarks, enjoying its cultural offerings, or
-                      studying at its renowned universities, the UK offers a
-                      multifaceted experience that continues to captivate people
-                      from around the globe.
+                      {{
+                        $t(
+                          "In conclusion, the UK is a diverse and dynamic country with a rich cultural heritage, world-class education system, and global influence. Whether exploring its historic landmarks, enjoying its cultural offerings, or studying at its renowned universities, the UK offers a multifaceted experience that continues to captivate people from around the globe."
+                        )
+                      }}
                     </p>
                   </div>
                 </div>

@@ -26,22 +26,24 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Home</router-link>
+                      <router-link to="/">{{ $t("Home") }}</router-link>
                     </li>
                     <li class="breadcrumb-item">
-                      <router-link to="/uk-universities"
-                        >UK Universities
+                      <router-link to="/uk-universities">
+                        {{ $t("UK Universities") }}
                       </router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Studigate is an educational and technology service that
-                      facilitate access to distance higher education from UK
-                      universities for students in the UAE and GCC.
+                      {{
+                        $t(
+                          "Studigrid is an educational and technology service that facilitates access to distance higher education from UK universities for students in the GCC."
+                        )
+                      }}
                     </li>
                   </ol>
                 </nav>
               </div>
-              <span class="page__title-pre">UK Universities </span>
+              <span class="page__title-pre">{{ $t("UK Universities") }} </span>
             </div>
             <div class="course__tab-content mb-0">
               <div class="tab-content" id="courseTabContent">
@@ -62,28 +64,18 @@
                       </div>
                       <div class="col-6">
                         <p>
-                          UK universities are esteemed globally for their
-                          distinguished history, academic excellence, and
-                          cutting-edge research. They attract a diverse
-                          international student body, drawn by the quality of
-                          education, extensive study options, and the unique
-                          blend of tradition and innovation. The UK higher
-                          education system includes ancient universities with
-                          centuries of history, such as Oxford and Cambridge,
-                          alongside modern institutions that offer a
-                          contemporary approach to learning and research.
+                          {{
+                            $t(
+                              "UK universities are esteemed globally for their distinguished history, academic excellence, and cutting-edge research. They attract a diverse international student body, drawn by the quality of education, extensive study options, and the unique blend of tradition and innovation. The UK higher education system includes ancient universities with centuries of history, such as Oxford and Cambridge, alongside modern institutions that offer a contemporary approach to learning and research."
+                            )
+                          }}
                         </p>
                         <p>
-                          These universities offer a broad spectrum of courses
-                          across various disciplines, catering to
-                          undergraduates, postgraduates, and professionals
-                          seeking further education. The teaching model in the
-                          UK emphasizes critical thinking, creativity, and
-                          independent study, aiming to equip students with
-                          skills relevant to their future careers. Many UK
-                          universities are renowned for their research impact,
-                          contributing significantly to advancements in science,
-                          humanities, and the arts.
+                          {{
+                            $t(
+                              "These universities offer a broad spectrum of courses across various disciplines, catering to undergraduates, postgraduates, and professionals seeking further education. The teaching model in the UK emphasizes critical thinking, creativity, and independent study, aiming to equip students with skills relevant to their future careers. Many UK universities are renowned for their research impact, contributing significantly to advancements in science, humanities, and the arts."
+                            )
+                          }}
                         </p>
                       </div>
                     </div>
@@ -91,31 +83,25 @@
                     <div class="row mb-50">
                       <div class="col-6">
                         <p>
-                          UK campuses are multicultural environments, fostering
-                          global networks and promoting a broad worldview among
-                          students. This cultural diversity enriches the student
-                          experience, preparing graduates for global career
-                          opportunities. Furthermore, UK universities often
-                          maintain strong connections with industries, ensuring
-                          that their courses remain relevant to the changing
-                          demands of the job market.
+                          {{
+                            $t(
+                              "UK campuses are multicultural environments, fostering global networks and promoting a broad worldview among students. This cultural diversity enriches the student experience, preparing graduates for global career opportunities. Furthermore, UK universities often maintain strong connections with industries, ensuring that their courses remain relevant to the changing demands of the job market."
+                            )
+                          }}
                         </p>
                         <p>
-                          In addition to academic pursuits, students in the UK
-                          enjoy a vibrant student life with opportunities for
-                          sports, arts, and social activities, enhancing their
-                          overall educational experience. The combination of
-                          prestigious academic programs, rich history, and a
-                          dynamic student life makes UK universities a top
-                          choice for students worldwide.
+                          {{
+                            $t(
+                              "In addition to academic pursuits, students in the UK enjoy a vibrant student life with opportunities for sports, arts, and social activities, enhancing their overall educational experience. The combination of prestigious academic programs, rich history, and a dynamic student life makes UK universities a top choice for students worldwide."
+                            )
+                          }}
                         </p>
                         <p>
-                          The United Kingdom, known for its diverse and
-                          prestigious higher education system, comprises four
-                          countries each with its own set of renowned
-                          universities. Here are 15 common universities spread
-                          across these nations, providing a glimpse into the
-                          academic excellence the UK has to offer.
+                          {{
+                            $t(
+                              "The United Kingdom, known for its diverse and prestigious higher education system, comprises four countries each with its own set of renowned universities. Here are 15 common universities spread across these nations, providing a glimpse into the academic excellence the UK has to offer."
+                            )
+                          }}
                         </p>
                       </div>
                       <div class="col-6">

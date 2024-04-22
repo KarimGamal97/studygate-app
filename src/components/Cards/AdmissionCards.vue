@@ -22,16 +22,15 @@
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
                         <h3 class="course__title">
-                          • English Language Proficiency
+                          • {{ $t("English Language Proficiency") }}
                         </h3>
                         <div class="course__teacher d-flex align-items-center">
                           <p>
-                            IELTS: A common requirement is an IELTS score of 6.0
-                            to 7.0 overall, with no section lower than 6.0,
-                            depending on the university and course. TOEFL, PTE
-                            Academic, and other English language tests are also
-                            accepted, with specific score requirements set by
-                            each university.
+                            {{
+                              $t(
+                                "IELTS: A common requirement is an IELTS score of 6.0 to 7.0 overall, with no section lower than 6.0, depending on the university and course. TOEFL, PTE Academic, and other English language tests are also accepted, with specific score requirements set by each university."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -47,14 +46,16 @@
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
                         <h3 class="course__title">
-                          • Letters of Recommendation
+                          •
+                          {{ $t("Letters of Recommendation") }}
                         </h3>
                         <div class="course__teacher d-flex align-items-center">
                           <p>
-                            Typically, two letters of recommendation are
-                            required, usually from academics who are familiar
-                            with the applicant's academic abilities and
-                            potential for postgraduate study.
+                            {{
+                              $t(
+                                "Typically, two letters of recommendation are required, usually from academics who are familiar with the applicant's academic abilities and potential for postgraduate study."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -70,14 +71,16 @@
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
                         <h3 class="course__title">
-                          • Personal Statement or Statement of Purpose
+                          •
+                          {{ $t("Personal Statement or Statement of Purpose") }}
                         </h3>
                         <div class="course__teacher d-flex align-items-center">
                           <p>
-                            An essay explaining your reasons for pursuing the
-                            M.S. degree, your interest in the specific program
-                            and university, your academic and research
-                            interests, and your career goals.
+                            {{
+                              $t(
+                                "An essay explaining your reasons for pursuing the M.S. degree, your interest in the specific program and university, your academic and research interests, and your career goals."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -92,14 +95,22 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
-                        <h3 class="course__title">• CV/Resume</h3>
+                        <h3 class="course__title">
+                          •
+                          {{ $t("CV/Resume") }}
+                        </h3>
                         <div class="course__teacher d-flex align-items-center">
                           <p>
-                            A current CV or resume detailing your education,
-                            qualifications, work experience, and any other
-                            relevant activities or achievements.<br />
-                            Some programs like MBA in specific universities in
-                            the UK may require the following
+                            {{
+                              $t(
+                                "A current CV or resume detailing your education, qualifications, work experience, and any other relevant activities or achievements."
+                              )
+                            }}
+                            {{
+                              $t(
+                                "Some programs like MBA in specific universities in the UK may require the following"
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -114,12 +125,17 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
-                        <h3 class="course__title">• Interviews</h3>
+                        <h3 class="course__title">
+                          •
+                          {{ $t("Interviews") }}
+                        </h3>
                         <div class="course__teacher d-flex align-items-center">
                           <p>
-                            Some programs may invite candidates for an interview
-                            as part of the admissions process, either in person
-                            or via video conferencing.
+                            {{
+                              $t(
+                                "Some programs may invite candidates for an interview as part of the admissions process, either in person or via video conferencing. A current CV or resume detailing your education, qualifications, work experience, and any other relevant activities or achievements.Some programs like MBA in specific universities in the UK may require the following"
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -134,13 +150,17 @@
                         <div
                           class="course__meta d-flex align-items-center justify-content-between"
                         ></div>
-                        <h3 class="course__title">• Work Experience</h3>
+                        <h3 class="course__title">
+                          •
+                          {{ $t("Work Experience") }}
+                        </h3>
                         <div class="course__teacher d-flex align-items-center">
                           <p>
-                            While not always mandatory, relevant work experience
-                            can be beneficial and, in some cases, required for
-                            certain programs (e.g., MBA or programs with a
-                            professional focus).
+                            {{
+                              $t(
+                                "While not always mandatory, relevant work experience can be beneficial and, in some cases, required for certain programs (e.g., MBA or programs with a professional focus)."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>

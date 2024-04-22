@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="About Uk " subtitle="About Uk " />
+  <Breadcrumb title="About UK " subtitle="About UK " />
   <AboutUkDetails />
   <Footer footerPadding="true" />
 </template>

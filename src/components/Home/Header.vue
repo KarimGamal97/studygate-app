@@ -1,4 +1,4 @@
-<template :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
+<template>
   <header>
     <div
       id="header-sticky"
@@ -189,7 +189,7 @@
               </div>
               <div class="header__btn ml-20 d-none d-sm-block">
                 <router-link to="/apply-course" class="e-btn">
-                  <span style="text-transform: capitalize">
+                  <span style="text-transform: capitalize; font-size: 14px">
                     {{ $t("Apply for A Course") }}
                   </span></router-link
                 >
