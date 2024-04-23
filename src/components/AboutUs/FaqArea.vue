@@ -26,20 +26,22 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Home</router-link>
+                      <router-link to="/">{{ $t("Home") }}</router-link>
                     </li>
                     <li class="breadcrumb-item">
-                      <router-link to="/faq">FAQ</router-link>
+                      <router-link to="/faq">{{ $t("FAQ") }}</router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Studigate is an educational and technology service that
-                      facilitate access to distance higher education from UK
-                      universities for students in the UAE and GCC.
+                      {{
+                        $t(
+                          "Studigrid is an educational and technology service that facilitates access to distance higher education from UK universities for students in the GCC."
+                        )
+                      }}
                     </li>
                   </ol>
                 </nav>
               </div>
-              <span class="page__title-pre">FAQ</span>
+              <span class="page__title-pre">{{ $t("FAQ") }}</span>
             </div>
             <div class="course__tab-content mt-50">
               <!-- Start Collapse -->
@@ -55,7 +57,7 @@
                         font-weight: 400;
                       "
                     >
-                      What types of programs do you offer?
+                      {{ $t("What types of programs do you offer?") }}
                     </h3>
                     <p
                       style="
@@ -64,12 +66,11 @@
                         letter-spacing: 1px;
                       "
                     >
-                      We offer a wide range of programs including postgraduate,
-                      doctoral, and professional development courses across
-                      various fields such as business, and IT with more focus on
-                      AI and Data Analytics. Our programs are designed to meet
-                      the needs of both full-time students and working
-                      professionals looking for career advancement.
+                      {{
+                        $t(
+                          "We offer a wide range of programs including postgraduate, doctoral, and professional development courses across various fields such as business, and IT with more focus on AI and Data Analytics. Our programs are designed to meet the needs of both full-time students and working professionals looking for career advancement."
+                        )
+                      }}
                     </p>
                   </li>
                   <li>
@@ -82,7 +83,7 @@
                         font-weight: 400;
                       "
                     >
-                      Are your degrees recognized internationally?
+                      {{ $t("Are your degrees recognized internationally?") }}
                     </h3>
                     <p
                       style="
@@ -91,10 +92,11 @@
                         letter-spacing: 1px;
                       "
                     >
-                      Yes, all our degrees are awarded by accredited
-                      universities and are recognized internationally. We
-                      collaborate with universities that have a strong
-                      reputation for academic excellence and global recognition.
+                      {{
+                        $t(
+                          "Yes, all our degrees are awarded by accredited universities and are recognized internationally. We collaborate with universities that have a strong reputation for academic excellence and global recognition."
+                        )
+                      }}
                     </p>
                   </li>
                   <li>
@@ -107,7 +109,7 @@
                         font-weight: 400;
                       "
                     >
-                      How do distance learning classes work?
+                      {{ $t("How do distance learning classes work?") }}
                     </h3>
                     <p
                       style="
@@ -116,13 +118,11 @@
                         letter-spacing: 1px;
                       "
                     >
-                      Distance learning classes are delivered through a
-                      state-of-the-art learning management system (LMS) where
-                      students can access lectures, course materials, and
-                      interact with faculty and peers. Classes may include a mix
-                      of live sessions, recorded lectures, discussion forums,
-                      and interactive assignments to ensure a comprehensive
-                      learning experience.
+                      {{
+                        $t(
+                          "Distance learning classes are delivered through a state-of-the-art learning management system (LMS) where students can access lectures, course materials, and interact with faculty and peers. Classes may include a mix of live sessions, recorded lectures, discussion forums,and interactive assignments to ensure a comprehensive learning experience."
+                        )
+                      }}
                     </p>
                   </li>
                   <li>
@@ -135,7 +135,7 @@
                         font-weight: 400;
                       "
                     >
-                      Can I study at my own pace?
+                      {{ $t("Can I study at my own pace?") }}
                     </h3>
                     <p
                       style="
@@ -144,11 +144,11 @@
                         letter-spacing: 1px;
                       "
                     >
-                      Many of our programs are designed with flexibility in
-                      mind, allowing students to study at their own pace.
-                      However, some courses may have scheduled sessions and
-                      deadlines to ensure that students stay on track and
-                      complete their program in a timely manner.
+                      {{
+                        $t(
+                          "Many of our programs are designed with flexibility in mind, allowing students to study at their own pace.However, some courses may have scheduled sessions and deadlines to ensure that students stay on track and complete their program in a timely manner."
+                        )
+                      }}
                     </p>
                   </li>
                   <li>
@@ -161,8 +161,11 @@
                         font-weight: 400;
                       "
                     >
-                      What kind of support services do you offer to distance
-                      learning students?
+                      {{
+                        $t(
+                          "What kind of support services do you offer to distance learning students?"
+                        )
+                      }}
                     </h3>
                     <p
                       style="
@@ -171,12 +174,11 @@
                         letter-spacing: 1px;
                       "
                     >
-                      We provide a range of support services to ensure our
-                      distance learning students have a successful learning
-                      experience. This includes academic advising, technical
-                      support, library access, career services, and wellness
-                      resources. Our dedicated team is available to assist
-                      students with any challenges they may encounter.
+                      {{
+                        $t(
+                          "We provide a range of support services to ensure our distance learning students have a successful learning experience. This includes academic advising, technical support, library access, career services, and wellness resources. Our dedicated team is available to assist students with any challenges they may encounter."
+                        )
+                      }}
                     </p>
                   </li>
                   <li>
@@ -189,7 +191,11 @@
                         font-weight: 400;
                       "
                     >
-                      What are the admission requirements for your programs?
+                      {{
+                        $t(
+                          "What are the admission requirements for your programs?"
+                        )
+                      }}
                     </h3>
                     <p
                       style="
@@ -198,12 +204,11 @@
                         letter-spacing: 1px;
                       "
                     >
-                      Admission requirements vary by program but generally
-                      include a completed application form, transcripts from
-                      previous institutions, proof of language proficiency (for
-                      non-native English speakers), letters of recommendation,
-                      and a personal statement. Some programs may also require
-                      specific qualifications or work experience.
+                      {{
+                        $t(
+                          "Admission requirements vary by program but generally include a completed application form, transcripts from previous institutions proof of language proficiency (for non-native English speakers), letters of recommendation, and a personal statement. Some programs may also require specific qualifications or work experience."
+                        )
+                      }}
                     </p>
                   </li>
                   <li>
@@ -216,7 +221,7 @@
                         font-weight: 400;
                       "
                     >
-                      How do I apply?
+                      {{ $t("How do I apply?") }}
                     </h3>
                     <p
                       style="
@@ -225,11 +230,11 @@
                         letter-spacing: 1px;
                       "
                     >
-                      Prospective students can apply through our online
-                      application portal. The process involves submitting your
-                      personal details, educational background, supporting
-                      documents, and any additional information required for
-                      your chosen program.
+                      {{
+                        $t(
+                          "Prospective students can apply through our online application portal. The process involves submitting your personal details educational background, supporting documents, and any additional information required for your chosen program."
+                        )
+                      }}
                     </p>
                   </li>
                   <li>
@@ -242,8 +247,11 @@
                         font-weight: 400;
                       "
                     >
-                      Are there any scholarships or financial aid options
-                      available?
+                      {{
+                        $t(
+                          "Are there any scholarships or financial aid options available?"
+                        )
+                      }}
                     </h3>
                     <p
                       style="
@@ -252,12 +260,11 @@
                         letter-spacing: 1px;
                       "
                     >
-                      Yes, a variety of scholarships and financial aid options
-                      for eligible students are available in some of the
-                      universities we deal with. These are designed to help
-                      reduce the financial burden of higher education. Students
-                      are encouraged to apply early, as funds are limited and
-                      distributed on a competitive basis.
+                      {{
+                        $t(
+                          "Yes, a variety of scholarships and financial aid options for eligible students are available in some of the universities we deal with. These are designed to help reduce the financial burden of higher education. Students are encouraged to apply early, as funds are limited and distributed on a competitive basis."
+                        )
+                      }}
                     </p>
                   </li>
                   <li>
@@ -270,7 +277,11 @@
                         font-weight: 400;
                       "
                     >
-                      How are exams administered for distance learning courses?
+                      {{
+                        $t(
+                          "How are exams administered for distance learning courses?"
+                        )
+                      }}
                     </h3>
                     <p
                       style="
@@ -279,11 +290,11 @@
                         letter-spacing: 1px;
                       "
                     >
-                      Exams for distance education courses may be administered
-                      virtually through our secure online proctoring system,
-                      which ensures the integrity of the examination process.
-                      Some courses may require students to attend in-person
-                      exams at authorized centers.
+                      {{
+                        $t(
+                          "Exams for distance education courses may be administered virtually through our secure online proctoring system, which ensures the integrity of the examination process. Some courses may require students to attend in-person exams at authorized centers."
+                        )
+                      }}
                     </p>
                   </li>
                   <li>
@@ -296,8 +307,11 @@
                         font-weight: 400;
                       "
                     >
-                      How can I choose the right university and course in the
-                      UK?
+                      {{
+                        $t(
+                          "How can I choose the right university and course in the UK?"
+                        )
+                      }}
                     </h3>
                     <p
                       style="
@@ -306,12 +320,11 @@
                         letter-spacing: 1px;
                       "
                     >
-                      Our consultants are experts in the UK higher education
-                      sector and will provide personalized advice based on your
-                      academic background, career goals, and preferences. We
-                      consider factors such as university rankings, course
-                      content, faculty expertise, and career outcomes to
-                      recommend options that best suit your needs.
+                      {{
+                        $t(
+                          "Our consultants are experts in the UK higher education sector and will provide personalized advice based on your academi background, career goals, and preferences. We consider factors such as university rankings, course content, faculty expertise, and career outcomes to recommend options that best suit your needs."
+                        )
+                      }}
                     </p>
                   </li>
                   <li>
@@ -324,7 +337,9 @@
                         font-weight: 400;
                       "
                     >
-                      What is the cost of studying and living in the UK?
+                      {{
+                        $t("What is the cost of studying and living in the UK?")
+                      }}
                     </h3>
                     <p
                       style="
@@ -333,13 +348,11 @@
                         letter-spacing: 1px;
                       "
                     >
-                      Costs vary depending on your chosen institution, type of
-                      learning, course, and lifestyle. Tuition fees for
-                      international students can range widely, and you should
-                      also budget for living expenses, including accommodation,
-                      food, transportation, and personal expenses. We can
-                      provide detailed cost estimates and help you plan your
-                      finances.
+                      {{
+                        $t(
+                          "Costs vary depending on your chosen institution, type of learning, course, and lifestyle. Tuition fees for international students can range widely, and you should also budget for living expenses, including accommodation, food, transportation, and personal expenses. We can provide detailed cost estimates and help you plan your finances."
+                        )
+                      }}
                     </p>
                   </li>
                 </ul>
