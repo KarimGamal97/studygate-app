@@ -183,6 +183,18 @@
                       :value="locale"
                     >
                       {{ locale }}
+                      <img
+                        v-if="locale === 'en'"
+                        src="../../assets/img/home/en-lang.svg"
+                        alt="UK Flag"
+                        class="flag-icon"
+                      />
+                      <img
+                        v-else-if="locale === 'ar'"
+                        src="../../assets/img/home/ar-lang.svg"
+                        alt="Jordan Flag"
+                        class="flag-icon"
+                      />
                     </option>
                   </select>
                 </div>
@@ -235,7 +247,9 @@
         <div class="side-info-content sidebar-menu mm-menu">
           <ul>
             <li>
-              <router-link to="/" class="border-0">Home</router-link>
+              <router-link to="/" class="border-0">{{
+                $t("Home")
+              }}</router-link>
             </li>
             <li
               class="menu-item-has-children has-droupdown"
@@ -245,7 +259,7 @@
                 @click="
                   menuOption.coursesDropdown = !menuOption.coursesDropdown
                 "
-                >UK Distance Education
+                >{{ $t("UK Distance Education") }}
               </a>
               <ul
                 class="sub-menu"
@@ -253,34 +267,38 @@
               >
                 <li>
                   <router-link to="/distance-edu">
-                    Distance Education
+                    {{ $t("Distance Education") }}
                   </router-link>
                 </li>
                 <li>
                   <router-link to="/why-study-uk">
-                    Why Study in the UK
+                    {{ $t("Why Study in the UK") }}
                   </router-link>
                 </li>
                 <li>
-                  <router-link to="/admission-req"
-                    >Admission Requirements</router-link
-                  >
+                  <router-link to="/admission-req">{{
+                    $t("Admission Requirements")
+                  }}</router-link>
                 </li>
                 <li>
                   <router-link to="/uk-accreditation">
-                    UK Accreditation
+                    {{ $t("UK Accreditation") }}
                   </router-link>
                 </li>
                 <li>
                   <router-link to="/uk-universities">
-                    UK Universities
+                    {{ $t("UK Universities") }}
                   </router-link>
                 </li>
                 <li>
-                  <router-link to="/about-uk"> About UK </router-link>
+                  <router-link to="/about-uk">
+                    {{ $t("About UK") }}
+                  </router-link>
                 </li>
                 <li>
-                  <router-link to="/useful-links"> Useful Links </router-link>
+                  <router-link to="/useful-links">
+                    {{ $t("Useful Links") }}</router-link
+                  >
                 </li>
               </ul>
             </li>
@@ -288,8 +306,9 @@
               class="menu-item-has-children has-droupdown"
               :class="[menuOption.blogDropdown === true ? 'active' : '']"
             >
-              <a v-on:click="menuOption.blogDropdown = !menuOption.blogDropdown"
-                >Services</a
+              <a
+                v-on:click="menuOption.blogDropdown = !menuOption.blogDropdown"
+                >{{ $t("Services") }}</a
               >
               <ul
                 class="sub-menu"
@@ -303,46 +322,50 @@
                     v-on:click="
                       menuOption.blogDropdown = !menuOption.blogDropdown
                     "
-                    >Master Programs</a
+                    >{{ $t("Master Programs") }}</a
                   >
                   <ul class="submenu">
                     <li>
                       <router-link to="/ms-analytics"
-                        >MS Data Analytics
+                        >{{ $t("MS Data Analytics") }}
                       </router-link>
                     </li>
                     <li>
-                      <router-link to="/ms-data">MS Data Science </router-link>
+                      <router-link to="/ms-data"
+                        >{{ $t("MS Data Science") }}
+                      </router-link>
                     </li>
                     <li>
-                      <router-link to="/mba">MBA </router-link>
+                      <router-link to="/mba">{{ $t("MBA") }} </router-link>
                     </li>
                   </ul>
                 </li>
                 <li class="has-dropdown">
-                  <router-link to="/phd">Research Programs </router-link>
+                  <router-link to="/phd"
+                    >{{ $t("Research Programs") }}
+                  </router-link>
                   <ul class="submenu">
                     <li>
                       <router-link to="/phd"
-                        >Doctor of Philosophy (Phd)
+                        >{{ $t("Doctor of Philosophy (Phd)") }}
                       </router-link>
                     </li>
                     <li>
                       <router-link to="/mres"
-                        >Master by Research (MRes)
+                        >{{ $t("Master by Research (MRes)") }}
                       </router-link>
                     </li>
                     <li>
                       <router-link to="/mphil"
-                        >Master of Philosophy (MPhil)
+                        >{{ $t("Master of Philosophy (MPhil)") }}
                       </router-link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <router-link to="/short-courses"
-                    >Short courses in Data Analytics and AI</router-link
-                  >
+                  <router-link to="/short-courses">{{
+                    $t("Short courses in Data Analytics and AI")
+                  }}</router-link>
                 </li>
               </ul>
             </li>
@@ -350,26 +373,31 @@
               class="menu-item-has-children has-droupdown"
               :class="[menuOption.pagesDropDown === true ? 'active' : '']"
             >
-              <a @click="menuOption.pagesDropDown = !menuOption.pagesDropDown"
-                >About Us</a
+              <a
+                @click="menuOption.pagesDropDown = !menuOption.pagesDropDown"
+                >{{ $t("About Us") }}</a
               >
               <ul
                 class="sub-menu"
                 :class="[menuOption.pagesDropDown === true ? 'active' : '']"
               >
                 <li>
-                  <router-link to="/about">Our Company</router-link>
+                  <router-link to="/about">{{ $t("Our Company") }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/book-meeting">Book a meeting</router-link>
+                  <router-link to="/book-meeting">{{
+                    $t("Book a meeting")
+                  }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/faq">FAQ</router-link>
+                  <router-link to="/faq">{{ $t("FAQ") }}</router-link>
                 </li>
               </ul>
             </li>
             <li>
-              <router-link to="/contact" class="border-0">Contact</router-link>
+              <router-link to="/contact" class="border-0">{{
+                $t("Contact Us")
+              }}</router-link>
             </li>
           </ul>
         </div>
