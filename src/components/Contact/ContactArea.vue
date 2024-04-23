@@ -6,19 +6,21 @@
           <div class="contact__wrapper">
             <div class="section__title-wrapper mb-40">
               <h2 class="section__title">
-                Get
+                {{ $t("Get") }}
                 <span
                   class="yellow-bg yellow-bg-big"
                   style="text-transform: lowercase"
                 >
-                  in touch<img
-                    src="../../assets/img/shape/yellow-bg.png"
-                    alt=""
+                  {{ $t("in touch")
+                  }}<img src="../../assets/img/shape/yellow-bg.png" alt=""
                 /></span>
               </h2>
               <p>
-                Have a question or just want to say hi? We'd love to hear from
-                you.
+                {{
+                  $t(
+                    "Have a question or just want to say hi? We'd love to hear from you."
+                  )
+                }}
               </p>
             </div>
             <div class="contact__form">
@@ -117,7 +119,7 @@
                       </span>
                     </div>
                   </div>
-                  <h3 style="font-size: 20px">Queries for</h3>
+                  <h3 style="font-size: 20px">{{ $t("Queries for") }}</h3>
                   <div class="d-flex col-xxl-12 col-xl-12 col-md-12 mb-3">
                     <div class="col-3">
                       <div class="form-check">
@@ -128,7 +130,7 @@
                           id="masterDegree"
                         />
                         <label class="form-check-label ms-2" for="masterDegree">
-                          Master Degree
+                          {{ $t("Master Degree") }}
                         </label>
                       </div>
                     </div>
@@ -141,7 +143,7 @@
                           id="MBA"
                         />
                         <label class="form-check-label ms-2" for="MBA">
-                          MBA
+                          {{ $t("MBA") }}
                         </label>
                       </div>
                     </div>
@@ -154,7 +156,7 @@
                           id="MS Research"
                         />
                         <label class="form-check-label ms-2" for="msResearch">
-                          MS Research
+                          {{ $t("MS Research") }}
                         </label>
                       </div>
                     </div>
@@ -167,7 +169,7 @@
                           id="PHD"
                         />
                         <label class="form-check-label ms-2" for="PHD">
-                          PHD
+                          {{ $t("PHD") }}
                         </label>
                       </div>
                     </div>
@@ -180,12 +182,14 @@
                           id="Training"
                         />
                         <label class="form-check-label ms-2" for="Training">
-                          Training
+                          {{ $t("Training") }}
                         </label>
                       </div>
                     </div>
                   </div>
-                  <h3 style="font-size: 20px">Destination Country of Study</h3>
+                  <h3 style="font-size: 20px">
+                    {{ $t("Destination Country of Study") }}
+                  </h3>
                   <div class="col-xxl-12 my-3">
                     <div class="input-group">
                       <select
@@ -202,8 +206,10 @@
                           }`,
                         ]"
                       >
-                        <option value="uk" selected="uk">UNITED KINGDOM</option>
-                        <option value="values">NEW ZEALAND</option>
+                        <option value="uk" selected="uk">
+                          {{ $t("UNITED KINGDOM") }}
+                        </option>
+                        <option value="values">{{ $t("NEW ZEALAND") }}</option>
                       </select>
                     </div>
                   </div>
@@ -234,12 +240,15 @@
                       class="contact__form-agree d-flex align-items-center my-10 gap-2"
                     >
                       <p style="font-size: 13px">
-                        Your details will be used to supply the information you
-                        requested and in accordance with our
-                        <a style="color: #0056ad" href="terms-of-use">Terms </a
-                        >&
+                        {{
+                          $t(
+                            "Your details will be used to supply the information you requested and in accordance with our"
+                          )
+                        }}
+                        <a style="color: #0056ad" href="terms-of-use"> </a
+                        >{{ $t("&") }}
                         <a style="color: #0056ad" href="/data-privacy">
-                          Privacy Polices</a
+                          {{ $t("Privacy Polices") }}</a
                         >
                       </p>
                     </div>
@@ -255,12 +264,12 @@
                       class="e-check-label"
                       for="e-agree"
                       style="font-size: 13px"
-                      >From time to time Studigrid would like to send you
-                      information about further courses and events which we
-                      think might interest you. You can opt-out of receiving
-                      this information at any time using links provided in our
-                      communications. Tick the box if you want to receive this
-                      information.
+                    >
+                      {{
+                        $t(
+                          "From time to time Studigrid would like to send you information about further courses and events which we think might interest you. You can opt-out of receiving this information at any time using links provided in our communications. Tick the box if you want to receive this information."
+                        )
+                      }}
                     </label>
                   </div>
                   <!-- Captcha -->
@@ -281,7 +290,9 @@
                   <!-- Captcha -->
                   <div class="col-xxl-12 mt-3">
                     <div class="contact__btn">
-                      <button type="submit" class="e-btn">Send</button>
+                      <button type="submit" class="e-btn">
+                        {{ $t("Send") }}
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -326,12 +337,13 @@
                       </svg>
                     </div>
                     <div class="contact__info-text">
-                      <h4>Abu Dhabi Office</h4>
+                      <h4>{{ $t("Abu Dhabi Office") }}</h4>
                       <p>
                         <a
                           target="_blank"
                           href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873"
-                          >Al Muroor Road Office 207 Saraya Tower</a
+                        >
+                          {{ $t("Al Muroor Road Office 207 Saraya Tower") }}</a
                         >
                       </p>
                     </div>
@@ -351,7 +363,9 @@
                       </svg>
                     </div>
                     <div class="contact__info-text">
-                      <h4>Email us directly</h4>
+                      <h4>
+                        {{ $t("Email us directly") }}
+                      </h4>
                       <p>
                         <a href="mailto:info@studygrid.com">info@studigate</a>
                       </p>
@@ -371,7 +385,9 @@
                       </svg>
                     </div>
                     <div class="contact__info-text">
-                      <h4>Phone</h4>
+                      <h4>
+                        {{ $t("Phone") }}
+                      </h4>
                       <p><a href="tel:009710581223419">009710581223419</a></p>
                     </div>
                   </div>

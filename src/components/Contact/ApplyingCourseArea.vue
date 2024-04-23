@@ -6,19 +6,21 @@
           <div class="contact__wrapper">
             <div class="section__title-wrapper mb-40">
               <h2 class="section__title">
-                Sign up for more
+                {{ $t("Sign up for more") }}
                 <span
                   class="yellow-bg yellow-bg-big"
                   style="text-transform: lowercase"
                 >
-                  information<img
-                    src="../../assets/img/shape/yellow-bg.png"
-                    alt=""
+                  {{ $t("information")
+                  }}<img src="../../assets/img/shape/yellow-bg.png" alt=""
                 /></span>
               </h2>
               <p>
-                Please complete the form below to receive specialized course
-                information from our advisors.
+                {{
+                  $t(
+                    "Please complete the form below to receive specialized course information from our advisors."
+                  )
+                }}
               </p>
             </div>
             <div class="contact__form meeting-form">
@@ -121,7 +123,9 @@
                     </div>
                   </div>
                   <div class="col-xxl-4 col-xl-5 col-md-5 my-3">
-                    <h3 style="font-size: 18px">Intended country of study</h3>
+                    <h3 style="font-size: 18px">
+                      {{ $t("Intended country of study") }}
+                    </h3>
                     <div class="input-group">
                       <select
                         class="form-select py-3"
@@ -137,14 +141,18 @@
                           }`,
                         ]"
                       >
-                        <option value="uk">UNITED KINGDOM</option>
-                        <option value="ireland">IRELAND</option>
-                        <option value="newzeland">NEW ZEALAND</option>
+                        <option value="uk">{{ $t("UNITED KINGDOM") }}</option>
+                        <option value="ireland">{{ $t("IRELAND") }}</option>
+                        <option value="newzeland">
+                          {{ $t("NEW ZEALAND") }}
+                        </option>
                       </select>
                     </div>
                   </div>
                   <div class="col-xxl-4 col-xl-5 col-md-5 my-3">
-                    <h3 style="font-size: 18px">Degree of interest</h3>
+                    <h3 style="font-size: 18px">
+                      {{ $t("Degree of interest") }}
+                    </h3>
                     <div class="input-group">
                       <select
                         class="form-select py-3"
@@ -187,12 +195,15 @@
                       class="contact__form-agree d-flex align-items-center my-10 gap-2"
                     >
                       <p style="font-size: 13px">
-                        Your details will be used to supply the information you
-                        requested and in accordance with our
-                        <a style="color: #0056ad" href="terms-of-use">Terms </a
-                        >&
+                        {{
+                          $t(
+                            "Your details will be used to supply the information you requested and in accordance with our"
+                          )
+                        }}
+                        <a style="color: #0056ad" href="terms-of-use"> </a
+                        >{{ $t("&") }}
                         <a style="color: #0056ad" href="/data-privacy">
-                          Privacy Polices</a
+                          {{ $t("Privacy Polices") }}</a
                         >
                       </p>
                     </div>
@@ -235,7 +246,9 @@
                   <!-- Captcha -->
                   <div class="col-xxl-12">
                     <div class="contact__btn">
-                      <button type="submit" class="e-btn">Send</button>
+                      <button type="submit" class="e-btn">
+                        {{ $t("Send") }}
+                      </button>
                     </div>
                   </div>
                 </div>
