@@ -123,7 +123,7 @@
                         }}</a>
                       </li>
                       <li>
-                        <a href="/why-study-uk">{{ $t("Why study in Uk") }}</a>
+                        <a href="/why-study-uk">{{ $t("Why Study in Uk") }}</a>
                       </li>
                       <li>
                         <a href="uk-accreditation">{{

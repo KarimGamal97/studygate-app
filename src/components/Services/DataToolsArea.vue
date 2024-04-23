@@ -26,23 +26,25 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <router-link to="/">Home</router-link>
+                      <router-link to="/">{{ $t("Home") }}</router-link>
                     </li>
                     <li class="breadcrumb-item">
                       <router-link to="/data-tools"
-                        >Data Analytics Tools
+                        >{{ $t("Data Analytics Tools") }}
                       </router-link>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Studigate is an educational and technology service that
-                      facilitate access to distance higher education from UK
-                      universities for students in the UAE and GCC.
+                      {{
+                        $t(
+                          "Studigrid is an educational and technology service that facilitates access to distance higher education from UK universities for students in the GCC."
+                        )
+                      }}
                     </li>
                   </ol>
                 </nav>
               </div>
               <span class="page__title-pre"
-                >Data Analytics common Tools used in Industry
+                >{{ $t("Data Analytics common Tools used in Industry") }}
               </span>
             </div>
           </div>
@@ -66,17 +68,20 @@
                         <h3 class="course__title">Python</h3>
                         <div class="course__teacher">
                           <p>
-                            • Description: Python is a versatile, high-level
-                            programming language with a wide range of libraries
-                            for data analysis (Pandas), visualization
-                            (Matplotlib, Seaborn), and machine learning
-                            (scikit-learn, TensorFlow). Its simplicity and
-                            readability make it popular among data scientists
-                            and analysts.
+                            •
+                            {{
+                              $t(
+                                "Description: Python is a versatile, high-level programming language with a wide range of libraries for data analysis (Pandas), visualization (Matplotlib, Seaborn), and machine learning (scikit-learn, TensorFlow). Its simplicity and readability make it popular among data scientists and analysts."
+                              )
+                            }}
                           </p>
                           <p>
-                            • Use Cases: Data manipulation, statistical
-                            analysis, machine learning, data visualization.
+                            •
+                            {{
+                              $t(
+                                "Use Cases: Data manipulation, statistical analysis, machine learning, data visualization."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -91,15 +96,20 @@
                         <h3 class="course__title">R</h3>
                         <div class="course__teacher">
                           <p>
-                            • Description: R is a programming language and
-                            software environment designed for statistical
-                            computing and graphics. It is highly extensible and
-                            offers a vast array of packages for statistical
-                            analysis, graphical models, and data visualization.
+                            •
+                            {{
+                              $t(
+                                "Description: R is a programming language and software environment designed for statistical computing and graphics. It is highly extensible and offers a vast array of packages for statistical analysis, graphical models, and data visualization."
+                              )
+                            }}
                           </p>
                           <p>
-                            • Use Cases: Statistical analysis, predictive
-                            modeling, data visualization, bioinformatics.
+                            •
+                            {{
+                              $t(
+                                "Use Cases: Statistical analysis, predictive modeling, data visualization, bioinformatics."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -117,15 +127,20 @@
                         <h3 class="course__title">Tableau</h3>
                         <div class="course__teacher">
                           <p>
-                            • Description: Tableau is a leading data
-                            visualization tool that allows users to create
-                            interactive and shareable dashboards. It helps in
-                            understanding data visually, with the ability to
-                            connect to almost any database.
+                            •
+                            {{
+                              $t(
+                                "Description: Tableau is a leading data visualization tool that allows users to create interactive and shareable dashboards. It helps in understanding data visually, with the ability to connect to almost any database."
+                              )
+                            }}
                           </p>
                           <p>
-                            • Use Cases: Business intelligence, data
-                            visualization, dashboard creation, data sharing.
+                            •
+                            {{
+                              $t(
+                                "Use Cases: Business intelligence, data visualization, dashboard creation, data sharing."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -140,15 +155,20 @@
                         <h3 class="course__title">Power BI</h3>
                         <div class="course__teacher">
                           <p>
-                            • Description: Power BI is a business analytics
-                            service by Microsoft. It provides interactive
-                            visualizations and business intelligence
-                            capabilities with an interface simple enough for end
-                            users to create their own reports and dashboards.
+                            •
+                            {{
+                              $t(
+                                "Description: Power BI is a business analytics service by Microsoft. It provides interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards."
+                              )
+                            }}
                           </p>
                           <p>
-                            Use Cases: Business intelligence, data
-                            visualization, reporting, dashboard creation.
+                            •
+                            {{
+                              $t(
+                                "Use Cases: Business intelligence, data visualization, reporting, dashboard creation."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -168,15 +188,20 @@
                         </h3>
                         <div class="course__teacher">
                           <p>
-                            • Description: SAS is a software suite developed for
-                            advanced analytics, multivariate analysis, business
-                            intelligence, data management, and predictive
-                            analytics. It is widely used in healthcare,
-                            business, and research.
+                            •
+                            {{
+                              $t(
+                                "Description: SAS is a software suite developed for advanced analytics, multivariate analysis, business intelligence, data management, and predictive analytics. It is widely used in healthcare, business, and research."
+                              )
+                            }}
                           </p>
                           <p>
-                            • Use Cases: Predictive modeling, data mining,
-                            statistical analysis, business analytics.
+                            •
+                            {{
+                              $t(
+                                "Use Cases: Predictive modeling, data mining, statistical analysis, business analytics."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -191,15 +216,20 @@
                         <h3 class="course__title">Apache Spark</h3>
                         <div class="course__teacher">
                           <p>
-                            • Description: Apache Spark is a unified analytics
-                            engine for large-scale data processing. It provides
-                            high-level APIs in Java, Scala, Python, and R, and
-                            an optimized engine that supports general
-                            computation graphs for data analysis tasks.
+                            •
+                            {{
+                              $t(
+                                "Description: Apache Spark is a unified analytics engine for large-scale data processing. It provides high-level APIs in Java, Scala, Python, and R, and an optimized engine that supports general computation graphs for data analysis tasks."
+                              )
+                            }}
                           </p>
                           <p>
-                            • Use Cases: Big data processing, machine learning,
-                            real-time data processing, data analytics.
+                            •
+                            {{
+                              $t(
+                                "Use Cases: Big data processing, machine learning, real-time data processing, data analytics."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -217,14 +247,20 @@
                         <h3 class="course__title">Google Analytics</h3>
                         <div class="course__teacher">
                           <p>
-                            • Description: Google Analytics is a web analytics
-                            service offered by Google that tracks and reports
-                            website traffic. It's an essential tool for digital
-                            marketing and understanding online behavior.
+                            •
+                            {{
+                              $t(
+                                "Description: Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. It's an essential tool for digital marketing and understanding online behavior."
+                              )
+                            }}
                           </p>
                           <p>
-                            • Use Cases: Website traffic analysis, digital
-                            marketing effectiveness, user engagement analysis.
+                            •
+                            {{
+                              $t(
+                                "Use Cases: Website traffic analysis, digital marketing effectiveness, user engagement analysis."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -242,14 +278,20 @@
                         <h3 class="course__title">Looker</h3>
                         <div class="course__teacher">
                           <p>
-                            • Description: Looker is a business intelligence
-                            software and big data analytics platform that helps
-                            explore, analyze, and share real-time business
-                            analytics easily. It's now part of Google Cloud.
+                            •
+                            {{
+                              $t(
+                                "Description: Looker is a business intelligence software and big data analytics platform that helps explore, analyze, and share real-time business analytics easily. It's now part of Google Cloud."
+                              )
+                            }}
                           </p>
                           <p>
-                            • Use Cases: Business intelligence, data
-                            exploration, data visualization, reporting.
+                            •
+                            {{
+                              $t(
+                                "Use Cases: Business intelligence, data exploration, data visualization, reporting."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
@@ -264,19 +306,20 @@
                         <h3 class="course__title">SPSS</h3>
                         <div class="course__teacher">
                           <p>
-                            • SPSS is a comprehensive and flexible statistical
-                            software package used for data management,
-                            statistical analysis, and graphical representation
-                            of data. Originally developed for the social
-                            sciences, SPSS has found widespread use in various
-                            fields such as market research, health research,
-                            surveys and polling, education, data mining, and
-                            more due to its user-friendly interface and
-                            extensive functionality.
+                            •
+                            {{
+                              $t(
+                                "SPSS is a comprehensive and flexible statistical software package used for data management, statistical analysis, and graphical representation of data. Originally developed for the social sciences, SPSS has found widespread use in various fields such as market research, health research, surveys and polling, education, data mining, and more due to its user-friendly interface and extensive functionality."
+                              )
+                            }}
                           </p>
                           <p>
-                            • Use Cases: Data exploration, data visualization,
-                            statistical analysis.
+                            •
+                            {{
+                              $t(
+                                "Use Cases: Data exploration, data visualization, statistical analysis."
+                              )
+                            }}
                           </p>
                         </div>
                       </div>
