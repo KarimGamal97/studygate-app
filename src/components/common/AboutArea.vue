@@ -5,7 +5,10 @@
         <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6">
           <div class="about__thumb-wrapper">
             <div class="about__review">
-              <h5>Join the <span>Studigate </span> community</h5>
+              <h5>
+                {{ $t("Join the") }}<span> {{ $t("Studigrid") }}</span>
+                {{ $t("community") }}
+              </h5>
             </div>
             <div class="about__thumb ml-100">
               <img src="../../assets/img/about/about.jpg" alt="" />
@@ -20,7 +23,9 @@
                 <img src="../../assets/img/about/student-2.jpg" alt="" />
                 <img src="../../assets/img/about/student-1.jpg" alt="" />
               </a>
-              <p>Join over <span>4,000+</span> students</p>
+              <p>
+                {{ $t("Join over") }} <span>4,000+</span> {{ $t("students") }}
+              </p>
             </div>
           </div>
         </div>
@@ -28,41 +33,41 @@
           <div class="about__content pl-70 pr-60 pt-25">
             <div class="section__title-wrapper mb-25">
               <h2 class="section__title">
-                Achieve your <br /><span class="yellow-bg-big"
-                  >Goals
+                {{ $t("Achieve your") }}<br /><span class="yellow-bg-big"
+                  >{{ $t("Goals") }}
                   <img src="../../assets/img/shape/yellow-bg-2.png" alt="" />
                 </span>
-                with Studigate
+                {{ $t("with Studigrid") }}
               </h2>
               <p style="text-align: justify">
-                Studigate is an educational and technology service that
-                facilitate access to distance higher education from UK
-                universities for students in the UAE and GCC. Our approach
-                combines personalized guidance and partnership with reputable
-                universities to offer distance learning education programs
-                mainly in analytics and business. Studigate also offers bridging
-                courses and professional training in Data Analytics to
-                professionals, and organizations.
+                {{
+                  $t(
+                    "Studigate is an educational and technology service that facilitate access to distance higher education from UK universities for students in the UAE and GCC. Our approach combines personalized guidance and partnership with reputable universities to offer distance learning education programs mainly in analytics and business. Studigate also offers bridging courses and professional training in Data Analytics to professionals, and organizations."
+                  )
+                }}
               </p>
             </div>
             <div class="about__list mb-35">
               <ul>
                 <li class="d-flex align-items-center">
-                  <i class="fa fa-check"></i> Connects UAE and GCC students with
-                  UK universities.
+                  <i class="fa fa-check"></i>
+                  {{
+                    $t("Connects UAE and GCC students with UK universities.")
+                  }}
                 </li>
                 <li class="d-flex align-items-center">
-                  <i class="fa fa-check"></i> Programs focus on analytics
-                  courses .
+                  <i class="fa fa-check"></i>
+                  {{ $t("Programs focus on analytics courses .") }}
                 </li>
                 <li class="d-flex align-items-center">
-                  <i class="fa fa-check"></i> Professional training.
+                  <i class="fa fa-check"></i>
+                  {{ $t("Professional training.") }}
                 </li>
               </ul>
             </div>
-            <router-link to="/contact" class="e-btn e-btn-border"
-              >apply now</router-link
-            >
+            <router-link to="/contact" class="e-btn e-btn-border">
+              {{ $t("apply now") }}
+            </router-link>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@
         <form @submit.prevent="validateForm">
           <!-- MeetingTitle -->
           <div>
-            <label for="meetingTitle">Meeting Title</label>
+            <label for="meetingTitle">{{ $t("Meeting Title") }}</label>
             <input
               type="text"
               id="meetingTitle"
@@ -28,7 +28,7 @@
           </div>
           <!-- meetingDetails -->
           <div>
-            <label for="meetingDetails">Meeting Details</label>
+            <label for="meetingDetails">{{ $t("Meeting Details") }}</label>
             <textarea
               name="meetingDetails"
               rows="5"
@@ -51,7 +51,7 @@
           </div>
           <!-- Name -->
           <div>
-            <label for="name">Your Name</label>
+            <label for="name">{{ $t("Your Name") }}</label>
             <input
               type="text"
               id="name"
@@ -74,7 +74,7 @@
           </div>
           <!-- MeetingDate -->
           <div>
-            <label for="meetingDate">Meeting Date</label>
+            <label for="meetingDate">{{ $t("Meeting Date") }}</label>
             <input
               type="date"
               id="meetingDate"
@@ -92,7 +92,7 @@
           </div>
           <!-- MeetinTime -->
           <div>
-            <label for="meetingTime">Meeting Time</label>
+            <label for="meetingTime">{{ $t("Meeting Time") }}</label>
             <input
               type="time"
               id="meetingTime"
@@ -110,7 +110,7 @@
           </div>
           <!-- Email -->
           <div>
-            <label for="email">Your Email</label>
+            <label for="email">{{ $t("Your Email") }}</label>
             <input
               type="email"
               id="email"
@@ -135,11 +135,17 @@
               class="contact__form-agree d-flex align-items-center my-10 gap-2"
             >
               <p style="font-size: 13px">
-                Your details will be used to supply the information you
-                requested and in accordance with our
-                <a style="color: #0056ad" href="terms-of-use">Terms </a>&
+                {{
+                  $t(
+                    "Your details will be used to supply the information you requested and in accordance with our"
+                  )
+                }}
+                <a style="color: #0056ad" href="terms-of-use">
+                  {{ $t("Terms") }}
+                </a>
+                {{ $t("&") }}
                 <a style="color: #0056ad" href="/data-privacy">
-                  Privacy Polices</a
+                  {{ $t("Privacy Polices") }}</a
                 >
               </p>
             </div>
@@ -151,12 +157,12 @@
               id="e-agree"
               width="50px"
             />
-            <label class="e-check-label" for="e-agree" style="font-size: 13px"
-              >From time to time Studigrid would like to send you information
-              about further courses and events which we think might interest
-              you. You can opt-out of receiving this information at any time
-              using links provided in our communications. Tick the box if you
-              want to receive this information.
+            <label class="e-check-label" for="e-agree" style="font-size: 13px">
+              {{
+                $t(
+                  "From time to time Studigrid would like to send you information about further courses and events which we think might interest you. You can opt-out of receiving this information at any time using links provided in our communications. Tick the box if you want to receive this information."
+                )
+              }}
             </label>
           </div>
           <!-- Captcha -->
@@ -175,7 +181,7 @@
           >
           </vue-recaptcha>
           <!-- Captcha -->
-          <button type="submit" class="mt-3">Send</button>
+          <button type="submit" class="mt-3">{{ $t("Send") }}</button>
         </form>
       </div>
     </div>

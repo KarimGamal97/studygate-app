@@ -1,13 +1,15 @@
 <template>
   <div class="brand__area pb-110">
     <div class="container">
-        <div class="row">
-            <div class="col-xxl-12">
-                <div class="brand__content text-center">
-                <h3 class="brand__title">Trusted by 100 world's best companies</h3>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-xxl-12">
+          <div class="brand__content text-center">
+            <h3 class="brand__title">
+              {{ $t("Trusted by 100 world's best companies") }}
+            </h3>
+          </div>
         </div>
+      </div>
       <div class="brand-active swiper-container">
         <swiper
           ref="mySwiper"
@@ -19,25 +21,24 @@
           :breakpoints="breakpoints"
         >
           <swiper-slide v-for="brand in brandData" :key="brand.id">
-               <div class="brand__item text-center">
-                 <img :src="getImgUrl(brand.img)" class="img-fluid" alt="img" />
-               </div>
+            <div class="brand__item text-center">
+              <img :src="getImgUrl(brand.img)" class="img-fluid" alt="img" />
+            </div>
           </swiper-slide>
         </swiper>
       </div>
 
-        <div class="row">
-            <div class="col-xxl-12">
-                <div class="brand__more text-center">
-                <router-link to="/about" class="link-btn">
-                    View all partners
-                    <i class="far fa-arrow-right"></i>
-                    <i class="far fa-arrow-right"></i>
-                </router-link>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-xxl-12">
+          <div class="brand__more text-center">
+            <router-link to="/about" class="link-btn">
+              {{ $t("View all partners") }}
+              <i class="far fa-arrow-right"></i>
+              <i class="far fa-arrow-right"></i>
+            </router-link>
+          </div>
         </div>
-
+      </div>
     </div>
   </div>
 </template>
@@ -79,12 +80,11 @@ export default {
           img: "brand-1.png",
         },
       ],
-      breakpoints:{
-          550:{slidesPerView: 3},
-          768:{slidesPerView: 4},
-          1200:{slidesPerView: 6},
-      }
-      
+      breakpoints: {
+        550: { slidesPerView: 3 },
+        768: { slidesPerView: 4 },
+        1200: { slidesPerView: 6 },
+      },
     };
   },
   methods: {
