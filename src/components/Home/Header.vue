@@ -183,20 +183,20 @@
                       :value="locale"
                     >
                       {{ locale }}
-                      <img
-                        v-if="locale === 'en'"
-                        src="../../assets/img/home/en-lang.svg"
-                        alt="UK Flag"
-                        class="flag-icon"
-                      />
-                      <img
-                        v-else-if="locale === 'ar'"
-                        src="../../assets/img/home/ar-lang.svg"
-                        alt="Jordan Flag"
-                        class="flag-icon"
-                      />
                     </option>
                   </select>
+                  <img
+                    v-if="$i18n.locale === 'en'"
+                    src="../../assets/img/home/en-lang.svg"
+                    alt="UK Flag"
+                    width="30"
+                  />
+                  <img
+                    v-else-if="$i18n.locale === 'ar'"
+                    src="../../assets/img/home/ar-lang.svg"
+                    alt="Jordan Flag"
+                    width="25"
+                  />
                 </div>
               </div>
               <div class="header__btn ml-20 d-none d-sm-block">
@@ -484,3 +484,37 @@ export default {
   },
 };
 </script>
+<style scoped>
+#header-sticky
+  > div
+  > div
+  > div.col-xxl-10.col-xl-10.col-lg-10.col-md-10.col-sm-7.col-10
+  > div
+  > div.ml-10.d-none.d-md-block
+  > div {
+  border: 1px solid #333;
+  border-radius: 6px;
+}
+#header-sticky
+  > div
+  > div
+  > div.col-xxl-10.col-xl-10.col-lg-10.col-md-10.col-sm-7.col-10
+  > div
+  > div.ml-10.d-none.d-md-block
+  > div
+  > select {
+  border: none;
+  background: transparent;
+}
+#header-sticky
+  > div
+  > div
+  > div.col-xxl-10.col-xl-10.col-lg-10.col-md-10.col-sm-7.col-10
+  > div
+  > div.ml-10.d-none.d-md-block
+  > div
+  > select:focus {
+  outline: none;
+  border: none;
+}
+</style>
