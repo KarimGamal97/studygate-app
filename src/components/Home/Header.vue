@@ -175,7 +175,7 @@
                 </nav>
               </div>
               <div class="ml-10 d-none d-md-block">
-                <div class="locale-change">
+                <div class="locale-change" style="padding: 4px">
                   <select v-model="$i18n.locale">
                     <option
                       v-for="locale in $i18n.availableLocales"
@@ -187,13 +187,13 @@
                   </select>
                   <img
                     v-if="$i18n.locale === 'en'"
-                    src="../../assets/img/home/en-lang.svg"
+                    src="../../assets/img/home/en-lang-.svg"
                     alt="UK Flag"
-                    width="30"
+                    width="25"
                   />
                   <img
                     v-else-if="$i18n.locale === 'ar'"
-                    src="../../assets/img/home/ar-lang.svg"
+                    src="../../assets/img/home/ar-lang-.svg"
                     alt="Jordan Flag"
                     width="25"
                   />

@@ -42,7 +42,7 @@
                     alt="yellow-shape"
                   />
                 </span>
-                {{ $t("degree without quitting job.") }}
+                {{ $t("university degree without quitting job.") }}
               </h3>
               <p>
                 {{
