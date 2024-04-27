@@ -21,7 +21,10 @@
       <div class="row">
         <div class="col-xxl-12 col-xl-12 col-lg-12">
           <div class="course__wrapper">
-            <div class="page__title-content mb-25">
+            <div
+              class="page__title-content mb-25"
+              :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+            >
               <div class="page__title-breadcrumb">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
@@ -43,7 +46,10 @@
               </div>
               <span class="page__title-pre">{{ $t("MBA") }}</span>
             </div>
-            <div class="course__tab-content mb-95">
+            <div
+              class="course__tab-content mb-95"
+              :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+            >
               <div class="tab-content" id="courseTabContent">
                 <div
                   class="tab-pane fade show active"
@@ -104,7 +110,10 @@
             </div>
           </div>
         </div>
-        <div class="col-xxl-12 col-xl-12 col-lg-12">
+        <div
+          class="col-xxl-12 col-xl-12 col-lg-12"
+          :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+        >
           <div class="course__tab-conent">
             <div class="tab-content" id="courseTabContent">
               <div
@@ -242,17 +251,20 @@
             </div>
           </div>
         </div>
-        <h3 class="mt-5 mb-3">
+        <h3 class="mt-5 mb-3" :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
           {{ $t("Why study MBA?") }}
         </h3>
-        <p>
+        <p :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
           {{
             $t(
               "Pursuing an MBA (Master of Business Administration) is a strategic investment in one's career, offering various benefits that contribute to professional growth and success:"
             )
           }}
         </p>
-        <div class="col-xxl-12 col-xl-12 col-lg-12">
+        <div
+          class="col-xxl-12 col-xl-12 col-lg-12"
+          :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+        >
           <div class="course__tab-conent">
             <div class="tab-content" id="courseTabContent">
               <div
@@ -412,7 +424,7 @@
                           <p>
                             {{
                               $t(
-                                "Industry Recognition: Employers recognize the prestige and rigor associated with MBA programs. Holding an MBA from a reputable institution enhances an individual's credibility and marketability in the job market, increasing the likelihood of securing desired positions."
+                                "Industry Recognition: Employers recognize the prestige and rigor associated with MBA programs. Holding an MBA from a reputable institution enhances an individual's credibility and marketability in the job market, increasing  the likelihood of securing desired positions."
                               )
                             }}
                           </p>

@@ -21,7 +21,10 @@
       <div class="row">
         <div class="col-xxl-12 col-xl-12 col-lg-12">
           <div class="course__wrapper">
-            <div class="page__title-content mb-25">
+            <div
+              class="page__title-content mb-25"
+              :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+            >
               <div class="page__title-breadcrumb">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
@@ -55,7 +58,10 @@
                   role="tabpanel"
                   aria-labelledby="description-tab"
                 >
-                  <div class="course__description">
+                  <div
+                    class="course__description"
+                    :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+                  >
                     <p>
                       {{
                         $t(
@@ -69,10 +75,13 @@
             </div>
           </div>
         </div>
-        <h3 class="mb-3">
+        <h3 class="mb-3" :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
           {{ $t("AI Short Courses") }}
         </h3>
-        <div class="col-xxl-12 col-xl-12 col-lg-12">
+        <div
+          class="col-xxl-12 col-xl-12 col-lg-12"
+          :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+        >
           <div class="course__tab-conent">
             <div class="tab-content" id="courseTabContent">
               <div
@@ -261,10 +270,13 @@
             </div>
           </div>
         </div>
-        <h3 class="mt-5 mb-3">
+        <h3 class="mt-5 mb-3" :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
           {{ $t("Data Analytics Short Courses") }}
         </h3>
-        <div class="col-xxl-12 col-xl-12 col-lg-12">
+        <div
+          class="col-xxl-12 col-xl-12 col-lg-12"
+          :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+        >
           <div class="course__tab-conent">
             <div class="tab-content" id="courseTabContent">
               <div

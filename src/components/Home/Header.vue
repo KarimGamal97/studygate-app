@@ -1,4 +1,4 @@
-<template>
+<template :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
   <header>
     <div
       id="header-sticky"
@@ -40,7 +40,7 @@
             >
               <div :class="`main-menu ${header__white && 'main-menu-3'}`">
                 <nav id="mobile-menu" class="d-none d-xl-block">
-                  <ul class="d-flex" style="gap: 40px">
+                  <ul class="d-flex" style="gap: 20px">
                     <li>
                       <router-link to="/">{{ $t("Home") }}</router-link>
                     </li>
@@ -209,7 +209,7 @@
               <div class="sidebar__menu d-xl-none">
                 <div
                   @click="handleSidebar"
-                  class="sidebar-toggle-btn ml-30"
+                  class="sidebar-toggle-btn ml-240 mt-45"
                   id="sidebar-toggle"
                 >
                   <span class="line"></span>
@@ -400,6 +400,43 @@
               }}</router-link>
             </li>
           </ul>
+          <div
+            class="ml-10"
+            style="
+              display: flex;
+              justify-content: center;
+
+              padding: 5px;
+              border-radius: 6px;
+            "
+          >
+            <div
+              class="locale-change d-flex justify-content-center"
+              style="gap: 10px"
+            >
+              <select v-model="$i18n.locale">
+                <option
+                  v-for="locale in $i18n.availableLocales"
+                  :key="`locale-${locale}`"
+                  :value="locale"
+                >
+                  {{ locale }}
+                </option>
+              </select>
+              <img
+                v-if="$i18n.locale === 'en'"
+                src="../../assets/img/home/en-lang-.svg"
+                alt="UK Flag"
+                width="25"
+              />
+              <img
+                v-else-if="$i18n.locale === 'ar'"
+                src="../../assets/img/home/ar-lang-.svg"
+                alt="Jordan Flag"
+                width="25"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

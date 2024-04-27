@@ -11,11 +11,11 @@
                 role="tabpanel"
                 aria-labelledby="grid-tab"
               >
-                <div class="row">
+                <div class="row" :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <div
                       class="course__item white-bg mb-30 fix"
-                      style="height: 450px"
+                      style="height: 480px"
                     >
                       <div class="course__content">
                         <div
@@ -144,7 +144,7 @@
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <div
                       class="course__item white-bg mb-30 fix"
-                      style="height: 350px"
+                      style="height: 100%"
                     >
                       <div class="course__content">
                         <div

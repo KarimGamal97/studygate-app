@@ -11,7 +11,7 @@
                 role="tabpanel"
                 aria-labelledby="grid-tab"
               >
-                <div class="row">
+                <div class="row" :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
                   <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
                     <div class="course__item white-bg mb-30 fix">
                       <div class="course__content">

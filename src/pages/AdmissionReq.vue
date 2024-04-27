@@ -1,8 +1,8 @@
 <template>
   <Header header__white="header__white" />
   <Breadcrumb
-    title="Admission requirements "
-    subtitle="Admission requirements "
+    title="Admission Requirements "
+    subtitle="Admission Requirements "
   />
   <AdmissionReqArea />
   <AdmissionCards />

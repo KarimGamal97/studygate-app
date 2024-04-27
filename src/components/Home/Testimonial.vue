@@ -4,7 +4,7 @@
     style="background-color: #3954d5"
   >
     <div class="container">
-      <div class="row">
+      <div class="row" :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
         <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-10">
           <h3 class="testimonial__title">1. {{ $t("Our MISSION") }}</h3>
           <div class="testimonial__item-3">

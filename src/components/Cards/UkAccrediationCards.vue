@@ -2,7 +2,10 @@
   <section class="course__area pb-120">
     <div class="container">
       <div class="row">
-        <div class="col-xxl-12 col-xl-12 col-lg-12">
+        <div
+          class="col-xxl-12 col-xl-12 col-lg-12"
+          :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+        >
           <div class="course__tab-conent">
             <div class="tab-content" id="courseTabContent">
               <div

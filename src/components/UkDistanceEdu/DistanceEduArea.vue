@@ -21,7 +21,10 @@
       <div class="row">
         <div class="col-xxl-12 col-xl-12 col-lg-12">
           <div class="course__wrapper">
-            <div class="page__title-content mb-25">
+            <div
+              class="page__title-content mb-25"
+              :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+            >
               <div class="page__title-breadcrumb">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
@@ -55,9 +58,12 @@
                   role="tabpanel"
                   aria-labelledby="description-tab"
                 >
-                  <div class="course__description">
+                  <div
+                    class="course__description"
+                    :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+                  >
                     <div class="row mb-50">
-                      <div class="col-6">
+                      <div class="col-md-6 col-sm-12">
                         <p>
                           {{
                             $t(
@@ -73,7 +79,7 @@
                           }}
                         </p>
                       </div>
-                      <div class="col-6">
+                      <div class="col-md-6 col-sm-12">
                         <img
                           src="../../assets/img/UK_Distance_Education/distance-edu-1.png"
                           style="width: 100%"
@@ -82,14 +88,14 @@
                       </div>
                     </div>
                     <div class="row mb-50">
-                      <div class="col-6">
+                      <div class="col-md-6 col-sm-12">
                         <img
                           src="../../assets/img/UK_Distance_Education/distance-edu-2.png"
                           style="width: 100%"
                           alt=""
                         />
                       </div>
-                      <div class="col-6">
+                      <div class="col-md-6 col-sm-12">
                         <p>
                           {{
                             $t(

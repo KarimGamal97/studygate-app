@@ -21,7 +21,10 @@
       <div class="row">
         <div class="col-xxl-12 col-xl-12 col-lg-12">
           <div class="course__wrapper">
-            <div class="page__title-content mb-25">
+            <div
+              class="page__title-content mb-25"
+              :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+            >
               <div class="page__title-breadcrumb">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
@@ -47,7 +50,10 @@
                 {{ $t("Why study in the United Kingdom?") }}
               </span>
             </div>
-            <div class="course__tab-content mb-95">
+            <div
+              class="course__tab-content mb-95"
+              :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+            >
               <div class="tab-content" id="courseTabContent">
                 <div
                   class="tab-pane fade show active"
@@ -57,7 +63,7 @@
                 >
                   <div class="course__description">
                     <div class="row mb-50">
-                      <div class="col-6">
+                      <div class="col-md-6 col-sm-12">
                         <p>
                           {{
                             $t(
@@ -73,7 +79,7 @@
                           }}
                         </p>
                       </div>
-                      <div class="col-6">
+                      <div class="col-md-6 col-sm-12">
                         <img
                           src="../../assets/img/Why_Study_Uk/why-study-1.jpg"
                           style="width: 100%"
@@ -82,14 +88,14 @@
                       </div>
                     </div>
                     <div class="row mb-50">
-                      <div class="col-6">
+                      <div class="col-md-6 col-sm-12">
                         <img
                           src="../../assets/img/Why_Study_Uk/why-study-3.jpg"
                           style="width: 100%"
                           alt=""
                         />
                       </div>
-                      <div class="col-6">
+                      <div class="col-md-6 col-sm-12">
                         <p>
                           {{
                             $t(
@@ -107,7 +113,7 @@
                       </div>
                     </div>
                     <div class="row mb-50">
-                      <div class="col-6">
+                      <div class="col-md-6 col-sm-12">
                         <p>
                           {{
                             $t(
@@ -123,7 +129,7 @@
                           }}
                         </p>
                       </div>
-                      <div class="col-6">
+                      <div class="col-md-6 col-sm-12">
                         <img
                           src="../../assets/img/Why_Study_Uk/why-study-2.jpg"
                           style="width: 100%"
@@ -132,14 +138,14 @@
                       </div>
                     </div>
                     <div class="row mb-50">
-                      <div class="col-6">
+                      <div class="col-md-6 col-sm-12">
                         <img
                           src="../../assets/img/Why_Study_Uk/why-study-4.png"
                           style="width: 100%"
                           alt=""
                         />
                       </div>
-                      <div class="col-6">
+                      <div class="col-md-6 col-sm-12">
                         <p>
                           {{
                             $t(
