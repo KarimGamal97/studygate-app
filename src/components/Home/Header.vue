@@ -231,7 +231,7 @@
       <div @click="handleSidebarClose" class="sidebar__close">
         <button class="sidebar__close-btn" id="sidebar__close-btn">
           <span><i class="fal fa-times"></i></span>
-          <span>close</span>
+          <span>{{ $t("close") }}</span>
         </button>
       </div>
       <div class="sidebar__content">

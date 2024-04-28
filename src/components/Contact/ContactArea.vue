@@ -1,10 +1,13 @@
 <template>
-  <section class="contact__area pt-115 pb-120">
+  <section class="contact__area pt-30 pb-120">
     <div class="container">
       <div class="row">
         <div class="col-xxl-7 col-xl-7 col-lg-6">
           <div class="contact__wrapper">
-            <div class="section__title-wrapper mb-40">
+            <div
+              class="section__title-wrapper mb-40"
+              :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+            >
               <h2 class="section__title">
                 {{ $t("Get") }}
                 <span
@@ -119,9 +122,14 @@
                       </span>
                     </div>
                   </div>
-                  <h3 style="font-size: 20px">{{ $t("Queries for") }}</h3>
-                  <div class="d-flex col-xxl-12 col-xl-12 col-md-12 mb-3">
-                    <div class="col-3">
+                  <h3
+                    style="font-size: 20px"
+                    :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+                  >
+                    {{ $t("Queries for") }}
+                  </h3>
+                  <div class="col-xxl-12 col-xl-12 col-md-12 mb-3 inquires">
+                    <div class="col-md-3 col-sm-2">
                       <div class="form-check">
                         <input
                           class="form-check-input"
@@ -134,7 +142,7 @@
                         </label>
                       </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-md-2 col-sm-2">
                       <div class="form-check">
                         <input
                           class="form-check-input"
@@ -147,7 +155,7 @@
                         </label>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-3 col-sm-2">
                       <div class="form-check">
                         <input
                           class="form-check-input"
@@ -160,7 +168,7 @@
                         </label>
                       </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-md-2 col-sm-2">
                       <div class="form-check">
                         <input
                           class="form-check-input"
@@ -173,7 +181,7 @@
                         </label>
                       </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-md-2 col-sm-2">
                       <div class="form-check">
                         <input
                           class="form-check-input"
@@ -187,7 +195,10 @@
                       </div>
                     </div>
                   </div>
-                  <h3 style="font-size: 20px">
+                  <h3
+                    style="font-size: 20px"
+                    :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+                  >
                     {{ $t("Destination Country of Study") }}
                   </h3>
                   <div class="col-xxl-12 my-3">
@@ -492,5 +503,11 @@ export default {
 }
 .danger {
   border: 1px solid indianred;
+}
+
+@media (min-width: 991px) {
+  .inquires {
+    display: flex;
+  }
 }
 </style>
