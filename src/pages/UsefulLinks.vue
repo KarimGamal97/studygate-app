@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Useful Links" subtitle="Useful Links" />
+  <Breadcrumb :title="$t('Useful Links')" :subtitle="$t('Useful Links')" />
   <UsefulLinksCard />
   <Footer footerPadding="true" />
 </template>

@@ -1,6 +1,9 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Ms Data Science" subtitle="Ms Data Science" />
+  <Breadcrumb
+    :title="$t('Ms Data Science')"
+    :subtitle="$t('Ms Data Science')"
+  />
   <MsDataArea />
   <Footer footerPadding="true" />
 </template>

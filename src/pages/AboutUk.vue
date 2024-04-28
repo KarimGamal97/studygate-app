@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="About UK " subtitle="About UK " />
+  <Breadcrumb :title="$t('About UK')" :subtitle="$t('About UK')" />
   <AboutUkDetails />
   <Footer footerPadding="true" />
 </template>

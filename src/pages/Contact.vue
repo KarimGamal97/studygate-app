@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Contact" subtitle="Contact" />
+  <Breadcrumb :title="$t('Contact Us')" :subtitle="$t('Contact Us')" />
   <ContactArea />
   <Footer footerPadding="true" />
 </template>

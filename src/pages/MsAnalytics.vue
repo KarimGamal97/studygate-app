@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="MS Analytics" subtitle="MS Analytics" />
+  <Breadcrumb :title="$t('MS Analytics')" :subtitle="$t('MS Analytics')" />
   <MsAnalyticsArea />
   <Footer footerPadding="true" />
 </template>

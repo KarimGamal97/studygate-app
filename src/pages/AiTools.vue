@@ -1,8 +1,8 @@
 <template>
   <Header header__white="header__white" />
   <Breadcrumb
-    title=" Open AI tools in industry "
-    subtitle="Open AI tools in industry  "
+    :title="$t('Open AI tools in industry')"
+    :subtitle="$t('Open AI tools in industry')"
   />
   <AiToolsArea />
   <Footer footerPadding="true" />

@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="MRes" subtitle="Master by Research (MRes) " />
+  <Breadcrumb :title="$t('MRes')" :subtitle="$t('Master by Research (MRes)')" />
   <MRESArea />
   <Footer footerPadding="true" />
 </template>

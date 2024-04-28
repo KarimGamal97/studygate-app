@@ -1,6 +1,9 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="UK Universities" subtitle="UK Universities" />
+  <Breadcrumb
+    :title="$t('UK Universities')"
+    :subtitle="$t('UK Universities')"
+  />
   <UkUniversitiesArea />
   <UkUniversitiesCard />
   <Footer footerPadding="true" />

@@ -33,7 +33,8 @@
                     <div class="contact__form-input">
                       <input
                         type="text"
-                        placeholder="Your Name"
+                        :placeholder="$t('Your Name')"
+                        :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
                         name="name"
                         v-model="username"
                         @input="v$.username.$touch()"
@@ -58,7 +59,8 @@
                     <div class="contact__form-input">
                       <input
                         type="email"
-                        placeholder="Email Id"
+                        :placeholder="$t('Email Id')"
+                        :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
                         name="email"
                         v-model="email"
                         :class="[
@@ -80,7 +82,8 @@
                     <div class="contact__form-input">
                       <input
                         type="text"
-                        placeholder="Phone Number"
+                        :placeholder="$t('Phone Number')"
+                        :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
                         name="phone"
                         v-model="phone"
                         @input="v$.phone.$touch()"
@@ -103,7 +106,8 @@
                     <div class="contact__form-input">
                       <input
                         type="text"
-                        placeholder="Country"
+                        :placeholder="$t('Country')"
+                        :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
                         name="city"
                         v-model="city"
                         @input="v$.city.$touch()"
@@ -227,7 +231,8 @@
                   <div class="col-xxl-12">
                     <div class="contact__form-input">
                       <textarea
-                        placeholder="Enter Your Message"
+                        :placeholder="$t('Enter Your Message')"
+                        :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
                         name="message"
                         v-model="message"
                         @input="v$.message.$touch()"
@@ -246,7 +251,10 @@
                       </span>
                     </div>
                   </div>
-                  <div class="col-xxl-12">
+                  <div
+                    class="col-xxl-12"
+                    :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+                  >
                     <div
                       class="contact__form-agree d-flex align-items-center my-10 gap-2"
                     >
@@ -264,7 +272,10 @@
                       </p>
                     </div>
                   </div>
-                  <div class="col-xxl-12 d-flex gap-3 mb-3">
+                  <div
+                    class="col-xxl-12 d-flex gap-3 mb-3"
+                    :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+                  >
                     <input
                       class="e-check-input big-checkbox"
                       type="checkbox"
@@ -285,6 +296,7 @@
                   </div>
                   <!-- Captcha -->
                   <vue-recaptcha
+                    :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
                     v-show="showRecaptcha"
                     sitekey="6LfWEr4pAAAAABNqiI6kVo73ow6QUbxnCc5vu-fz"
                     size="normal"
@@ -299,7 +311,10 @@
                   >
                   </vue-recaptcha>
                   <!-- Captcha -->
-                  <div class="col-xxl-12 mt-3">
+                  <div
+                    class="col-xxl-12 mt-3"
+                    :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
+                  >
                     <div class="contact__btn">
                       <button type="submit" class="e-btn">
                         {{ $t("Send") }}

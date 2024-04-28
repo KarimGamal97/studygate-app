@@ -1,8 +1,8 @@
 <template>
   <Header header__white="header__white" />
   <Breadcrumb
-    title="Data Analytics Common Tools"
-    subtitle=" Data Analytics common Tools used in Industry"
+    :title="$t('Data Analytics common Tools used in Industry')"
+    :subtitle="$t('Data Analytics common Tools used in Industry')"
   />
   <DataToolsArea />
   <Footer footerPadding="true" />

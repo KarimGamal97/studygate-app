@@ -1,6 +1,9 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Discover More" subtitle="Discover more about Studigrid " />
+  <Breadcrumb
+    :title="$t('Discover More')"
+    :subtitle="$t('Discover more about us')"
+  />
   <DiscoverMoreArea />
   <Footer footerPadding="true" />
 </template>

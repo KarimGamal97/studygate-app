@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="About" subtitle="About" />
+  <Breadcrumb :title="$t('About Us')" :subtitle="$t('About Us')" />
   <AboutArea />
   <BrandArea />
   <Testimonial />

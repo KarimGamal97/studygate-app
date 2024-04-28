@@ -1,6 +1,9 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Uk Accreditation" subtitle="Uk Accreditation" />
+  <Breadcrumb
+    :title="$t('UK Accreditation')"
+    :subtitle="$t('UK Accreditation')"
+  />
   <UkAccrediationArea />
   <UkAccrediationCards />
   <Footer footerPadding="true" />

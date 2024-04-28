@@ -1,6 +1,9 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Data Privacy Policy" subtitle="Data Privacy Policy" />
+  <Breadcrumb
+    :title="$t('Data Privacy Policy')"
+    :subtitle="$t('Data Privacy Policy')"
+  />
   <DataPrivacyArea />
   <Footer footerPadding="true" />
 </template>

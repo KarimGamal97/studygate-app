@@ -1,6 +1,9 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Why Study UK" subtitle="Why Study in the UK" />
+  <Breadcrumb
+    :title="$t('Why Study in the UK')"
+    :subtitle="$t('Why Study in the UK')"
+  />
   <WhyStudyUkArea />
   <Footer footerPadding="true" />
 </template>

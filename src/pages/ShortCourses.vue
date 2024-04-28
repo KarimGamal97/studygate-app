@@ -1,8 +1,8 @@
 <template>
   <Header header__white="header__white" />
   <Breadcrumb
-    title="Short Courses"
-    subtitle="Short Courses in AI and Data Analytics "
+    :title="$t('Short Courses')"
+    :subtitle="$t('Short Courses in AI and Data Analytics')"
   />
   <ShortCoursesArea />
   <Footer footerPadding="true" />

@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="PHD" subtitle="Doctor of Philosophy " />
+  <Breadcrumb :title="$t('PHD')" :subtitle="$t('Doctor of Philosophy (Phd)')" />
   <PHDArea />
   <Footer footerPadding="true" />
 </template>

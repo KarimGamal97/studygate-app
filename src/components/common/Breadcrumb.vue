@@ -11,12 +11,12 @@
   >
     <div class="container">
       <div class="row">
-        <div class="col-xxl-12">
+        <div class="col-xxl-12" :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
           <div class="page__title-wrapper mt-110">
             <h3 class="page__title">{{ title }}</h3>
-            <nav aria-label="breadcrumb">
+            <nav aria-label="breadcrumb" class="mt-20">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item">
+                <li class="breadcrumb-item" style="margin-left: 10px">
                   <router-link to="/">{{ $t("Home") }}</router-link>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">

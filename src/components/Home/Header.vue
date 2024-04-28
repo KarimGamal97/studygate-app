@@ -174,6 +174,7 @@
                   </ul>
                 </nav>
               </div>
+              <!-- Locale -->
               <div class="ml-10 d-none d-md-block">
                 <div class="locale-change" style="padding: 4px">
                   <select v-model="$i18n.locale">

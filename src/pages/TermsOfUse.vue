@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Terms of Use" subtitle="Terms of Use" />
+  <Breadcrumb :title="$t('Terms of Use')" :subtitle="$t('Terms of Use')" />
   <TermsOfUseArea />
   <Footer footerPadding="true" />
 </template>

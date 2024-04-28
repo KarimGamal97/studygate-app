@@ -1,6 +1,9 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Distance Education" subtitle="Distance Education" />
+  <Breadcrumb
+    :title="$t('Distance Education')"
+    :subtitle="$t('Distance Education')"
+  />
   <DistanceEduArea />
   <Footer footerPadding="true" />
 </template>

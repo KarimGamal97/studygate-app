@@ -13,11 +13,11 @@
               <img src="../assets/img/error/error.png" alt="" />
             </div>
             <div class="error__content">
-              <h3 class="error__title">Page Not Found!</h3>
-              <p>Please try searching for some other page.</p>
-              <router-link to="/" class="e-btn e-btn-3 e-btn-4"
-                >Back To Home</router-link
-              >
+              <h3 class="error__title">{{ $t("Page Not Found!") }}</h3>
+              <p>{{ $t("Please try searching for some other page.") }}</p>
+              <router-link to="/" class="e-btn e-btn-3 e-btn-4">{{
+                $t("Back To Home")
+              }}</router-link>
             </div>
           </div>
         </div>

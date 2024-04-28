@@ -1,8 +1,8 @@
 <template>
   <Header header__white="header__white" />
   <Breadcrumb
-    title="Admission Requirements "
-    subtitle="Admission Requirements "
+    :title="$t('Admission Requirements')"
+    :subtitle="$t('Admission Requirements')"
   />
   <AdmissionReqArea />
   <AdmissionCards />

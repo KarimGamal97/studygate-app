@@ -1,6 +1,9 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Apply for a Course" subtitle="Apply for a Course" />
+  <Breadcrumb
+    :title="$t('Apply for A Course')"
+    :subtitle="$t('Apply for A Course')"
+  />
   <ApplyingCourseArea />
   <Footer footerPadding="true" />
 </template>

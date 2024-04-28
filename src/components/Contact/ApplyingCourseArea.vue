@@ -1,7 +1,7 @@
 <template>
   <section class="contact__area pt-115 pb-120">
     <div class="container">
-      <div class="row">
+      <div class="row" :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'">
         <div class="col-xxl-12 col-xl-12 col-lg-12">
           <div class="contact__wrapper">
             <div class="section__title-wrapper mb-40">
@@ -29,8 +29,9 @@
                   <div class="col-xxl-6 col-xl-6 col-md-6">
                     <div class="contact__form-input">
                       <input
+                        :dir="$i18n.locale == 'ar' ? 'rtl' : 'ltr'"
                         type="text"
-                        placeholder="Your Name"
+                        :placeholder="$t('Your Name')"
                         name="name"
                         v-model="username"
                         @input="v$.username.$touch()"
@@ -55,7 +56,7 @@
                     <div class="contact__form-input">
                       <input
                         type="email"
-                        placeholder="Email"
+                        :placeholder="$t('Email Id')"
                         name="email"
                         v-model="email"
                         :class="[
@@ -77,7 +78,7 @@
                     <div class="contact__form-input">
                       <input
                         type="text"
-                        placeholder="mobile number with country code"
+                        :placeholder="$t('Phone Number')"
                         name="phone"
                         v-model="phone"
                         @input="v$.phone.$touch()"
@@ -219,12 +220,12 @@
                       class="e-check-label"
                       for="e-agree"
                       style="font-size: 13px"
-                      >From time to time Studigrid would like to send you
-                      information about further courses and events which we
-                      think might interest you. You can opt-out of receiving
-                      this information at any time using links provided in our
-                      communications. Tick the box if you want to receive this
-                      information.
+                    >
+                      {{
+                        $t(
+                          "From time to time Studigrid would like to send you information about further courses and events which we think might interest you. You can opt-out of receiving this information at any time using links provided in our communications. Tick the box if you want to receive this information."
+                        )
+                      }}
                     </label>
                   </div>
                   <!-- Captcha -->

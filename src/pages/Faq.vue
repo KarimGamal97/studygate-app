@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="FAQ" subtitle="FAQ" />
+  <Breadcrumb :title="$t('FAQ')" :subtitle="$t('FAQ')" />
   <FaqArea />
   <Footer footerPadding="true" />
 </template>

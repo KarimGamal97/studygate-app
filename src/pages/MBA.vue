@@ -1,6 +1,9 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="MBA" subtitle="Master in Business Administration  " />
+  <Breadcrumb
+    :title="$t('MBA')"
+    :subtitle="$t('Master in Business Administration')"
+  />
   <MBAArea />
   <Footer footerPadding="true" />
 </template>

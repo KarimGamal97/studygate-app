@@ -1,6 +1,6 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="Book a Meeting" subtitle="Book a Meeting" />
+  <Breadcrumb :title="$t('Book a Meeting')" :subtitle="$t('Book a Meeting')" />
   <BookingFormArea />
   <Footer footerPadding="true" />
 </template>

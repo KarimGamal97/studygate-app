@@ -1,6 +1,9 @@
 <template>
   <Header header__white="header__white" />
-  <Breadcrumb title="MPhil" subtitle="Master of Philosophy  (MPhil)" />
+  <Breadcrumb
+    :title="$t('MPhil')"
+    :subtitle="$t('Master of Philosophy (MPhil)')"
+  />
   <MPhilArea />
   <Footer footerPadding="true" />
 </template>
